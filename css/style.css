@@ -1,0 +1,484 @@
+/* EDS Uyarı Sistemi Pro - Enhanced CSS */
+/* Version 2.0.0 - Bu dosya isteğe bağlıdır, ana CSS index.html içinde inline olarak yazılmıştır */
+
+:root {
+    --primary-color: #2ed573;
+    --secondary-color: #3742fa;
+    --danger-color: #ff4757;
+    --warning-color: #ffa502;
+    --info-color: #3742fa;
+    --success-color: #2ed573;
+    --dark-bg: #0a0a0a;
+    --surface-bg: rgba(30, 30, 30, 0.95);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --text-muted: #999999;
+    --shadow-color: rgba(0, 0, 0, 0.4);
+    --blur-bg: blur(20px);
+}
+
+/* Enhanced animations */
+@keyframes proximityPulse {
+    0% { 
+        transform: scale(1); 
+        opacity: 0.3; 
+    }
+    50% { 
+        transform: scale(1.1); 
+        opacity: 0.6; 
+    }
+    100% { 
+        transform: scale(1); 
+        opacity: 0.3; 
+    }
+}
+
+@keyframes alertGlow {
+    0%, 100% { 
+        box-shadow: 0 0 10px var(--danger-color); 
+    }
+    50% { 
+        box-shadow: 0 0 30px var(--danger-color); 
+    }
+}
+
+@keyframes slideInFromRight {
+    from { 
+        transform: translateX(100%); 
+        opacity: 0; 
+    }
+    to { 
+        transform: translateX(0); 
+        opacity: 1; 
+    }
+}
+
+@keyframes slideInFromBottom {
+    from { 
+        transform: translateY(100%); 
+        opacity: 0; 
+    }
+    to { 
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+
+@keyframes bounceIn {
+    0% { 
+        transform: scale(0.3); 
+        opacity: 0; 
+    }
+    50% { 
+        transform: scale(1.05); 
+    }
+    70% { 
+        transform: scale(0.9); 
+    }
+    100% { 
+        transform: scale(1); 
+        opacity: 1; 
+    }
+}
+
+/* Enhanced proximity zone styles */
+.proximity-zone {
+    animation: proximityPulse 2s infinite;
+    transition: opacity 0.3s ease;
+}
+
+.proximity-zone:hover {
+    opacity: 0.8 !important;
+}
+
+/* Enhanced marker styles for better visibility */
+.leaflet-marker-icon {
+    filter: drop-shadow(0 4px 8px var(--shadow-color));
+    transition: all 0.3s ease;
+}
+
+.leaflet-marker-icon:hover {
+    filter: drop-shadow(0 6px 12px var(--shadow-color));
+    transform: scale(1.1);
+}
+
+/* Enhanced map popup customization */
+.leaflet-popup-content-wrapper {
+    background: var(--surface-bg) !important;
+    color: var(--text-primary) !important;
+    border-radius: 12px !important;
+    border: 1px solid var(--border-color) !important;
+    backdrop-filter: var(--blur-bg);
+    box-shadow: 0 8px 32px var(--shadow-color) !important;
+}
+
+.leaflet-popup-tip {
+    background: var(--surface-bg) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+.leaflet-popup-close-button {
+    color: var(--text-secondary) !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
+
+.leaflet-popup-close-button:hover {
+    color: var(--danger-color) !important;
+}
+
+/* Enhanced tooltip styles */
+.leaflet-tooltip {
+    background: var(--surface-bg) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+    backdrop-filter: var(--blur-bg);
+    box-shadow: 0 4px 16px var(--shadow-color) !important;
+    font-size: 12px !important;
+    padding: 8px 12px !important;
+}
+
+.leaflet-tooltip-top:before,
+.leaflet-tooltip-bottom:before,
+.leaflet-tooltip-left:before,
+.leaflet-tooltip-right:before {
+    border-color: var(--border-color) transparent !important;
+}
+
+/* Loading animation enhancement */
+.loading-screen {
+    animation: fadeIn 0.5s ease;
+}
+
+.loading-content {
+    animation: slideInFromBottom 0.8s ease;
+}
+
+/* Info cards enhancement */
+.info-card {
+    animation: slideInFromBottom 0.5s ease;
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px var(--shadow-color);
+}
+
+/* Settings panel enhancement */
+.settings-panel {
+    animation: slideInFromRight 0.3s ease;
+    box-shadow: -10px 0 30px var(--shadow-color);
+}
+
+.settings-content {
+    animation: fadeIn 0.5s ease 0.2s both;
+}
+
+/* Alert modal enhancement */
+.alert-modal.show .alert-content {
+    animation: bounceIn 0.5s ease;
+}
+
+.alert-content.danger {
+    animation: alertGlow 1s infinite;
+}
+
+/* Enhanced button hover effects */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+/* Enhanced map button styles */
+.map-btn {
+    backdrop-filter: var(--blur-bg);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.map-btn:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px var(--shadow-color);
+}
+
+.map-btn.active {
+    background: var(--primary-color) !important;
+    color: black !important;
+    box-shadow: 0 0 20px rgba(46, 213, 115, 0.5);
+}
+
+/* Enhanced status bar */
+.status-bar {
+    transition: all 0.3s ease;
+}
+
+.status-item {
+    transition: all 0.3s ease;
+}
+
+.status-item:hover {
+    transform: translateY(-1px);
+}
+
+.status-item.gps-active {
+    animation: pulse 2s infinite;
+}
+
+/* Enhanced proximity zone colors with better contrast */
+.proximity-zone-early {
+    stroke: var(--info-color);
+    fill: rgba(55, 66, 250, 0.1);
+}
+
+.proximity-zone-main {
+    stroke: var(--warning-color);
+    fill: rgba(255, 165, 2, 0.15);
+}
+
+.proximity-zone-final {
+    stroke: var(--danger-color);
+    fill: rgba(255, 71, 87, 0.2);
+}
+
+/* Enhanced typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+/* Enhanced form controls */
+.setting-input:focus {
+    outline: none !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 3px rgba(46, 213, 115, 0.1) !important;
+}
+
+.toggle-switch {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.toggle-switch:hover {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.toggle-slider {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+/* Enhanced navigation buttons */
+.nav-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.nav-btn:hover::before {
+    left: 100%;
+}
+
+.nav-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 6px 20px var(--shadow-color);
+}
+
+/* Enhanced scrollbar styles */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #27c668;
+}
+
+/* Enhanced responsive design */
+@media (max-width: 768px) {
+    .btn span {
+        display: none;
+    }
+    
+    .btn {
+        padding: 10px 12px;
+        min-width: 44px;
+    }
+    
+    .info-card {
+        min-width: 90px;
+        padding: 8px;
+    }
+    
+    .info-text {
+        font-size: 11px;
+    }
+    
+    .map-controls {
+        right: 10px;
+        top: 10px;
+    }
+    
+    .map-btn {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .settings-panel {
+        width: 100vw !important;
+        right: -100vw !important;
+    }
+    
+    .alert-content {
+        margin: 20px 10px !important;
+        padding: 20px !important;
+    }
+    
+    .navigation-buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .nav-btn {
+        padding: 10px;
+        font-size: 11px;
+    }
+}
+
+/* Dark mode enhancements */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --dark-bg: #000000;
+        --surface-bg: rgba(20, 20, 20, 0.95);
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --border-color: rgba(255, 255, 255, 0.3);
+        --text-secondary: #ffffff;
+    }
+    
+    .btn {
+        border: 2px solid var(--border-color);
+    }
+    
+    .proximity-zone {
+        stroke-width: 3;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .proximity-zone {
+        animation: none;
+    }
+    
+    .loading-spinner {
+        animation: none;
+        border: 3px solid var(--primary-color);
+    }
+}
+
+/* Print styles enhancement */
+@media print {
+    .header,
+    .status-bar,
+    .bottom-panel,
+    .map-controls,
+    .settings-panel,
+    .alert-modal {
+        display: none !important;
+    }
+    
+    .map-container {
+        margin: 0 !important;
+        height: 100vh !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .proximity-zone {
+        stroke-width: 2;
+        opacity: 0.8;
+    }
+}
+
+/* Focus management for accessibility */
+.btn:focus,
+.map-btn:focus,
+.nav-btn:focus,
+.setting-input:focus,
+.toggle-switch:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--primary-color);
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 10000;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 6px;
+}

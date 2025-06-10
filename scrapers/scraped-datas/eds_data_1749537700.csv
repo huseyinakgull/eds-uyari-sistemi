@@ -1,0 +1,2 @@
+id,latitude,longitude,type,category,city,timestamp,source
+eds_1,39.1,35.1,eds_point,GENEL,Diger,1749537700.075595,embedded_json

@@ -1,0 +1,21 @@
+2025-06-10 10:15:24,599 - INFO - Loading file: .DS_Store
+2025-06-10 10:15:24,600 - WARNING - Unsupported file format: 
+2025-06-10 10:15:24,600 - INFO - Loading file: eds_database.db
+2025-06-10 10:15:24,600 - WARNING - Unsupported file format: .db
+2025-06-10 10:15:24,600 - INFO - Loading file: eds_data_1749537700.json
+2025-06-10 10:15:24,601 - INFO - Loaded 1 points from eds_data_1749537700.json
+2025-06-10 10:15:24,601 - INFO - Loading file: eds_api_format.json
+2025-06-10 10:15:24,611 - INFO - Loaded 1 points from eds_api_format.json
+2025-06-10 10:15:24,611 - INFO - Loading file: eds_export.json
+2025-06-10 10:15:24,618 - INFO - Loaded 2173 points from eds_export.json
+2025-06-10 10:15:24,619 - INFO - Loading file: community_radar_data_20250610_093711.geojson
+2025-06-10 10:15:24,625 - INFO - Loaded 1546 points from community_radar_data_20250610_093711.geojson
+2025-06-10 10:15:24,626 - INFO - Loading file: eds_data_1749537700.geojson
+2025-06-10 10:15:24,626 - INFO - Loaded 1 points from eds_data_1749537700.geojson
+2025-06-10 10:15:24,626 - INFO - Loading file: eds_export.geojson
+2025-06-10 10:15:24,638 - INFO - Loaded 2173 points from eds_export.geojson
+2025-06-10 10:15:24,638 - INFO - Loading file: eds_data_1749537700.csv
+2025-06-10 10:15:24,639 - INFO - Loaded 1 points from eds_data_1749537700.csv
+2025-06-10 10:15:24,639 - INFO - Total raw data points loaded: 5896
+2025-06-10 10:15:25,601 - INFO - Normalized 3641 points
+2025-06-10 10:15:26,197 - INFO - Data exported to: merged-output/eds_merged_data_20250610_101526.[geojson|json|csv|db]

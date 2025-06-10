@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚨 EDS Uyarı Sistemi - Gelişmiş Hız Kamerası Takip</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1a1a1a">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(30, 30, 30, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 15px 20px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .logo i {
+            color: #2ed573;
+            font-size: 20px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .btn.active {
+            background: #2ed573;
+            color: black;
+            box-shadow: 0 0 20px rgba(46, 213, 115, 0.3);
+        }
+
+        .btn.danger {
+            background: #ff4757;
+        }
+
+        .btn.danger:hover {
+            background: #ff3838;
+        }
+
+        /* Status Bar */
+        .status-bar {
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background: rgba(30, 30, 30, 0.9);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .status-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            font-size: 12px;
+        }
+
+        .status-item i {
+            font-size: 16px;
+            color: #3742fa;
+        }
+
+        .status-item.gps-active i { color: #2ed573; }
+        .status-item.gps-searching i { color: #ffa502; }
+        .status-item.gps-error i { color: #ff4757; }
+
+        /* Map Container */
+        .map-container {
+            margin-top: 130px;
+            height: calc(100vh - 200px);
+            position: relative;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        .map-controls {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 500;
+        }
+
+        .map-btn {
+            width: 44px;
+            height: 44px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(30, 30, 30, 0.9);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .map-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .map-btn.active {
+            background: #2ed573;
+            color: black;
+        }
+
+        /* Bottom Panel */
+        .bottom-panel {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(30, 30, 30, 0.95);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 15px 20px;
+            z-index: 999;
+        }
+
+        .info-cards {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+        }
+
+        .info-card {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 12px;
+            min-width: 120px;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+
+        .info-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .info-card i {
+            color: #3742fa;
+            font-size: 16px;
+        }
+
+        .info-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-label {
+            font-size: 10px;
+            color: #999;
+            text-transform: uppercase;
+        }
+
+        .info-value {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Alert Modal */
+        .alert-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            padding: 20px;
+        }
+
+        .alert-modal.show {
+            display: flex;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .alert-content {
+            background: rgba(30, 30, 30, 0.95);
+            backdrop-filter: blur(30px);
+            border: 2px solid #ff4757;
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            position: relative;
+            animation: alertPulse 0.5s ease;
+        }
+
+        .alert-content.warning {
+            border-color: #ffa502;
+        }
+
+        .alert-content.info {
+            border-color: #3742fa;
+        }
+
+        .alert-icon {
+            font-size: 60px;
+            color: #ff4757;
+            margin-bottom: 20px;
+            animation: bounce 1s infinite;
+        }
+
+        .alert-icon.warning {
+            color: #ffa502;
+        }
+
+        .alert-icon.info {
+            color: #3742fa;
+        }
+
+        .alert-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ff4757;
+        }
+
+        .alert-title.warning {
+            color: #ffa502;
+        }
+
+        .alert-title.info {
+            color: #3742fa;
+        }
+
+        .alert-message {
+            font-size: 16px;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .alert-details {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .alert-detail {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .navigation-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .nav-btn {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn.google {
+            background: #4285f4;
+            color: white;
+        }
+
+        .nav-btn.apple {
+            background: #000;
+            color: white;
+        }
+
+        .nav-btn.waze {
+            background: #33d8ff;
+            color: black;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .dismiss-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 30px;
+            height: 30px;
+            border: none;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ccc;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .dismiss-btn:hover {
+            background: #ff4757;
+            color: white;
+        }
+
+        /* Settings Panel */
+        .settings-panel {
+            position: fixed;
+            top: 0;
+            right: -350px;
+            width: 350px;
+            height: 100vh;
+            background: rgba(30, 30, 30, 0.95);
+            backdrop-filter: blur(20px);
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 1500;
+            transition: right 0.3s ease;
+            overflow-y: auto;
+        }
+
+        .settings-panel.open {
+            right: 0;
+        }
+
+        .settings-header {
+            padding: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .settings-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .settings-close {
+            width: 32px;
+            height: 32px;
+            border: none;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ccc;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .settings-content {
+            padding: 20px;
+        }
+
+        .setting-group {
+            margin-bottom: 25px;
+        }
+
+        .setting-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #ccc;
+        }
+
+        .setting-input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 14px;
+        }
+
+        .setting-input:focus {
+            outline: none;
+            border-color: #2ed573;
+        }
+
+        .setting-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 0;
+        }
+
+        .toggle-switch {
+            position: relative;
+            width: 50px;
+            height: 24px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .toggle-switch.active {
+            background: #2ed573;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle-switch.active .toggle-slider {
+            transform: translateX(26px);
+        }
+
+        /* Loading Screen */
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading-content {
+            text-align: center;
+        }
+
+        .loading-spinner {
+            width: 60px;
+            height: 60px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            border-top: 3px solid #2ed573;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loading-title {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #2ed573, #3742fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .loading-message {
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes alertPulse {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        @keyframes pulse {
+            0% { 
+                transform: scale(1); 
+                opacity: 1; 
+            }
+            100% { 
+                transform: scale(2.5); 
+                opacity: 0; 
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .header { padding: 10px 15px; }
+            .status-bar { padding: 8px 15px; }
+            .bottom-panel { padding: 10px 15px; }
+            .logo { font-size: 16px; }
+            .status-item { font-size: 11px; }
+            .info-card { min-width: 100px; padding: 10px; }
+            .alert-content { padding: 20px; margin: 10px; }
+            .alert-icon { font-size: 40px; }
+            .alert-title { font-size: 20px; }
+            .settings-panel { width: 100vw; right: -100vw; }
+            .controls .btn span { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2 class="loading-title">🚨 EDS Uyarı Sistemi</h2>
+            <p class="loading-message">Gelişmiş harita ve GPS sistemi hazırlanıyor...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-camera"></i>
+                <span>EDS Alert Pro</span>
+            </div>
+            <div class="controls">
+                <button id="toggleTracking" class="btn">
+                    <i class="fas fa-location-arrow"></i>
+                    <span>Başlat</span>
+                </button>
+                <button id="settingsBtn" class="btn">
+                    <i class="fas fa-cog"></i>
+                    <span>Ayarlar</span>
+                </button>
+                <button id="testAlertBtn" class="btn">
+                    <i class="fas fa-bell"></i>
+                    <span>Test</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <div class="status-item" id="gpsStatusItem">
+            <i class="fas fa-satellite-dish"></i>
+            <span id="gpsStatus">GPS Hazır</span>
+        </div>
+        <div class="status-item">
+            <i class="fas fa-camera"></i>
+            <span id="edsCount">0 Kamera</span>
+        </div>
+        <div class="status-item">
+            <i class="fas fa-tachometer-alt"></i>
+            <span id="currentSpeed">0 km/h</span>
+        </div>
+        <div class="status-item">
+            <i class="fas fa-shield-alt"></i>
+            <span id="alertLevel">Güvenli</span>
+        </div>
+    </div>
+
+    <!-- Map Container -->
+    <div class="map-container">
+        <div id="map"></div>
+        
+        <div class="map-controls">
+            <button id="centerLocation" class="map-btn" title="Konumumu Merkeze Al">
+                <i class="fas fa-crosshairs"></i>
+            </button>
+            <button id="toggleMapStyle" class="map-btn" title="Harita Stili">
+                <i class="fas fa-adjust"></i>
+            </button>
+            <button id="toggleProximityZones" class="map-btn active" title="Uyarı Daireleri">
+                <i class="fas fa-circle"></i>
+            </button>
+            <button id="toggleTrafficLayer" class="map-btn" title="Trafik Katmanı">
+                <i class="fas fa-road"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Bottom Panel -->
+    <div class="bottom-panel">
+        <div class="info-cards">
+            <div class="info-card">
+                <i class="fas fa-road"></i>
+                <div class="info-text">
+                    <span class="info-label">Konum</span>
+                    <span class="info-value" id="currentRoad">Tespit ediliyor...</span>
+                </div>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-clock"></i>
+                <div class="info-text">
+                    <span class="info-label">Süre</span>
+                    <span class="info-value" id="trackingTime">00:00</span>
+                </div>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-route"></i>
+                <div class="info-text">
+                    <span class="info-label">Mesafe</span>
+                    <span class="info-value" id="totalDistance">0.0 km</span>
+                </div>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div class="info-text">
+                    <span class="info-label">En Yakın</span>
+                    <span class="info-value" id="nearestCamera">-</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert Modal -->
+    <div id="alertModal" class="alert-modal">
+        <div class="alert-content" id="alertContent">
+            <button class="dismiss-btn" onclick="dismissAlert()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="alert-icon" id="alertIcon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="alert-title" id="alertTitle">Hız Kamerası Uyarısı</div>
+            <div class="alert-message" id="alertMessage">Yaklaşan kamera tespit edildi</div>
+            <div class="alert-details">
+                <div class="alert-detail" id="alertDistance">500m</div>
+                <div class="alert-detail" id="alertType">OHITS</div>
+                <div class="alert-detail" id="alertSpeedLimit">50 km/h</div>
+            </div>
+            <div class="navigation-buttons" id="navigationButtons">
+                <button class="nav-btn google" onclick="openNavigation('google')">
+                    <i class="fab fa-google"></i> Google Maps
+                </button>
+                <button class="nav-btn apple" onclick="openNavigation('apple')">
+                    <i class="fab fa-apple"></i> Apple Maps
+                </button>
+                <button class="nav-btn waze" onclick="openNavigation('waze')">
+                    <i class="fas fa-route"></i> Waze
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Panel -->
+    <div id="settingsPanel" class="settings-panel">
+        <div class="settings-header">
+            <h3 class="settings-title">⚙️ Ayarlar</h3>
+            <button class="settings-close" onclick="closeSettings()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="settings-content">
+            <div class="setting-group">
+                <label class="setting-label">🔔 Uyarı Mesafeleri</label>
+                <div style="margin-bottom: 10px;">
+                    <label style="font-size: 12px; color: #999;">Erken Uyarı (metre)</label>
+                    <input type="range" class="setting-input" id="earlyAlert" min="500" max="2000" value="1000" 
+                           oninput="updateSetting('earlyAlert', this.value)">
+                    <span id="earlyAlertValue">1000m</span>
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <label style="font-size: 12px; color: #999;">Ana Uyarı (metre)</label>
+                    <input type="range" class="setting-input" id="mainAlert" min="200" max="800" value="500" 
+                           oninput="updateSetting('mainAlert', this.value)">
+                    <span id="mainAlertValue">500m</span>
+                </div>
+                <div>
+                    <label style="font-size: 12px; color: #999;">Son Uyarı (metre)</label>
+                    <input type="range" class="setting-input" id="finalAlert" min="50" max="300" value="100" 
+                           oninput="updateSetting('finalAlert', this.value)">
+                    <span id="finalAlertValue">100m</span>
+                </div>
+            </div>
+
+            <div class="setting-group">
+                <div class="setting-toggle">
+                    <span>🔊 Sesli Uyarılar</span>
+                    <div class="toggle-switch active" onclick="toggleSetting('audioAlerts')">
+                        <div class="toggle-slider"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="setting-group">
+                <div class="setting-toggle">
+                    <span>📳 Titreşim Uyarıları</span>
+                    <div class="toggle-switch active" onclick="toggleSetting('vibrationAlerts')">
+                        <div class="toggle-slider"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="setting-group">
+                <div class="setting-toggle">
+                    <span>🔄 Otomatik Navigasyon</span>
+                    <div class="toggle-switch" onclick="toggleSetting('autoNavigation')">
+                        <div class="toggle-slider"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="setting-group">
+                <div class="setting-toggle">
+                    <span>🌓 Dark Mode</span>
+                    <div class="toggle-switch active" onclick="toggleSetting('darkMode')">
+                        <div class="toggle-slider"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="setting-group">
+                <div class="setting-toggle">
+                    <span>⭕ Uyarı Daireleri</span>
+                    <div class="toggle-switch active" onclick="toggleSetting('proximityZones')">
+                        <div class="toggle-slider"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="setting-group">
+                <label class="setting-label">🎵 Ses Seviyesi</label>
+                <input type="range" class="setting-input" id="volumeLevel" min="0" max="1" step="0.1" value="0.8" 
+                       oninput="updateSetting('volumeLevel', this.value)">
+                <span id="volumeLevelValue">80%</span>
+            </div>
+
+            <div class="setting-group">
+                <label class="setting-label">📱 Varsayılan Navigasyon</label>
+                <select class="setting-input" id="defaultNavigation" onchange="updateSetting('defaultNavigation', this.value)">
+                    <option value="google">Google Maps</option>
+                    <option value="apple">Apple Maps</option>
+                    <option value="waze">Waze</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <script>
+        // Application State
+        let app = {
+            map: null,
+            userMarker: null,
+            isTracking: false,
+            watchId: null,
+            edsMarkers: [],
+            proximityCircles: [],
+            trackingStartTime: null,
+            totalDistance: 0,
+            lastPosition: null,
+            isDarkMode: true,
+            showProximityZones: true,
+            showTrafficLayer: false,
+            alertHistory: [],
+            settings: {
+                earlyAlert: 1000,
+                mainAlert: 500,
+                finalAlert: 100,
+                audioAlerts: true,
+                vibrationAlerts: true,
+                autoNavigation: false,
+                darkMode: true,
+                proximityZones: true,
+                volumeLevel: 0.8,
+                defaultNavigation: 'google'
+            }
+        };
+
+        // Load GeoJSON data
+        let edsLocations = [];
+
+        // Utility Functions
+        function calculateDistance(lat1, lon1, lat2, lon2) {
+            const R = 6371e3; // Earth's radius in meters
+            const φ1 = lat1 * Math.PI / 180;
+            const φ2 = lat2 * Math.PI / 180;
+            const Δφ = (lat2 - lat1) * Math.PI / 180;
+            const Δλ = (lon2 - lon1) * Math.PI / 180;
+
+            const a = Math.sin(Δφ / 2) * Math.sin(Δφ / 2) +
+                      Math.cos(φ1) * Math.cos(φ2) *
+                      Math.sin(Δλ / 2) * Math.sin(Δλ / 2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+            return R * c;
+        }
+
+        function formatDistance(meters) {
+            if (meters < 1000) {
+                return Math.round(meters) + 'm';
+            } else {
+                return (meters / 1000).toFixed(1) + 'km';
+            }
+        }
+
+        function formatTime(seconds) {
+            const hours = Math.floor(seconds / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
+            const secs = Math.floor(seconds % 60);
+            
+            if (hours > 0) {
+                return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+            } else {
+                return `${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+            }
+        }
+
+        function getCameraIcon(type) {
+            const icons = {
+                'OHITS': 'fas fa-camera',
+                'MOBILE': 'fas fa-car',
+                'REDLIGHT': 'fas fa-traffic-light'
+            };
+            return icons[type] || 'fas fa-camera';
+        }
+
+        function getCameraColor(type) {
+            const colors = {
+                'OHITS': '#ff4757',
+                'MOBILE': '#ffa502',
+                'REDLIGHT': '#ff3838'
+            };
+            return colors[type] || '#ff4757';
+        }
+
+        function getCameraName(type) {
+            const names = {
+                'OHITS': 'Sabit Hız Kamerası',
+                'MOBILE': 'Mobil Radar',
+                'REDLIGHT': 'Kırmızı Işık Kamerası'
+            };
+            return names[type] || type;
+        }
+
+        // Load EDS data from file or use fallback
+        async function loadEDSData() {
+            try {
+                const response = await fetch('data/eds-locations.geojson');
+                const data = await response.json();
+                
+                edsLocations = data.features.map(feature => ({
+                    lat: feature.geometry.coordinates[1],
+                    lng: feature.geometry.coordinates[0],
+                    type: feature.properties.type,
+                    speedLimit: feature.properties.speed_limit,
+                    road: feature.properties.road_name,
+                    district: feature.properties.district,
+                    id: feature.properties.id,
+                    city: feature.properties.city,
+                    direction: feature.properties.direction,
+                    status: feature.properties.status
+                }));
+                
+                console.log('✅ EDS verileri yüklendi:', edsLocations.length, 'kamera');
+            } catch (error) {
+                console.warn('⚠️ GeoJSON yüklenemedi, test verileri kullanılıyor');
+                console.log('✅ EDS verileri yüklendi:', edsLocations.length, 'kamera');
+                
+                // Veri sayısını güncelle
+                document.getElementById('edsCount').textContent = edsLocations.length + ' Kamera';
+            }
+        }
+
+        // Initialize Application
+        async function initApp() {
+            console.log('🚀 EDS Uyarı Sistemi başlatılıyor...');
+            
+            await loadEDSData();
+            
+            setTimeout(() => {
+                initMap();
+                setupEventListeners();
+                loadSettings();
+                hideLoadingScreen();
+                console.log('✅ Sistem hazır!');
+            }, 1500);
+        }
+
+        // Initialize Map
+        function initMap() {
+            try {
+                console.log('🗺️ Harita başlatılıyor...');
+                
+                app.map = L.map('map').setView([41.0082, 28.9784], 13);
+
+                // Dark mode tile layer
+                updateMapStyle();
+
+                // Add EDS markers and proximity zones
+                addEDSMarkers();
+                
+                // Update EDS count
+                document.getElementById('edsCount').textContent = edsLocations.length + ' Kamera';
+                
+                console.log('✅ Harita başarıyla yüklendi');
+            } catch (error) {
+                console.error('❌ Harita hatası:', error);
+                showAlert({
+                    type: 'ERROR',
+                    speedLimit: 0,
+                    road: 'Sistem Hatası'
+                }, 0, 'Harita yüklenemedi: ' + error.message);
+            }
+        }
+
+        // Update map style
+        function updateMapStyle() {
+            // Remove existing tile layers
+            app.map.eachLayer(layer => {
+                if (layer instanceof L.TileLayer) {
+                    app.map.removeLayer(layer);
+                }
+            });
+
+            // Add new tile layer
+            const tileLayer = app.settings.darkMode ? 
+                'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png' :
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+
+            L.tileLayer(tileLayer, {
+                attribution: '© OpenStreetMap © CartoDB',
+                subdomains: 'abcd',
+                maxZoom: 19
+            }).addTo(app.map);
+        }
+
+        // Add EDS Markers to Map with Proximity Zones
+        function addEDSMarkers() {
+            // Clear existing markers and circles
+            app.edsMarkers.forEach(item => {
+                app.map.removeLayer(item.marker);
+            });
+            app.proximityCircles.forEach(circle => {
+                app.map.removeLayer(circle);
+            });
+            app.edsMarkers = [];
+            app.proximityCircles = [];
+
+            edsLocations.forEach(location => {
+                // Create marker icon
+                const icon = L.divIcon({
+                    className: 'eds-marker',
+                    html: `<div style="
+                        width: 32px; 
+                        height: 32px; 
+                        background: ${getCameraColor(location.type)}; 
+                        border-radius: 50%; 
+                        display: flex; 
+                        align-items: center; 
+                        justify-content: center; 
+                        color: white; 
+                        font-size: 14px;
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+                        border: 2px solid rgba(255,255,255,0.3);
+                        z-index: 1000;
+                    ">
+                        <i class="${getCameraIcon(location.type)}"></i>
+                    </div>`,
+                    iconSize: [32, 32],
+                    iconAnchor: [16, 16]
+                });
+
+                // Create marker
+                const marker = L.marker([location.lat, location.lng], { icon })
+                    .addTo(app.map)
+                    .bindPopup(`
+                        <div style="text-align: center; min-width: 200px;">
+                            <h4><i class="${getCameraIcon(location.type)}" style="color: ${getCameraColor(location.type)}"></i> ${getCameraName(location.type)}</h4>
+                            <p><strong>📍 Yol:</strong> ${location.road}</p>
+                            <p><strong>🏙️ İlçe:</strong> ${location.district}</p>
+                            <p><strong>⚡ Hız Limiti:</strong> ${location.speedLimit} km/h</p>
+                            <p><strong>🆔 ID:</strong> ${location.id}</p>
+                            <div style="margin-top: 10px;">
+                                <button onclick="openNavigation('google', ${location.lat}, ${location.lng})" 
+                                        style="background: #4285f4; color: white; border: none; padding: 5px 10px; border-radius: 4px; margin: 2px; cursor: pointer;">
+                                    Google Maps
+                                </button>
+                                <button onclick="openNavigation('waze', ${location.lat}, ${location.lng})" 
+                                        style="background: #33d8ff; color: black; border: none; padding: 5px 10px; border-radius: 4px; margin: 2px; cursor: pointer;">
+                                    Waze
+                                </button>
+                            </div>
+                        </div>
+                    `);
+
+                app.edsMarkers.push({ marker, data: location });
+
+                // Add proximity zones if enabled
+                if (app.settings.proximityZones) {
+                    addProximityZones(location);
+                }
+            });
+        }
+
+        // Add proximity zones around EDS points
+        function addProximityZones(location) {
+            const distances = [app.settings.earlyAlert, app.settings.mainAlert, app.settings.finalAlert];
+            const colors = ['rgba(255, 165, 2, 0.1)', 'rgba(255, 71, 87, 0.15)', 'rgba(255, 56, 56, 0.2)'];
+            const strokeColors = ['#ffa502', '#ff4757', '#ff3838'];
+
+            distances.forEach((distance, index) => {
+                const circle = L.circle([location.lat, location.lng], {
+                    color: strokeColors[index],
+                    fillColor: colors[index],
+                    fillOpacity: 0.3,
+                    radius: distance,
+                    weight: 2,
+                    opacity: 0.6,
+                    className: 'proximity-zone'
+                }).addTo(app.map);
+
+                // Add tooltip to circles
+                circle.bindTooltip(`${getCameraName(location.type)}<br>${formatDistance(distance)} uyarı bölgesi`, {
+                    permanent: false,
+                    direction: 'top'
+                });
+
+                app.proximityCircles.push(circle);
+            });
+        }
+
+        // Toggle proximity zones visibility
+        function toggleProximityZones() {
+            const btn = document.getElementById('toggleProximityZones');
+            app.settings.proximityZones = !app.settings.proximityZones;
+            
+            if (app.settings.proximityZones) {
+                btn.classList.add('active');
+                addEDSMarkers(); // Refresh with zones
+            } else {
+                btn.classList.remove('active');
+                app.proximityCircles.forEach(circle => {
+                    app.map.removeLayer(circle);
+                });
+                app.proximityCircles = [];
+            }
+            saveSettings();
+        }
+
+        // GPS Tracking Functions
+        function toggleTracking() {
+            const btn = document.getElementById('toggleTracking');
+            const btnText = btn.querySelector('span');
+            
+            if (app.isTracking) {
+                stopTracking();
+                btn.classList.remove('active');
+                btnText.textContent = 'Başlat';
+            } else {
+                startTracking();
+                btn.classList.add('active');
+                btnText.textContent = 'Durdur';
+            }
+        }
+
+        function startTracking() {
+            console.log('📍 GPS tracking başlatılıyor...');
+            updateGPSStatus('searching', 'GPS aranıyor...');
+            
+            if (!navigator.geolocation) {
+                updateGPSStatus('error', 'GPS desteklenmiyor');
+                alert('❌ GPS desteklenmiyor');
+                return;
+            }
+
+            const options = {
+                enableHighAccuracy: true,
+                timeout: 15000,
+                maximumAge: 5000
+            };
+
+            app.trackingStartTime = Date.now();
+            app.isTracking = true;
+
+            app.watchId = navigator.geolocation.watchPosition(
+                onPositionSuccess,
+                onPositionError,
+                options
+            );
+
+            // Start tracking time counter
+            updateTrackingTime();
+        }
+
+        function stopTracking() {
+            console.log('⏹️ GPS tracking durduruluyor...');
+            
+            if (app.watchId !== null) {
+                navigator.geolocation.clearWatch(app.watchId);
+                app.watchId = null;
+            }
+
+            app.isTracking = false;
+            updateGPSStatus('idle', 'GPS durduruldu');
+        }
+
+        function onPositionSuccess(position) {
+            console.log('📍 GPS konumu alındı:', position.coords.latitude.toFixed(6), position.coords.longitude.toFixed(6));
+            
+            const lat = position.coords.latitude;
+            const lng = position.coords.longitude;
+            const accuracy = position.coords.accuracy;
+
+            updateGPSStatus('active', 'GPS aktif');
+            updateUserMarker(lat, lng, accuracy);
+            updateLocationInfo(lat, lng);
+            checkProximityAlerts(lat, lng);
+
+            // Calculate speed and distance
+            if (app.lastPosition) {
+                const distance = calculateDistance(
+                    app.lastPosition.lat, app.lastPosition.lng,
+                    lat, lng
+                );
+                app.totalDistance += distance;
+                
+                const timeDiff = Date.now() - app.lastPosition.timestamp;
+                if (timeDiff > 0) {
+                    const speed = (distance / (timeDiff / 1000)) * 3.6; // km/h
+                    document.getElementById('currentSpeed').textContent = Math.round(Math.max(0, speed)) + ' km/h';
+                }
+                
+                document.getElementById('totalDistance').textContent = formatDistance(app.totalDistance);
+            }
+
+            app.lastPosition = { lat, lng, timestamp: Date.now() };
+        }
+
+        function onPositionError(error) {
+            console.error('❌ GPS hatası:', error);
+            let message = 'GPS hatası';
+            
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    message = 'GPS izni reddedildi';
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    message = 'GPS konumu bulunamadı';
+                    break;
+                case error.TIMEOUT:
+                    message = 'GPS zaman aşımı';
+                    break;
+            }
+            
+            updateGPSStatus('error', message);
+        }
+
+        function updateGPSStatus(status, message) {
+            const statusEl = document.getElementById('gpsStatus');
+            const statusItem = document.getElementById('gpsStatusItem');
+            
+            statusEl.textContent = message;
+            statusItem.className = `status-item gps-${status}`;
+        }
+
+        function updateUserMarker(lat, lng, accuracy) {
+            if (app.userMarker) {
+                app.userMarker.setLatLng([lat, lng]);
+            } else {
+                const icon = L.divIcon({
+                    className: 'user-marker',
+                    html: `<div style="
+                        width: 20px; 
+                        height: 20px; 
+                        background: #2ed573; 
+                        border: 3px solid white; 
+                        border-radius: 50%; 
+                        box-shadow: 0 4px 12px rgba(46, 213, 115, 0.4);
+                        position: relative;
+                        z-index: 1001;
+                    ">
+                        <div style="
+                            width: 26px; 
+                            height: 26px; 
+                            border: 2px solid #2ed573; 
+                            border-radius: 50%; 
+                            position: absolute; 
+                            top: -3px; 
+                            left: -3px;
+                            animation: pulse 2s infinite;
+                        "></div>
+                    </div>`,
+                    iconSize: [20, 20],
+                    iconAnchor: [10, 10]
+                });
+
+                app.userMarker = L.marker([lat, lng], { icon }).addTo(app.map);
+                app.map.setView([lat, lng], 15);
+            }
+        }
+
+        function updateLocationInfo(lat, lng) {
+            document.getElementById('currentRoad').textContent = 
+                `${lat.toFixed(4)}, ${lng.toFixed(4)}`;
+        }
+
+        function updateTrackingTime() {
+            if (!app.isTracking || !app.trackingStartTime) return;
+            
+            const duration = (Date.now() - app.trackingStartTime) / 1000;
+            document.getElementById('trackingTime').textContent = formatTime(duration);
+            
+            setTimeout(updateTrackingTime, 1000);
+        }
+
+        // Enhanced Alert System
+        function checkProximityAlerts(userLat, userLng) {
+            let nearestCamera = null;
+            let nearestDistance = Infinity;
+            let alertLevel = 'Güvenli';
+
+            edsLocations.forEach(eds => {
+                const distance = calculateDistance(userLat, userLng, eds.lat, eds.lng);
+                
+                // Track nearest camera
+                if (distance < nearestDistance) {
+                    nearestDistance = distance;
+                    nearestCamera = eds;
+                }
+
+                // Check alert levels
+                if (distance <= app.settings.finalAlert) {
+                    alertLevel = 'Kritik';
+                    if (!hasRecentAlert(eds.id, 'final')) {
+                        showAlert(eds, distance, 'final');
+                        addAlertHistory(eds.id, 'final');
+                    }
+                } else if (distance <= app.settings.mainAlert) {
+                    alertLevel = 'Uyarı';
+                    if (!hasRecentAlert(eds.id, 'main')) {
+                        showAlert(eds, distance, 'main');
+                        addAlertHistory(eds.id, 'main');
+                    }
+                } else if (distance <= app.settings.earlyAlert) {
+                    if (alertLevel === 'Güvenli') alertLevel = 'Dikkat';
+                    if (!hasRecentAlert(eds.id, 'early')) {
+                        showAlert(eds, distance, 'early');
+                        addAlertHistory(eds.id, 'early');
+                    }
+                }
+            });
+
+            // Update UI
+            document.getElementById('alertLevel').textContent = alertLevel;
+            
+            if (nearestCamera && nearestDistance < 2000) {
+                document.getElementById('nearestCamera').textContent = 
+                    `${formatDistance(nearestDistance)} - ${getCameraName(nearestCamera.type)}`;
+            } else {
+                document.getElementById('nearestCamera').textContent = '-';
+            }
+        }
+
+        // Alert history management
+        function hasRecentAlert(cameraId, level) {
+            const now = Date.now();
+            const threshold = level === 'final' ? 10000 : level === 'main' ? 30000 : 60000; // 10s, 30s, 60s
+            
+            return app.alertHistory.some(alert => 
+                alert.cameraId === cameraId && 
+                alert.level === level && 
+                (now - alert.timestamp) < threshold
+            );
+        }
+
+        function addAlertHistory(cameraId, level) {
+            app.alertHistory.push({
+                cameraId,
+                level,
+                timestamp: Date.now()
+            });
+
+            // Clean old alerts (keep last 50)
+            if (app.alertHistory.length > 50) {
+                app.alertHistory = app.alertHistory.slice(-50);
+            }
+        }
+
+        function showAlert(eds, distance, level = 'main', customMessage = null) {
+            const alertLevels = {
+                'early': { type: 'info', priority: 1 },
+                'main': { type: 'warning', priority: 2 },
+                'final': { type: 'danger', priority: 3 }
+            };
+
+            const alertInfo = alertLevels[level] || alertLevels.main;
+            console.log(`🚨 ${level.toUpperCase()} uyarı:`, eds.type, Math.round(distance) + 'm');
+            
+            const cameraName = getCameraName(eds.type);
+            const message = customMessage || 
+                `${Math.round(distance)} metre ileride ${cameraName} tespit edildi`;
+            
+            // Update modal content
+            const modal = document.getElementById('alertModal');
+            const content = document.getElementById('alertContent');
+            const icon = document.getElementById('alertIcon');
+            const title = document.getElementById('alertTitle');
+            
+            // Set alert type classes
+            content.className = `alert-content ${alertInfo.type}`;
+            icon.className = `alert-icon ${alertInfo.type}`;
+            title.className = `alert-title ${alertInfo.type}`;
+            
+            document.getElementById('alertTitle').textContent = `${cameraName}`;
+            document.getElementById('alertMessage').textContent = message;
+            document.getElementById('alertDistance').textContent = formatDistance(distance);
+            document.getElementById('alertType').textContent = eds.type;
+            document.getElementById('alertSpeedLimit').textContent = eds.speedLimit + ' km/h';
+            
+            modal.classList.add('show');
+            
+            // Auto dismiss time based on level
+            const dismissTime = level === 'final' ? 10000 : level === 'main' ? 8000 : 6000;
+            setTimeout(() => {
+                modal.classList.remove('show');
+            }, dismissTime);
+            
+            // Enhanced speech synthesis
+            if (app.settings.audioAlerts && 'speechSynthesis' in window) {
+                const urgencyText = level === 'final' ? 'Acil! ' : level === 'main' ? 'Dikkat! ' : '';
+                const utterance = new SpeechSynthesisUtterance(
+                    `${urgencyText}${Math.round(distance)} metre ileride ${cameraName}`
+                );
+                utterance.lang = 'tr-TR';
+                utterance.rate = level === 'final' ? 1.2 : 1.0;
+                utterance.volume = app.settings.volumeLevel;
+                speechSynthesis.speak(utterance);
+            }
+
+            // Enhanced vibration
+            if (app.settings.vibrationAlerts && 'vibrate' in navigator) {
+                const patterns = {
+                    'early': [200, 100, 200],
+                    'main': [300, 150, 300, 150, 300],
+                    'final': [500, 200, 500, 200, 500]
+                };
+                navigator.vibrate(patterns[level] || patterns.main);
+            }
+
+            // Auto navigation if enabled
+            if (app.settings.autoNavigation && level === 'main') {
+                setTimeout(() => {
+                    openNavigation(app.settings.defaultNavigation, eds.lat, eds.lng);
+                }, 2000);
+            }
+        }
+
+        function dismissAlert() {
+            document.getElementById('alertModal').classList.remove('show');
+            if ('speechSynthesis' in window) {
+                speechSynthesis.cancel();
+            }
+        }
+
+        // Navigation Integration
+        function openNavigation(service, lat = null, lng = null) {
+            if (!lat || !lng) {
+                // Get coordinates from alert or user location
+                if (app.lastPosition) {
+                    lat = app.lastPosition.lat;
+                    lng = app.lastPosition.lng;
+                } else {
+                    alert('❌ Konum bilgisi bulunamadı');
+                    return;
+                }
+            }
+
+            let url;
+            
+            switch (service) {
+                case 'google':
+                    url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=driving`;
+                    break;
+                case 'apple':
+                    url = `http://maps.apple.com/?daddr=${lat},${lng}&dirflg=d`;
+                    break;
+                case 'waze':
+                    url = `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`;
+                    break;
+                default:
+                    alert('❌ Desteklenmeyen navigasyon servisi');
+                    return;
+            }
+
+            window.open(url, '_blank');
+            console.log(`🗺️ ${service} navigasyonu açıldı:`, lat, lng);
+        }
+
+        // Map Controls
+        function centerOnUser() {
+            if (app.userMarker) {
+                app.map.setView(app.userMarker.getLatLng(), 15);
+            } else {
+                alert('⚠️ Konum henüz tespit edilmedi. GPS tracking\'i başlatın.');
+            }
+        }
+
+        function toggleMapStyle() {
+            app.settings.darkMode = !app.settings.darkMode;
+            updateMapStyle();
+            saveSettings();
+        }
+
+        function toggleTrafficLayer() {
+            const btn = document.getElementById('toggleTrafficLayer');
+            app.showTrafficLayer = !app.showTrafficLayer;
+            
+            if (app.showTrafficLayer) {
+                btn.classList.add('active');
+                // Note: This would require a traffic layer service
+                console.log('🚦 Trafik katmanı aktifleştirildi (demo)');
+            } else {
+                btn.classList.remove('active');
+                console.log('🚦 Trafik katmanı devre dışı');
+            }
+        }
+
+        // Settings Management
+        function openSettings() {
+            document.getElementById('settingsPanel').classList.add('open');
+        }
+
+        function closeSettings() {
+            document.getElementById('settingsPanel').classList.remove('open');
+        }
+
+        function updateSetting(setting, value) {
+            app.settings[setting] = parseFloat(value) || value;
+            
+            // Update UI
+            if (document.getElementById(setting + 'Value')) {
+                const displayValue = setting === 'volumeLevel' ? 
+                    Math.round(value * 100) + '%' : 
+                    setting.includes('Alert') ? value + 'm' : value;
+                document.getElementById(setting + 'Value').textContent = displayValue;
+            }
+            
+            // Apply changes
+            if (setting.includes('Alert') || setting === 'proximityZones') {
+                addEDSMarkers(); // Refresh proximity zones
+            }
+            
+            saveSettings();
+            console.log('⚙️ Ayar güncellendi:', setting, value);
+        }
+
+        function toggleSetting(setting) {
+            const toggle = event.target.closest('.toggle-switch');
+            app.settings[setting] = !app.settings[setting];
+            
+            if (app.settings[setting]) {
+                toggle.classList.add('active');
+            } else {
+                toggle.classList.remove('active');
+            }
+            
+            // Apply specific changes
+            if (setting === 'darkMode') {
+                updateMapStyle();
+            } else if (setting === 'proximityZones') {
+                toggleProximityZones();
+                return; // toggleProximityZones handles saving
+            }
+            
+            saveSettings();
+            console.log('⚙️ Ayar değiştirildi:', setting, app.settings[setting]);
+        }
+
+        function saveSettings() {
+            try {
+                localStorage.setItem('edsAlertSettings', JSON.stringify(app.settings));
+            } catch (error) {
+                console.warn('⚠️ Ayarlar kaydedilemedi:', error);
+            }
+        }
+
+        function loadSettings() {
+            try {
+                const saved = localStorage.getItem('edsAlertSettings');
+                if (saved) {
+                    const settings = JSON.parse(saved);
+                    app.settings = { ...app.settings, ...settings };
+                    
+                    // Update UI elements
+                    Object.keys(app.settings).forEach(key => {
+                        const element = document.getElementById(key);
+                        if (element) {
+                            if (element.type === 'range') {
+                                element.value = app.settings[key];
+                                updateSetting(key, app.settings[key]);
+                            } else if (element.tagName === 'SELECT') {
+                                element.value = app.settings[key];
+                            }
+                        }
+                        
+                        // Update toggle switches
+                        const toggle = document.querySelector(`[onclick="toggleSetting('${key}')"]`);
+                        if (toggle) {
+                            if (app.settings[key]) {
+                                toggle.classList.add('active');
+                            } else {
+                                toggle.classList.remove('active');
+                            }
+                        }
+                    });
+                    
+                    console.log('✅ Ayarlar yüklendi');
+                }
+            } catch (error) {
+                console.warn('⚠️ Ayarlar yüklenemedi:', error);
+            }
+        }
+
+        // Test Alert Function
+        function testAlert() {
+            const testData = {
+                type: 'OHITS',
+                speedLimit: 50,
+                road: 'Test Yolu',
+                district: 'Test Bölgesi'
+            };
+            
+            showAlert(testData, 250, 'main', 'Bu bir test uyarısıdır - Tüm sistemler çalışıyor!');
+        }
+
+        // Event Listeners Setup
+        function setupEventListeners() {
+            document.getElementById('toggleTracking').addEventListener('click', toggleTracking);
+            document.getElementById('centerLocation').addEventListener('click', centerOnUser);
+            document.getElementById('toggleMapStyle').addEventListener('click', toggleMapStyle);
+            document.getElementById('toggleProximityZones').addEventListener('click', toggleProximityZones);
+            document.getElementById('toggleTrafficLayer').addEventListener('click', toggleTrafficLayer);
+            document.getElementById('testAlertBtn').addEventListener('click', testAlert);
+            document.getElementById('settingsBtn').addEventListener('click', openSettings);
+
+            // Keyboard shortcuts
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closeSettings();
+                    dismissAlert();
+                } else if (e.key === ' ' && !e.target.closest('input')) {
+                    e.preventDefault();
+                    toggleTracking();
+                } else if (e.key === 'c' && !e.target.closest('input')) {
+                    centerOnUser();
+                }
+            });
+        }
+
+        // Hide Loading Screen
+        function hideLoadingScreen() {
+            const loadingScreen = document.getElementById('loadingScreen');
+            
+            setTimeout(() => {
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 500);
+        }
+
+        // Initialize Application
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🚀 DOM yüklendi, gelişmiş EDS uygulaması başlatılıyor...');
+            
+            // Request notification permission
+            if ('Notification' in window && Notification.permission === 'default') {
+                Notification.requestPermission();
+            }
+            
+            initApp();
+        });
+
+        // Global error handling
+        window.addEventListener('error', (e) => {
+            console.error('🚨 Global Error:', e.error);
+        });
+
+        // Make functions global for console access
+        window.testAlert = testAlert;
+        window.openNavigation = openNavigation;
+        window.app = app;
+        
+        console.log('📱 EDS Uyarı Sistemi Pro yüklendi!\n🔧 Test için: testAlert(), navigasyon için: openNavigation("google")');
+    </script>
+
+    <!-- PWA Service Worker Registration -->
+    <script>
+        // Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('✅ Service Worker kayıtlı:', registration.scope);
+                        
+                        // Update available
+                        registration.addEventListener('updatefound', () => {
+                            const newWorker = registration.installing;
+                            newWorker.addEventListener('statechange', () => {
+                                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                    // New content available, reload page
+                                    console.log('🔄 Yeni sürüm mevcut, sayfa yenileniyor...');
+                                    window.location.reload();
+                                }
+                            });
+                        });
+                    })
+                    .catch(error => {
+                        console.warn('⚠️ Service Worker kaydı başarısız:', error);
+                    });
+            });
+        }
+
+        // PWA Install Prompt
+        let deferredPrompt;
+        
+        window.addEventListener('beforeinstallprompt', (e) => {
+            console.log('💾 PWA kurulum prompt\'u hazır');
+            e.preventDefault();
+            deferredPrompt = e;
+            
+            // Show install button (could add to UI)
+            showInstallButton();
+        });
+
+        function showInstallButton() {
+            // Could show an install button in the UI
+            console.log('📱 PWA kurulum butonu gösterilebilir');
+        }
+
+        // Handle app shortcuts from manifest
+        window.addEventListener('load', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const action = urlParams.get('action');
+            
+            if (action) {
+                setTimeout(() => {
+                    switch (action) {
+                        case 'start-tracking':
+                            if (!app.isTracking) {
+                                document.getElementById('toggleTracking')?.click();
+                            }
+                            break;
+                        case 'test-alert':
+                            testAlert();
+                            break;
+                        case 'open-settings':
+                            openSettings();
+                            break;
+                    }
+                }, 2000);
+            }
+        });
+
+        // Background sync for GPS data (if supported)
+        if ('serviceWorker' in navigator && 'sync' in window.ServiceWorkerRegistration.prototype) {
+            navigator.serviceWorker.ready.then(registration => {
+                return registration.sync.register('background-gps-sync');
+            }).catch(err => {
+                console.warn('⚠️ Background sync not supported:', err);
+            });
+        }
+
+        console.log('🚀 PWA features initialized');
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+{
+  "generation_info": {
+    "timestamp": "2025-06-10T10:15:26.196511",
+    "total_points": 944,
+    "processing_stats": {
+      "loaded_from_eds_data_1749537700.json": 1,
+      "loaded_from_eds_api_format.json": 1,
+      "loaded_from_eds_export.json": 2173,
+      "loaded_from_community_radar_data_20250610_093711.geojson": 1546,
+      "loaded_from_eds_data_1749537700.geojson": 1,
+      "loaded_from_eds_export.geojson": 2173,
+      "loaded_from_eds_data_1749537700.csv": 1,
+      "normalized_points": 3641,
+      "missing_coordinates": 1,
+      "outside_turkey": 2254
+    }
+  },
+  "quality_distribution": {
+    "excellent": 835,
+    "good": 109
+  },
+  "type_distribution": {
+    "OHITS": 872,
+    "REDLIGHT": 39,
+    "MOBILE": 33
+  },
+  "city_distribution": {
+    "Diger": 577,
+    "Istanbul": 163,
+    "Ankara": 53,
+    "Sakarya": 15,
+    "Denizli": 27,
+    "Antalya": 26,
+    "Gaziantep": 9,
+    "Bursa": 6,
+    "Eskisehir": 5,
+    "Konya": 7,
+    "Diyarbakir": 1,
+    "Samsun": 3,
+    "Izmir": 50,
+    "Van": 1,
+    "Trabzon": 1
+  },
+  "source_distribution": {
+    "embedded_json (merged from 3 sources)": 1,
+    "multiple (merged from 2 sources)": 1,
+    "openstreetmap (merged from 3 sources)": 503,
+    "openstreetmap (merged from 6 sources)": 303,
+    "openstreetmap (merged from 4 sources)": 11,
+    "openstreetmap (merged from 9 sources)": 7,
+    "openstreetmap (merged from 12 sources)": 5,
+    "openstreetmap (merged from 8 sources)": 1,
+    "openstreetmap (merged from 7 sources)": 1,
+    "openstreetmap (merged from 16 sources)": 1,
+    "synthetic_high_density (merged from 2 sources)": 1,
+    "community_waze": 7,
+    "synthetic_high_density": 102
+  },
+  "geographic_coverage": {
+    "min_latitude": 35.8278522,
+    "max_latitude": 42.1877928,
+    "min_longitude": 25.8283382,
+    "max_longitude": 44.7999637
+  },
+  "confidence_stats": {
+    "average": 0.9682468220338983,
+    "min": 0.7250000000000001,
+    "max": 1.0
+  }
+}

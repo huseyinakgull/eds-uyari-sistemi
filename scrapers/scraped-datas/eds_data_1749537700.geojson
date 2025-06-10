@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1,
+          39.1
+        ]
+      },
+      "properties": {
+        "id": "eds_1",
+        "type": "eds_point",
+        "category": "GENEL",
+        "city": "Diger",
+        "timestamp": 1749537700.075595,
+        "source": "embedded_json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,945 @@
+id,latitude,longitude,type,city,district,road_name,speed_limit,direction,source,confidence_score,timestamp,osm_id,last_updated,status
+eds_1,39.1,35.1,OHITS,Diger,,,,,embedded_json (merged from 3 sources),0.9000000000000001,1749537700.075595,,2025-06-10T10:15:24.639275,active
+sample_001,41.0082,28.9784,OHITS,Istanbul,Sisli,Buyukdere Caddesi,50,N-S,multiple (merged from 2 sources),1.0,1749539724.639306,,2025-06-10T09:40:21.667487,active
+eds_002184,41.0176784,28.9725003,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.646026,31678600,2025-06-10T09:37:11.235345,active
+eds_002185,36.76389,29.4594683,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.647199,45337046,2025-06-10T09:37:11.235353,active
+eds_002186,36.5644203,31.9215432,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.648366,60063639,2025-06-10T09:37:11.235356,active
+eds_002187,40.1637179,44.4186902,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.6495821,130041119,2025-06-10T09:37:11.235358,active
+eds_002189,37.5119079,29.685886,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.650748,196870512,2025-06-10T09:37:11.235362,active
+eds_002190,40.7392301,44.6906133,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.6518579,208856779,2025-06-10T09:37:11.235364,active
+eds_002191,41.8492115,44.7319077,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 6 sources),1.0,1749539724.652962,220729275,2025-06-10T09:37:11.235367,active
+eds_002192,41.8423539,44.7304348,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539724.654068,220734883,2025-06-10T09:37:11.235370,active
+eds_002193,41.8271001,44.7359098,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 6 sources),1.0,1749539724.655164,220752256,2025-06-10T09:37:11.235372,active
+eds_002194,41.7519462,44.7777786,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 6 sources),1.0,1749539724.656265,220993269,2025-06-10T09:37:11.235385,active
+eds_002195,41.7857529,44.7999637,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539724.657325,221144118,2025-06-10T09:37:11.235387,active
+eds_002197,41.0310055,28.9229061,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539724.658379,243883005,2025-06-10T09:37:11.235391,active
+eds_002198,41.0258846,28.9286804,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.659381,245014142,2025-06-10T09:37:11.235393,active
+eds_002199,41.0215597,28.9192564,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539724.660387,251296313,2025-06-10T09:37:11.235396,active
+eds_002200,41.0916269,28.9075276,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.661389,251330008,2025-06-10T09:37:11.235399,active
+eds_002202,41.0681483,29.0461025,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.66239,269417305,2025-06-10T09:37:11.235403,active
+eds_002206,41.7407198,44.7717304,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539724.663369,280061723,2025-06-10T09:37:11.235410,active
+eds_002208,40.15821,44.5404936,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 6 sources),1.0,1749539724.6653252,287885925,2025-06-10T09:37:11.235414,active
+eds_002209,40.1552523,44.5408417,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.666315,287885928,2025-06-10T09:37:11.235416,active
+eds_002210,40.1256616,44.4933735,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.667289,287892373,2025-06-10T09:37:11.235418,active
+eds_002211,41.893025,44.7150726,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539724.66837,288608896,2025-06-10T09:37:11.235420,active
+eds_002212,42.0384582,43.515197,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.669318,288609488,2025-06-10T09:37:11.235422,active
+eds_002213,42.103558,43.2401615,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539724.6702569,288610083,2025-06-10T09:37:11.235423,active
+eds_002214,40.2335271,44.5495666,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539724.6711879,288952205,2025-06-10T09:37:11.235425,active
+eds_002215,40.2118674,44.5620107,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.6721249,288954082,2025-06-10T09:37:11.235427,active
+eds_002216,40.1563602,44.4731677,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.6730702,292949553,2025-06-10T09:37:11.235429,active
+eds_002217,39.191025,33.1101233,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539724.674002,310594758,2025-06-10T09:37:11.235431,active
+eds_002218,41.7479959,44.7717732,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539724.67491,312947830,2025-06-10T09:37:11.235433,active
+eds_002219,41.8948926,41.7732581,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.675808,313196810,2025-06-10T09:37:11.235434,active
+eds_002220,42.0632303,41.8716744,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.676703,313454779,2025-06-10T09:37:11.235436,active
+eds_002222,40.2115779,44.5385613,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.677611,331497966,2025-06-10T09:37:11.235440,active
+eds_002223,40.1832276,44.4807414,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 4 sources),1.0,1749539724.6785102,354434145,2025-06-10T09:37:11.235442,active
+eds_002231,40.8014002,29.4682283,OHITS,Istanbul,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539724.679394,493491418,2025-06-10T09:37:11.235456,active
+eds_002232,40.2228974,44.4543858,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539724.68029,597102785,2025-06-10T09:37:11.235458,active
+eds_002233,40.5939551,44.3553108,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.681171,597103112,2025-06-10T09:37:11.235460,active
+eds_002234,40.6581158,44.300456,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.68204,597103239,2025-06-10T09:37:11.235462,active
+eds_002235,40.835624,44.2811465,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.6829062,597103384,2025-06-10T09:37:11.235464,active
+eds_002237,41.0053256,44.4042694,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.684651,602698990,2025-06-10T09:37:11.235467,active
+eds_002238,40.1684228,44.525793,OHITS,Diger,Unknown,speed_camera,40,,openstreetmap (merged from 3 sources),1.0,1749539724.685517,611406096,2025-06-10T09:37:11.235469,active
+eds_002239,39.8992133,33.4313138,OHITS,Ankara,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.686371,615366013,2025-06-10T09:37:11.235471,active
+eds_002240,40.1818865,44.5240641,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.6872268,632025891,2025-06-10T09:37:11.235473,active
+eds_002242,40.7614721,29.8534612,OHITS,Sakarya,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539724.688915,641775258,2025-06-10T09:37:11.235476,active
+eds_002243,40.8750571,26.6284673,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 6 sources),1.0,1749539724.689749,645343560,2025-06-10T09:37:11.235478,active
+eds_002244,37.8120173,29.1116892,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.6905642,665366063,2025-06-10T09:37:11.235480,active
+eds_002245,39.9519472,32.7975373,OHITS,Ankara,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.691385,674685169,2025-06-10T09:37:11.235481,active
+eds_002246,39.9469854,32.7074929,OHITS,Ankara,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.6921978,674688106,2025-06-10T09:37:11.235483,active
+eds_002247,39.91946,32.9312029,OHITS,Ankara,Unknown,speed_camera,82,,openstreetmap (merged from 3 sources),1.0,1749539724.6930182,674697180,2025-06-10T09:37:11.235485,active
+eds_002250,40.1996936,44.5073361,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.693851,703653339,2025-06-10T09:37:11.235492,active
+eds_002251,40.1944354,44.517802,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.6946712,703653350,2025-06-10T09:37:11.235493,active
+eds_002253,41.0580649,28.9180614,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.695464,769089447,2025-06-10T09:37:11.235497,active
+eds_002254,41.7407068,44.7598973,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539724.696297,771201267,2025-06-10T09:37:11.235499,active
+eds_002256,41.7305795,44.7749471,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539724.697109,790334036,2025-06-10T09:37:11.235503,active
+eds_002257,41.5634342,26.8278548,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.697919,835057472,2025-06-10T09:37:11.235505,active
+eds_002259,41.7552719,44.775595,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.699567,877625195,2025-06-10T09:37:11.235508,active
+eds_002260,41.0028224,28.8147832,OHITS,Istanbul,Unknown,speed_camera,110,,openstreetmap (merged from 6 sources),1.0,1749539724.700369,905151559,2025-06-10T09:37:11.235514,active
+eds_002261,41.0507226,28.8707454,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.701169,910814571,2025-06-10T09:37:11.235516,active
+eds_002262,41.7136917,44.7686941,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539724.701994,919358548,2025-06-10T09:37:11.235518,active
+eds_002263,41.6143367,44.790131,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.702764,921378584,2025-06-10T09:37:11.235519,active
+eds_002265,37.3644964,29.4708654,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.704291,948406995,2025-06-10T09:37:11.235523,active
+eds_002266,37.159236,29.6751184,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.7050502,948461462,2025-06-10T09:37:11.235525,active
+eds_002267,37.0147417,29.9647747,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.705806,948767151,2025-06-10T09:37:11.235527,active
+eds_002268,37.0128404,29.9185393,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.706557,948767863,2025-06-10T09:37:11.235528,active
+eds_002269,37.0510147,30.2388139,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.7073011,954825807,2025-06-10T09:37:11.235530,active
+eds_002270,36.9395954,30.6507473,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.708042,955166546,2025-06-10T09:37:11.235532,active
+eds_002272,40.9745027,28.8725818,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539724.7095401,959578907,2025-06-10T09:37:11.235539,active
+eds_002274,40.9935003,28.9202614,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.711045,974668980,2025-06-10T09:37:11.235543,active
+eds_002275,40.2434312,44.5760657,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.7118132,983124830,2025-06-10T09:37:11.235545,active
+eds_002276,40.2466145,44.5820736,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.7126029,983124868,2025-06-10T09:37:11.235547,active
+eds_002278,40.1441124,44.3270498,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.714176,986406475,2025-06-10T09:37:11.235550,active
+eds_002279,36.9424472,30.9020125,OHITS,Antalya,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539724.714972,991763814,2025-06-10T09:37:11.235552,active
+eds_002280,36.919317,31.0489891,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.7157729,991824144,2025-06-10T09:37:11.235554,active
+eds_002281,40.9701658,28.8421066,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539724.716574,1026971625,2025-06-10T09:37:11.235556,active
+eds_002282,40.9778734,28.8043149,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539724.7173629,1027174608,2025-06-10T09:37:11.235558,active
+eds_002283,40.9642019,28.8157383,OHITS,Istanbul,Unknown,speed_camera,30,,openstreetmap (merged from 3 sources),1.0,1749539724.718153,1027174743,2025-06-10T09:37:11.235560,active
+eds_002284,41.8910423,44.7168122,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 9 sources),1.0,1749539724.718952,1059341045,2025-06-10T09:37:11.235561,active
+eds_002285,36.9133278,30.7152546,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.719706,1061411606,2025-06-10T09:37:11.235563,active
+eds_002286,41.6894417,41.7153488,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.720499,1080186496,2025-06-10T09:37:11.235565,active
+eds_002287,40.9962625,28.7038921,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539724.72128,1098965482,2025-06-10T09:37:11.235571,active
+eds_002288,40.9998041,28.6967272,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539724.722084,1098965540,2025-06-10T09:37:11.235573,active
+eds_002292,42.0282016,43.5351926,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.7236748,1176868051,2025-06-10T09:37:11.235581,active
+eds_002293,42.0287451,43.5462168,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.724467,1176870404,2025-06-10T09:37:11.235583,active
+eds_002294,41.999813,43.6588063,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539724.7252638,1177965379,2025-06-10T09:37:11.235585,active
+eds_002295,42.03963,43.8147587,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.726069,1178094246,2025-06-10T09:37:11.235587,active
+eds_002296,42.0241517,44.2235864,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539724.726892,1184282542,2025-06-10T09:37:11.235588,active
+eds_002300,42.0082618,44.752692,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.7277062,1203234590,2025-06-10T09:37:11.235596,active
+eds_002301,41.9793014,44.7489999,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539724.728526,1203249816,2025-06-10T09:37:11.235598,active
+eds_002302,41.8829794,41.7747727,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539724.729331,1276866404,2025-06-10T09:37:11.235600,active
+eds_002304,41.7862907,41.7661639,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539724.7301152,1304540599,2025-06-10T09:37:11.235603,active
+eds_002305,41.6838858,41.7004008,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.730939,1330799579,2025-06-10T09:37:11.235605,active
+eds_002306,40.1964599,44.5170372,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.7317498,1342686376,2025-06-10T09:37:11.235607,active
+eds_002307,36.8554345,30.8134573,OHITS,Antalya,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.7325811,1348475073,2025-06-10T09:37:11.235609,active
+eds_002309,40.6558429,44.0757377,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.733417,1410205970,2025-06-10T09:37:11.235613,active
+eds_002310,40.6565096,44.0807801,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.734195,1410205989,2025-06-10T09:37:11.235614,active
+eds_002311,40.3329208,44.3681883,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.734978,1421784993,2025-06-10T09:37:11.235616,active
+eds_002312,40.4098955,26.6578976,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539724.7357628,1446384161,2025-06-10T09:37:11.235618,active
+eds_002313,42.009989,44.0472783,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539724.736556,1472419971,2025-06-10T09:37:11.235620,active
+eds_002315,42.0130779,44.0553176,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539724.7381198,1472420030,2025-06-10T09:37:11.235624,active
+eds_002317,40.223433,44.5599608,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 6 sources),1.0,1749539724.739723,1495549465,2025-06-10T09:37:11.235627,active
+eds_002318,40.1952043,44.5389751,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.740534,1565977605,2025-06-10T09:37:11.235629,active
+eds_002319,41.7987701,44.7994075,OHITS,Diger,Unknown,speed_camera,40,,openstreetmap (merged from 3 sources),1.0,1749539724.7413208,1612189959,2025-06-10T09:37:11.235631,active
+eds_002323,40.2083093,44.4943958,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.742111,1775782153,2025-06-10T09:37:11.235640,active
+eds_002324,41.6339116,26.61357,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 6 sources),1.0,1749539724.742889,1813039095,2025-06-10T09:37:11.235642,active
+eds_002325,41.0773039,28.1647469,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.743685,1826869978,2025-06-10T09:37:11.235644,active
+eds_002326,40.1652721,44.3383983,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539724.744491,1827774633,2025-06-10T09:37:11.235645,active
+eds_002327,41.078483,28.1840583,OHITS,Diger,Unknown,speed_camera,30,,openstreetmap (merged from 6 sources),1.0,1749539724.745277,1830935008,2025-06-10T09:37:11.235647,active
+eds_002328,41.0691284,28.2969586,OHITS,Diger,Unknown,speed_camera,30,,openstreetmap (merged from 3 sources),1.0,1749539724.746055,1831067158,2025-06-10T09:37:11.235649,active
+eds_002329,41.1206729,28.946246,OHITS,Istanbul,Unknown,speed_camera,90,,openstreetmap (merged from 6 sources),1.0,1749539724.746848,1833556454,2025-06-10T09:37:11.235651,active
+eds_002331,40.9859025,28.7771468,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 12 sources),1.0,1749539724.747628,1857599982,2025-06-10T09:37:11.235655,active
+eds_002333,37.0061197,28.3211338,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.749231,1861205433,2025-06-10T09:37:11.235659,active
+eds_002334,40.67872,44.2893259,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.750051,1876379933,2025-06-10T09:37:11.235660,active
+eds_002335,40.9560529,44.4422852,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.750869,1888390756,2025-06-10T09:37:11.235662,active
+eds_002336,40.2898662,44.6096445,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539724.751698,1890073921,2025-06-10T09:37:11.235664,active
+eds_002337,40.1654763,44.3352002,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.752516,1902258450,2025-06-10T09:37:11.235666,active
+eds_002338,40.2096993,44.5344942,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.753352,1965740475,2025-06-10T09:37:11.235668,active
+eds_002339,40.1574539,44.4613723,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.7541409,1972401132,2025-06-10T09:37:11.235669,active
+eds_002341,40.3126562,44.5772122,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.755767,1972936528,2025-06-10T09:37:11.235673,active
+eds_002342,40.3092596,44.5755323,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.756607,1973140981,2025-06-10T09:37:11.235675,active
+eds_002343,40.1979035,44.5112293,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.757419,1980753488,2025-06-10T09:37:11.235677,active
+eds_002344,40.1810496,44.4598836,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.758234,2004508489,2025-06-10T09:37:11.235678,active
+eds_002345,40.1895534,44.4759394,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.7590559,2004508697,2025-06-10T09:37:11.235680,active
+eds_002346,40.1987166,44.4622047,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.7598772,2004508885,2025-06-10T09:37:11.235682,active
+eds_002347,37.0817496,37.4182388,OHITS,Gaziantep,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539724.7607,2017826002,2025-06-10T09:37:11.235684,active
+eds_002349,40.5288472,44.7810084,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.761539,2035436364,2025-06-10T09:37:11.235688,active
+eds_002350,40.4674657,44.737605,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.762346,2035518010,2025-06-10T09:37:11.235703,active
+eds_002355,40.2811135,44.625054,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.7631638,2178857499,2025-06-10T09:37:11.235712,active
+eds_002356,39.7650938,26.3522527,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539724.763981,2181656871,2025-06-10T09:37:11.235714,active
+eds_002357,40.2020312,44.5820392,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.7648058,2219510105,2025-06-10T09:37:11.235716,active
+eds_002358,40.1405569,44.5106987,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.765627,2240175285,2025-06-10T09:37:11.235717,active
+eds_002360,42.1860308,42.7280476,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539724.76646,2250245514,2025-06-10T09:37:11.235721,active
+eds_002361,40.1771069,44.5286245,OHITS,Diger,Unknown,speed_camera,40,,openstreetmap (merged from 3 sources),1.0,1749539724.767287,2254360419,2025-06-10T09:37:11.235723,active
+eds_002362,41.1467944,27.8505779,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539724.7680929,2270207022,2025-06-10T09:37:11.235725,active
+eds_002363,37.0291704,30.4525561,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.768866,2291419257,2025-06-10T09:37:11.235727,active
+eds_002364,40.1484752,44.4700186,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.769699,2317707961,2025-06-10T09:37:11.235728,active
+eds_002365,40.150292,44.4731472,OHITS,Diger,Unknown,speed_camera,40,,openstreetmap (merged from 6 sources),1.0,1749539724.7705119,2317707972,2025-06-10T09:37:11.235730,active
+eds_002366,40.1853364,44.5028244,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.771313,2327075339,2025-06-10T09:37:11.235732,active
+eds_002367,40.1623687,44.4414796,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.772096,2327176016,2025-06-10T09:37:11.235734,active
+eds_002368,40.2160322,44.5552092,OHITS,Diger,Unknown,speed_camera,40,,openstreetmap (merged from 3 sources),1.0,1749539724.772892,2327176031,2025-06-10T09:37:11.235736,active
+eds_002369,40.2203118,44.531324,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.773695,2337651445,2025-06-10T09:37:11.235737,active
+eds_002370,40.2467647,44.4250557,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.774508,2345485288,2025-06-10T09:37:11.235739,active
+eds_002372,41.0038919,28.9536558,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.776064,2370650502,2025-06-10T09:37:11.235743,active
+eds_002373,41.806003,44.7716593,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539724.7768488,2379653461,2025-06-10T09:37:11.235745,active
+eds_002374,37.3221374,29.7854305,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.7776582,2383545777,2025-06-10T09:37:11.235746,active
+eds_002375,37.5104872,29.8187431,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.778443,2384131393,2025-06-10T09:37:11.235748,active
+eds_002376,40.8747695,43.8501997,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.779233,2407257041,2025-06-10T09:37:11.235750,active
+eds_002377,37.7551868,30.3367747,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.7799869,2423238324,2025-06-10T09:37:11.235752,active
+eds_002378,39.7983119,44.7694576,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.780782,2431058372,2025-06-10T09:37:11.235754,active
+eds_002379,40.662174,43.8847424,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.781565,2458144200,2025-06-10T09:37:11.235755,active
+eds_002380,40.1612061,44.2942577,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.7823691,2479786880,2025-06-10T09:37:11.235757,active
+eds_002381,41.5911317,41.6457872,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.7831411,2502667016,2025-06-10T09:37:11.235759,active
+eds_002382,39.8280623,26.3256293,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539724.78394,2519640015,2025-06-10T09:37:11.235761,active
+eds_002383,40.1610066,44.4249989,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.784736,2559590034,2025-06-10T09:37:11.235763,active
+eds_002384,40.1650519,44.3634391,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.78555,2559590035,2025-06-10T09:37:11.235767,active
+eds_002385,37.1000672,27.3091712,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.7863538,2611976817,2025-06-10T09:37:11.235769,active
+eds_002386,40.0197682,44.4890338,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.787147,2704382102,2025-06-10T09:37:11.235771,active
+eds_002387,40.4924835,44.7779675,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 6 sources),1.0,1749539724.787935,2738044091,2025-06-10T09:37:11.235773,active
+eds_002389,40.1497938,44.1640431,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 6 sources),1.0,1749539724.789584,2745881073,2025-06-10T09:37:11.235777,active
+eds_002393,40.1452298,44.510124,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.792812,2764889289,2025-06-10T09:37:11.235784,active
+eds_002395,40.2061235,44.5066539,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.793622,2776273493,2025-06-10T09:37:11.235788,active
+eds_002396,40.2183177,44.4989103,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.7944179,2781170681,2025-06-10T09:37:11.235790,active
+eds_002397,40.1842005,44.6269225,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.7952142,2788521544,2025-06-10T09:37:11.235791,active
+eds_002398,39.9520421,44.5403407,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.795993,2832387047,2025-06-10T09:37:11.235793,active
+eds_002400,40.9998624,28.6943501,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539724.797568,2837224049,2025-06-10T09:37:11.235797,active
+eds_002402,40.1889035,44.5278117,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.7983801,2916445324,2025-06-10T09:37:11.235801,active
+eds_002403,40.0907598,44.0449432,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.799159,2925541673,2025-06-10T09:37:11.235802,active
+eds_002404,40.8476162,43.8381025,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.7999501,2925554205,2025-06-10T09:37:11.235804,active
+eds_002405,40.840017,43.7852021,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.8007529,2925559966,2025-06-10T09:37:11.235806,active
+eds_002406,40.2274056,44.5493149,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.801565,2951366425,2025-06-10T09:37:11.235808,active
+eds_002407,40.3830774,44.6553302,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539724.802374,2951369093,2025-06-10T09:37:11.235810,active
+eds_002408,40.2609302,44.6096168,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.8031669,2960584637,2025-06-10T09:37:11.235812,active
+eds_002409,40.1828591,44.5620088,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.803954,2976955357,2025-06-10T09:37:11.235813,active
+eds_002410,40.1579903,44.4495478,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539724.80475,2976959156,2025-06-10T09:37:11.235815,active
+eds_002411,40.2087667,28.9528435,OHITS,Bursa,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.805536,2996415396,2025-06-10T09:37:11.235817,active
+eds_002413,40.2131777,29.0153304,OHITS,Bursa,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.807072,2997194567,2025-06-10T09:37:11.235821,active
+eds_002415,40.2125272,28.9478726,OHITS,Bursa,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.808634,2999899831,2025-06-10T09:37:11.235824,active
+eds_002416,40.2094434,29.2949617,OHITS,Bursa,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.809403,3005337386,2025-06-10T09:37:11.235826,active
+eds_002418,40.5186968,44.3900991,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.810931,3006218946,2025-06-10T09:37:11.235829,active
+eds_002419,40.5852407,44.3587923,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.811722,3006218947,2025-06-10T09:37:11.235831,active
+eds_002420,40.6567473,44.3008328,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.812546,3006218948,2025-06-10T09:37:11.235833,active
+eds_002421,40.7201171,44.2062357,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.8133519,3006218955,2025-06-10T09:37:11.235835,active
+eds_002422,40.8382927,44.4342517,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.814142,3006219023,2025-06-10T09:37:11.235836,active
+eds_002424,41.6387291,41.6112925,OHITS,Diger,Unknown,speed_camera,40,,openstreetmap (merged from 6 sources),1.0,1749539724.814923,3008209460,2025-06-10T09:37:11.235840,active
+eds_002426,41.9735185,43.5483757,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.816499,3008219551,2025-06-10T09:37:11.235844,active
+eds_002428,40.7686902,43.8455384,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.8173,3192581992,2025-06-10T09:37:11.235860,active
+eds_002434,40.296269,44.2924003,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.818086,3222853654,2025-06-10T09:37:11.235871,active
+eds_002435,40.1221306,29.4400839,OHITS,Bursa,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.818841,3237779892,2025-06-10T09:37:11.235872,active
+eds_002436,40.07068,29.5476253,OHITS,Bursa,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.8196049,3237794656,2025-06-10T09:37:11.235874,active
+eds_002437,39.9556461,29.6662412,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.8203819,3237819224,2025-06-10T09:37:11.235876,active
+eds_002438,39.8219799,30.1553426,OHITS,Eskisehir,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.821137,3237832652,2025-06-10T09:37:11.235877,active
+eds_002439,39.1345404,30.1593918,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.8219159,3237889547,2025-06-10T09:37:11.235879,active
+eds_002440,38.9718412,30.9221732,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.8226938,3239697064,2025-06-10T09:37:11.235881,active
+eds_002441,39.4322479,31.5428619,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.823481,3239740024,2025-06-10T09:37:11.235883,active
+eds_002442,39.4422987,31.5669151,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.8242612,3239740895,2025-06-10T09:37:11.235885,active
+eds_002443,39.597992,32.1762062,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.825036,3239815882,2025-06-10T09:37:11.235887,active
+eds_002444,39.7248885,32.3564051,OHITS,Ankara,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.8258119,3239827829,2025-06-10T09:37:11.235889,active
+eds_002445,39.8556335,32.6093458,OHITS,Ankara,Unknown,speed_camera,82,,openstreetmap (merged from 3 sources),1.0,1749539724.826614,3239834883,2025-06-10T09:37:11.235890,active
+eds_002446,39.9531511,32.8066151,OHITS,Ankara,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.8274,3240669113,2025-06-10T09:37:11.235892,active
+eds_002447,39.953505,32.6969013,OHITS,Ankara,Unknown,speed_camera,82,,openstreetmap (merged from 3 sources),1.0,1749539724.828175,3240672132,2025-06-10T09:37:11.235894,active
+eds_002448,40.0281475,32.6439276,OHITS,Ankara,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.8289611,3240678410,2025-06-10T09:37:11.235895,active
+eds_002449,39.7760063,32.6850772,OHITS,Ankara,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.8297422,3241105281,2025-06-10T09:37:11.235897,active
+eds_002450,37.9927099,32.5188729,OHITS,Konya,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.830534,3243261963,2025-06-10T09:37:11.235899,active
+eds_002455,40.2046443,44.5642165,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.834391,3331413578,2025-06-10T09:37:11.235907,active
+eds_002456,36.6303682,44.568615,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.835184,3382472008,2025-06-10T09:37:11.235909,active
+eds_002457,36.6078139,44.3566331,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539724.83599,3382509275,2025-06-10T09:37:11.235911,active
+eds_002458,40.1342858,44.5007873,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.8367748,3413163179,2025-06-10T09:37:11.235913,active
+eds_002459,40.203349,44.5301557,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.83758,3415474039,2025-06-10T09:37:11.235915,active
+eds_002460,40.1930632,44.4850775,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.8383949,3424399676,2025-06-10T09:37:11.235917,active
+eds_002461,40.1935143,44.4894537,OHITS,Diger,Unknown,speed_camera,40,,openstreetmap (merged from 3 sources),1.0,1749539724.839201,3424399686,2025-06-10T09:37:11.235919,active
+eds_002463,36.3809696,44.2262372,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 6 sources),1.0,1749539724.8400152,3488234851,2025-06-10T09:37:11.235923,active
+eds_002464,40.8202147,29.3647912,OHITS,Istanbul,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.8407838,3505846747,2025-06-10T09:37:11.235924,active
+eds_002465,40.172887,44.4936419,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.8415911,3520247820,2025-06-10T09:37:11.235926,active
+eds_002467,40.1834044,44.5274716,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.843193,3520247822,2025-06-10T09:37:11.235930,active
+eds_002469,37.894037,29.1280889,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.843984,3561569073,2025-06-10T09:37:11.235933,active
+eds_002470,40.2229832,44.5756522,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.8447738,3613297917,2025-06-10T09:37:11.235935,active
+eds_002471,42.184885,42.6928957,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539724.845563,3650615148,2025-06-10T09:37:11.235937,active
+eds_002472,40.4755102,44.7419743,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.846346,3654727205,2025-06-10T09:37:11.235939,active
+eds_002474,40.2921487,44.3678285,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.847154,3687717718,2025-06-10T09:37:11.235952,active
+eds_002475,41.8469576,44.7316009,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 6 sources),1.0,1749539724.847958,3688981741,2025-06-10T09:37:11.235953,active
+eds_002476,41.8939887,44.6621064,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 6 sources),1.0,1749539724.848751,3688981743,2025-06-10T09:37:11.235955,active
+eds_002477,41.9024808,44.5815029,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539724.849542,3688981744,2025-06-10T09:37:11.235957,active
+eds_002479,41.8072517,44.7710807,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539724.850345,3702906257,2025-06-10T09:37:11.235961,active
+eds_002480,41.9076676,44.5726911,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539724.851137,3702929627,2025-06-10T09:37:11.235962,active
+eds_002481,41.9842853,43.5885659,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.851938,3708933317,2025-06-10T09:37:11.235964,active
+eds_002482,41.6436823,41.6179165,OHITS,Diger,Unknown,speed_camera,40,,openstreetmap (merged from 3 sources),1.0,1749539724.852727,3711551258,2025-06-10T09:37:11.235966,active
+eds_002483,42.0873674,42.1400422,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.85352,3711579203,2025-06-10T09:37:11.235968,active
+eds_002484,42.0427516,41.7349859,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.854304,3711582873,2025-06-10T09:37:11.235970,active
+eds_002485,42.0775736,42.0862894,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.8551219,3711597389,2025-06-10T09:37:11.235972,active
+eds_002486,41.5992276,41.6033982,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539724.8559191,3711605881,2025-06-10T09:37:11.235973,active
+eds_002487,40.2187744,44.4960445,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.856717,3715913149,2025-06-10T09:37:11.235975,active
+eds_002488,40.3028402,44.6185324,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539724.857527,3721912756,2025-06-10T09:37:11.235977,active
+eds_002490,40.1503577,44.5063737,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.8583329,3735729787,2025-06-10T09:37:11.235982,active
+eds_002491,40.9840604,28.7256206,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539724.8591099,3739277649,2025-06-10T09:37:11.235983,active
+eds_002493,40.1327908,44.4856387,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.859922,3779181656,2025-06-10T09:37:11.235987,active
+eds_002494,40.1364056,44.4730264,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.860707,3779188162,2025-06-10T09:37:11.235989,active
+eds_002495,41.0667358,28.9897336,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.861482,3786188196,2025-06-10T09:37:11.235991,active
+eds_002499,40.1968818,44.4912643,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.864674,3824493939,2025-06-10T09:37:11.235998,active
+eds_002500,40.1827997,44.5098451,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.865481,3830337104,2025-06-10T09:37:11.236000,active
+eds_002501,40.1998106,44.4937806,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.866274,3835488428,2025-06-10T09:37:11.236002,active
+eds_002502,40.1775495,44.5226339,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.8670762,3836963489,2025-06-10T09:37:11.236004,active
+eds_002504,40.1365524,44.4622961,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.868682,3903814249,2025-06-10T09:37:11.236007,active
+eds_002505,40.1782429,44.4805437,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.869505,3913253971,2025-06-10T09:37:11.236017,active
+eds_002507,40.3471171,44.3804387,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.870309,3913379130,2025-06-10T09:37:11.236034,active
+eds_002508,40.3846949,44.3796259,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.87111,3913387525,2025-06-10T09:37:11.236036,active
+eds_002511,36.2243691,43.9750881,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 6 sources),1.0,1749539724.8719292,3958781978,2025-06-10T09:37:11.236042,active
+eds_002513,40.3106629,44.4726318,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.8735218,3963323866,2025-06-10T09:37:11.236045,active
+eds_002514,40.3185961,44.4850136,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.8743522,3963323874,2025-06-10T09:37:11.236047,active
+eds_002515,40.1680147,44.5468688,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.8751402,3963348082,2025-06-10T09:37:11.236049,active
+eds_002517,39.9105563,44.7115376,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.876726,4113489888,2025-06-10T09:37:11.236053,active
+eds_002518,39.9210098,44.7513741,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.877526,4113489889,2025-06-10T09:37:11.236054,active
+eds_002519,41.0055981,27.5123514,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539724.878305,4153631022,2025-06-10T09:37:11.236056,active
+eds_002522,40.1578472,44.5110951,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.879879,4194771997,2025-06-10T09:37:11.236062,active
+eds_002523,40.7806129,43.8474839,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.880689,4200865058,2025-06-10T09:37:11.236064,active
+eds_002524,40.817682,43.8373602,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.8814862,4200866274,2025-06-10T09:37:11.236066,active
+eds_002525,40.81987,43.8208489,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.882294,4200866400,2025-06-10T09:37:11.236068,active
+eds_002526,40.6576146,43.8517128,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.883065,4201682309,2025-06-10T09:37:11.236069,active
+eds_002527,40.7786081,29.8879786,OHITS,Sakarya,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.883822,4204353549,2025-06-10T09:37:11.236071,active
+eds_002528,40.7769841,29.9146818,OHITS,Sakarya,Unknown,speed_camera,130,,openstreetmap (merged from 3 sources),1.0,1749539724.8845959,4204355695,2025-06-10T09:37:11.236073,active
+eds_002529,40.6900503,44.272566,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.885417,4227214348,2025-06-10T09:37:11.236076,active
+eds_002530,40.7039137,44.220139,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.886223,4227214349,2025-06-10T09:37:11.236078,active
+eds_002531,40.8233678,44.2438438,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.887018,4227214350,2025-06-10T09:37:11.236080,active
+eds_002532,40.2002003,44.4647314,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.8878038,4228153889,2025-06-10T09:37:11.236082,active
+eds_002534,40.1959937,44.5475759,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539724.88942,4242357382,2025-06-10T09:37:11.236086,active
+eds_002538,40.151948,44.5163756,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.890207,4277726218,2025-06-10T09:37:11.236094,active
+eds_002539,40.1398157,44.5175589,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.8910122,4283672681,2025-06-10T09:37:11.236095,active
+eds_002541,36.8831796,30.6573362,OHITS,Antalya,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.891795,4329541048,2025-06-10T09:37:11.236099,active
+eds_002543,38.4956584,27.7379399,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.89259,4361708374,2025-06-10T09:37:11.236106,active
+eds_002544,40.1497948,44.474206,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.893412,4373250631,2025-06-10T09:37:11.236108,active
+eds_002548,40.1940575,44.5248778,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539724.8950121,4406579553,2025-06-10T09:37:11.236117,active
+eds_002550,40.1832828,44.5151019,OHITS,Diger,Unknown,speed_camera,30,,openstreetmap (merged from 3 sources),1.0,1749539724.8958058,4423444517,2025-06-10T09:37:11.236120,active
+eds_002552,41.1554721,28.7873981,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539724.8966,4447613065,2025-06-10T09:37:11.236124,active
+eds_002553,36.1910273,43.9626604,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539724.897402,4460608294,2025-06-10T09:37:11.236127,active
+eds_002556,41.0171136,28.559435,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539724.8989692,4566227062,2025-06-10T09:37:11.236132,active
+eds_002557,41.0103295,28.5284077,OHITS,Istanbul,Unknown,speed_camera,90,,openstreetmap (merged from 6 sources),1.0,1749539724.899749,4566227234,2025-06-10T09:37:11.236134,active
+eds_002558,41.1125409,44.2928258,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.9005382,4695993515,2025-06-10T09:37:11.236136,active
+eds_002559,41.0190878,44.3767264,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.901338,4695993537,2025-06-10T09:37:11.236138,active
+eds_002561,40.8255619,44.4676298,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.902109,4716327794,2025-06-10T09:37:11.236141,active
+eds_002562,40.8708253,44.4388758,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.902923,4716327799,2025-06-10T09:37:11.236143,active
+eds_002563,41.777004,44.7895965,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.903708,4745483535,2025-06-10T09:37:11.236145,active
+eds_002564,40.15787,44.5023129,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.904524,4769915718,2025-06-10T09:37:11.236147,active
+eds_002565,37.9004991,41.1199478,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.905306,4784253363,2025-06-10T09:37:11.236148,active
+eds_002566,40.2204957,44.5784689,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.906123,4795517962,2025-06-10T09:37:11.236150,active
+eds_002567,41.0445809,28.0377793,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 9 sources),1.0,1749539724.9069161,4810741110,2025-06-10T09:37:11.236152,active
+eds_002569,40.2007419,44.4797877,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.90851,4810928089,2025-06-10T09:37:11.236157,active
+eds_002570,41.1794281,27.5043236,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.909298,4823996230,2025-06-10T09:37:11.236158,active
+eds_002572,40.9520796,27.4767523,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 6 sources),1.0,1749539724.91087,4831100980,2025-06-10T09:37:11.236162,active
+eds_002573,40.6393099,26.8591925,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539724.911658,4848182867,2025-06-10T09:37:11.236164,active
+eds_002574,40.8825263,26.9321395,OHITS,Diger,Unknown,speed_camera,82,,openstreetmap (merged from 6 sources),1.0,1749539724.912443,4854256661,2025-06-10T09:37:11.236165,active
+eds_002576,40.2027237,44.5553234,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.9140449,4891351530,2025-06-10T09:37:11.236169,active
+eds_002580,40.1646825,44.4623351,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.917228,4947171592,2025-06-10T09:37:11.236176,active
+eds_002582,40.1685649,44.4384614,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.9188411,4953562663,2025-06-10T09:37:11.236180,active
+eds_002584,37.8910148,39.9848564,OHITS,Diyarbakir,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.9204328,5001203332,2025-06-10T09:37:11.236189,active
+eds_002586,40.1909686,44.4659259,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.921219,5017653080,2025-06-10T09:37:11.236193,active
+eds_002588,37.5735584,38.9427215,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.922817,5028511282,2025-06-10T09:37:11.236203,active
+eds_002589,37.5945774,38.9740165,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.9236228,5028511284,2025-06-10T09:37:11.236205,active
+eds_002590,36.2258561,44.0281951,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 4 sources),1.0,1749539724.924406,5032646655,2025-06-10T09:37:11.236207,active
+eds_002591,36.2091132,43.9714856,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539724.9252028,5032658139,2025-06-10T09:37:11.236209,active
+eds_002592,36.1785076,43.9553738,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539724.926005,5032664237,2025-06-10T09:37:11.236211,active
+eds_002593,40.2095748,44.4934879,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.926807,5037605625,2025-06-10T09:37:11.236213,active
+eds_002595,36.2032517,44.1093353,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539724.928419,5096458930,2025-06-10T09:37:11.236216,active
+eds_002596,36.1929551,44.0370539,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.929213,5096458932,2025-06-10T09:37:11.236218,active
+eds_002598,40.8464107,43.8378691,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.930014,5141771164,2025-06-10T09:37:11.236222,active
+eds_002600,40.1624625,44.4739062,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539724.930807,5200073360,2025-06-10T09:37:11.236225,active
+eds_002601,40.1148517,44.4776344,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.931612,5200073365,2025-06-10T09:37:11.236229,active
+eds_002602,40.1402747,44.0481366,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.932412,5200073367,2025-06-10T09:37:11.236231,active
+eds_002603,40.1398381,44.0496427,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.933198,5200073368,2025-06-10T09:37:11.236233,active
+eds_002604,40.0708281,44.4407007,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.93401,5220006396,2025-06-10T09:37:11.236234,active
+eds_002606,40.15999,44.4026375,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.934808,5282135451,2025-06-10T09:37:11.236238,active
+eds_002607,40.162655,44.3900576,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.93561,5282135475,2025-06-10T09:37:11.236240,active
+eds_002609,41.2185931,36.6587873,OHITS,Samsun,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.937205,5288175340,2025-06-10T09:37:11.236244,active
+eds_002610,37.0991251,42.6657024,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.938014,5299880416,2025-06-10T09:37:11.236245,active
+eds_002611,41.0575415,28.9067376,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.9387782,5312494218,2025-06-10T09:37:11.236247,active
+eds_002612,41.0680416,28.2964769,OHITS,Diger,Unknown,speed_camera,30,,openstreetmap (merged from 3 sources),1.0,1749539724.939571,5331067657,2025-06-10T09:37:11.236249,active
+eds_002613,42.1256406,26.5375173,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539724.9403698,5365077846,2025-06-10T09:37:11.236251,active
+eds_002614,40.2089573,44.4654283,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 4 sources),1.0,1749539724.941153,5368815351,2025-06-10T09:37:11.236253,active
+eds_002615,40.2034502,44.4617397,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.941949,5370659189,2025-06-10T09:37:11.236254,active
+eds_002617,41.0240211,37.5530865,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.943496,5373377300,2025-06-10T09:37:11.236259,active
+eds_002618,41.2265279,36.4707243,OHITS,Samsun,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.944293,5384468117,2025-06-10T09:37:11.236261,active
+eds_002620,40.2041142,44.5083649,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.9458811,5391027540,2025-06-10T09:37:11.236264,active
+eds_002622,40.2043253,44.5154509,OHITS,Diger,Unknown,speed_camera,40,,openstreetmap (merged from 3 sources),1.0,1749539724.947497,5391066416,2025-06-10T09:37:11.236268,active
+eds_002623,40.6249935,43.9786485,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.948288,5454764452,2025-06-10T09:37:11.236270,active
+eds_002625,36.5858659,31.8837376,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.9498801,5467751693,2025-06-10T09:37:11.236273,active
+eds_002626,40.2194527,44.4764283,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.950679,5482777969,2025-06-10T09:37:11.236275,active
+eds_002627,36.6534036,43.4369423,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 6 sources),1.0,1749539724.951484,5500236366,2025-06-10T09:37:11.236277,active
+eds_002628,40.2062737,44.5293037,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.952283,5502010276,2025-06-10T09:37:11.236279,active
+eds_002630,40.8488869,31.0720676,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.953871,5518187509,2025-06-10T09:37:11.236282,active
+eds_002631,42.1868035,42.6408148,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539724.954657,5568663465,2025-06-10T09:37:11.236284,active
+eds_002632,40.8767654,31.0498328,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.955449,5614894021,2025-06-10T09:37:11.236286,active
+eds_002633,40.8502758,31.0509908,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.956216,5614905646,2025-06-10T09:37:11.236294,active
+eds_002634,40.2384144,44.5648435,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539724.957032,5658920065,2025-06-10T09:37:11.236295,active
+eds_002652,36.3494214,44.1767683,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 6 sources),1.0,1749539724.9578319,5693453126,2025-06-10T09:37:11.236329,active
+eds_002654,36.5248943,32.0510264,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.959519,5736319358,2025-06-10T09:37:11.236333,active
+eds_002656,36.6654265,31.6519486,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.961056,5736359473,2025-06-10T09:37:11.236336,active
+eds_002657,36.7735898,31.4838408,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.96182,5736359475,2025-06-10T09:37:11.236338,active
+eds_002658,36.801151,31.400706,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.962574,5736359476,2025-06-10T09:37:11.236340,active
+eds_002659,36.8146423,31.3678648,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.963339,5736359477,2025-06-10T09:37:11.236341,active
+eds_002661,36.8907804,31.2264011,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.964848,5736359481,2025-06-10T09:37:11.236345,active
+eds_002663,36.9282055,30.9875335,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.966398,5736397051,2025-06-10T09:37:11.236357,active
+eds_002664,36.9444991,30.8891923,OHITS,Antalya,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539724.967179,5736397052,2025-06-10T09:37:11.236359,active
+eds_002665,36.9463651,30.8651555,OHITS,Antalya,Unknown,speed_camera,110,,openstreetmap (merged from 6 sources),1.0,1749539724.967954,5736397053,2025-06-10T09:37:11.236361,active
+eds_002666,36.9365862,30.8159218,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.968699,5736421427,2025-06-10T09:37:11.236363,active
+eds_002668,36.1874095,43.9745809,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539724.970264,5736854222,2025-06-10T09:37:11.236367,active
+eds_002669,36.9209216,30.6763233,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.971047,5737282447,2025-06-10T09:37:11.236368,active
+eds_002670,37.3621349,29.4836114,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.9718232,5737282450,2025-06-10T09:37:11.236370,active
+eds_002671,37.4164907,29.3643084,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.972613,5737282451,2025-06-10T09:37:11.236372,active
+eds_002672,37.5943855,29.2683765,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.9733918,5737282452,2025-06-10T09:37:11.236374,active
+eds_002674,37.680494,29.22422,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.974936,5737282454,2025-06-10T09:37:11.236377,active
+eds_002675,37.7310868,29.1620539,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539724.975724,5737282455,2025-06-10T09:37:11.236379,active
+eds_002677,37.7356997,29.1190304,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.97729,5737282457,2025-06-10T09:37:11.236382,active
+eds_002678,37.7546146,29.1057887,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.978063,5737282458,2025-06-10T09:37:11.236384,active
+eds_002679,37.7745661,29.0992356,OHITS,Denizli,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539724.9788532,5737282459,2025-06-10T09:37:11.236385,active
+eds_002682,36.7316456,43.886623,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539724.9812548,5771445453,2025-06-10T09:37:11.236392,active
+eds_002684,36.3901017,44.2382419,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 3 sources),1.0,1749539724.982882,5789640509,2025-06-10T09:37:11.236396,active
+eds_002687,41.275246,27.9859962,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.985301,5818686173,2025-06-10T09:37:11.236401,active
+eds_002692,41.904044,44.5790593,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539724.989373,5877954716,2025-06-10T09:37:11.236410,active
+eds_002693,41.9045006,44.5778625,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539724.990177,5877954717,2025-06-10T09:37:11.236412,active
+eds_002694,41.9658997,44.4654506,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539724.990987,5877961787,2025-06-10T09:37:11.236414,active
+eds_002695,41.9655884,44.4668628,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539724.991804,5877961788,2025-06-10T09:37:11.236416,active
+eds_002696,41.9884329,44.4204364,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539724.992609,5877961789,2025-06-10T09:37:11.236418,active
+eds_002697,41.9892264,44.4196615,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539724.993419,5877961790,2025-06-10T09:37:11.236425,active
+eds_002698,42.0234549,44.2484591,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539724.994227,5877968299,2025-06-10T09:37:11.236427,active
+eds_002699,42.0233157,44.2471353,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539724.99505,5877968300,2025-06-10T09:37:11.236429,active
+eds_002700,42.0174247,44.145006,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 6 sources),1.0,1749539724.9958699,5877968301,2025-06-10T09:37:11.236430,active
+eds_002702,41.6510334,26.4551536,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.997492,5911662493,2025-06-10T09:37:11.236434,active
+eds_002703,41.0297318,26.2573455,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.998301,5911756922,2025-06-10T09:37:11.236436,active
+eds_002704,41.0205756,26.2583049,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539724.999098,5911757702,2025-06-10T09:37:11.236438,active
+eds_002706,37.8136891,29.0378629,OHITS,Denizli,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.000709,5967867396,2025-06-10T09:37:11.236441,active
+eds_002707,36.4827956,44.3809703,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 6 sources),1.0,1749539725.001529,6070043071,2025-06-10T09:37:11.236443,active
+eds_002708,36.6053434,44.3610349,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.002335,6098777878,2025-06-10T09:37:11.236445,active
+eds_002709,36.6100902,44.3514688,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.0031428,6098777879,2025-06-10T09:37:11.236447,active
+eds_002710,36.5988439,44.3739707,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.003957,6098777880,2025-06-10T09:37:11.236448,active
+eds_002711,36.6493795,44.5141973,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.004768,6098794373,2025-06-10T09:37:11.236450,active
+eds_002714,40.204893,44.5559288,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539725.007193,6139214148,2025-06-10T09:37:11.236457,active
+eds_002717,36.6304672,44.573172,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.00965,6149415347,2025-06-10T09:37:11.236462,active
+eds_002719,36.6367093,44.5107052,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.011273,6149435718,2025-06-10T09:37:11.236465,active
+eds_002721,36.4900532,44.3774097,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 6 sources),1.0,1749539725.012905,6149482230,2025-06-10T09:37:11.236469,active
+eds_002725,36.4852066,44.3813995,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 6 sources),1.0,1749539725.015357,6180307833,2025-06-10T09:37:11.236476,active
+eds_002728,36.845361,43.0613626,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.017792,6207266974,2025-06-10T09:37:11.236482,active
+eds_002730,36.8308617,43.0952229,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 6 sources),1.0,1749539725.019419,6207271149,2025-06-10T09:37:11.236486,active
+eds_002731,36.6402202,44.5086411,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.0202382,6212339526,2025-06-10T09:37:11.236488,active
+eds_002733,36.7212927,43.2482718,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.021864,6269132001,2025-06-10T09:37:11.236491,active
+eds_002734,36.2383553,44.0479665,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 6 sources),1.0,1749539725.0226822,6269595756,2025-06-10T09:37:11.236493,active
+eds_002735,37.8160981,29.0609641,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.0234811,6278687670,2025-06-10T09:37:11.236495,active
+eds_002736,36.6440822,43.556701,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.024288,6306160391,2025-06-10T09:37:11.236497,active
+eds_002765,40.675032,35.8282048,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.025941,6314536363,2025-06-10T09:37:11.236559,active
+eds_002771,36.7313145,42.9346321,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.02755,6387348985,2025-06-10T09:37:11.236570,active
+eds_002773,36.3054249,44.130924,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 3 sources),1.0,1749539725.0291798,6413813001,2025-06-10T09:37:11.236573,active
+eds_002774,36.3153878,44.1457526,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 3 sources),1.0,1749539725.029998,6413813002,2025-06-10T09:37:11.236575,active
+eds_002775,40.1348824,44.5282173,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.030825,6419284779,2025-06-10T09:37:11.236577,active
+eds_002776,40.1746126,44.4496647,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.031629,6434511035,2025-06-10T09:37:11.236579,active
+eds_002777,40.1702812,44.4461007,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.03245,6435498693,2025-06-10T09:37:11.236581,active
+eds_002778,41.3214979,27.9785183,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.0332448,6484442083,2025-06-10T09:37:11.236583,active
+eds_002781,36.8938665,30.6171216,OHITS,Antalya,Unknown,speed_camera,70,,openstreetmap (merged from 6 sources),1.0,1749539725.0356748,6510444161,2025-06-10T09:37:11.236589,active
+eds_002783,40.8950904,29.2479051,OHITS,Istanbul,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.0372639,6518573912,2025-06-10T09:37:11.236592,active
+eds_002784,39.7596415,30.4731308,OHITS,Eskisehir,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539725.038066,6544485548,2025-06-10T09:37:11.236594,active
+eds_002786,39.7485685,30.4970575,OHITS,Eskisehir,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.0396411,6555063390,2025-06-10T09:37:11.236598,active
+eds_002788,37.1510988,29.6869359,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.0412428,6573433999,2025-06-10T09:37:11.236601,active
+eds_002789,37.3968421,29.8289505,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.0420601,6573434000,2025-06-10T09:37:11.236603,active
+eds_002790,36.9039605,30.7552163,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.042851,6573434001,2025-06-10T09:37:11.236604,active
+eds_002791,37.5166997,29.7717989,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.043679,6573434002,2025-06-10T09:37:11.236606,active
+eds_002792,36.9127834,30.7092922,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.044468,6573434003,2025-06-10T09:37:11.236613,active
+eds_002793,37.9249917,30.301132,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.04525,6573434004,2025-06-10T09:37:11.236615,active
+eds_002794,39.3782964,30.0504044,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.046052,6578551694,2025-06-10T09:37:11.236617,active
+eds_002796,41.8396075,41.7781708,OHITS,Diger,Unknown,speed_camera,40,,openstreetmap (merged from 3 sources),1.0,1749539725.047657,6579735849,2025-06-10T09:37:11.236620,active
+eds_002797,41.8413754,41.7783891,OHITS,Diger,Unknown,speed_camera,40,,openstreetmap (merged from 3 sources),1.0,1749539725.048467,6579740199,2025-06-10T09:37:11.236626,active
+eds_002798,42.1609039,42.3817183,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539725.049293,6579788487,2025-06-10T09:37:11.236628,active
+eds_002799,42.1627092,42.4600774,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539725.050106,6579788488,2025-06-10T09:37:11.236630,active
+eds_002800,42.1713109,42.583704,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539725.050931,6579788489,2025-06-10T09:37:11.236632,active
+eds_002801,42.1713545,42.5939274,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539725.0517418,6579788490,2025-06-10T09:37:11.236634,active
+eds_002802,42.1835524,42.6331979,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539725.0525498,6579788491,2025-06-10T09:37:11.236635,active
+eds_002803,42.1873542,42.6755214,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539725.0533729,6579788492,2025-06-10T09:37:11.236637,active
+eds_002804,42.1877928,42.7379919,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539725.054178,6579788493,2025-06-10T09:37:11.236639,active
+eds_002807,36.9113488,31.1523732,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.054997,6581541715,2025-06-10T09:37:11.236645,active
+eds_002809,36.924507,30.7948146,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.05661,6587390509,2025-06-10T09:37:11.236649,active
+eds_002810,36.9503473,30.6288594,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.0574028,6587390514,2025-06-10T09:37:11.236651,active
+eds_002811,36.911499,30.7357971,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.058205,6587390515,2025-06-10T09:37:11.236653,active
+eds_002812,36.9227545,30.7923849,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.058999,6587390516,2025-06-10T09:37:11.236654,active
+eds_002813,39.8045539,30.4204936,OHITS,Eskisehir,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.059799,6593740764,2025-06-10T09:37:11.236656,active
+eds_002822,41.8953753,44.7190218,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.061419,6616213604,2025-06-10T09:37:11.236679,active
+eds_002823,41.9195871,44.7279766,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.062228,6616213605,2025-06-10T09:37:11.236681,active
+eds_002824,42.0329312,44.7460353,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.063045,6616213606,2025-06-10T09:37:11.236683,active
+eds_002825,41.9466027,44.7403709,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.06387,6616213607,2025-06-10T09:37:11.236685,active
+eds_002826,40.8749755,26.6474388,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539725.064668,6642219397,2025-06-10T09:37:11.236687,active
+eds_002828,36.9194863,42.7748139,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539725.0662882,6644598546,2025-06-10T09:37:11.236691,active
+eds_002830,36.9657199,42.6638529,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 6 sources),1.0,1749539725.0679371,6644625295,2025-06-10T09:37:11.236695,active
+eds_002832,40.1538258,44.6558902,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.0687318,6710232635,2025-06-10T09:37:11.236700,active
+eds_002836,36.1669335,44.0610841,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 6 sources),1.0,1749539725.069551,6763762634,2025-06-10T09:37:11.236707,active
+eds_002837,41.3379463,27.9764548,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.0703459,6772920657,2025-06-10T09:37:11.236708,active
+eds_002838,41.036965,28.8903062,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.07114,6788645274,2025-06-10T09:37:11.236710,active
+eds_002839,41.0524567,28.8992637,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.071944,6806512353,2025-06-10T09:37:11.236712,active
+eds_002841,36.2427497,43.9985025,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 6 sources),1.0,1749539725.072781,6817323585,2025-06-10T09:37:11.236716,active
+eds_002842,36.1939218,44.0425284,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.0736032,6831122185,2025-06-10T09:37:11.236718,active
+eds_002843,36.8400718,31.3075879,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.074424,6834484315,2025-06-10T09:37:11.236720,active
+eds_002845,36.9151404,31.1300048,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.076048,6834484333,2025-06-10T09:37:11.236723,active
+eds_002847,36.734292,31.5392426,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.0776489,6834486304,2025-06-10T09:37:11.236727,active
+eds_002849,40.9378163,27.4844606,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.079254,6859676408,2025-06-10T09:37:11.236731,active
+eds_002851,41.9927403,44.7515877,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.0800672,6895611577,2025-06-10T09:37:11.236734,active
+eds_002853,38.3630646,26.8642313,OHITS,Izmir,Unknown,speed_camera,130,,openstreetmap (merged from 12 sources),1.0,1749539725.080878,6939011625,2025-06-10T09:37:11.236738,active
+eds_002857,39.3271364,44.1583587,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539725.0841348,6961555617,2025-06-10T09:37:11.236746,active
+eds_002858,41.5425724,26.8377766,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539725.08493,6966439107,2025-06-10T09:37:11.236748,active
+eds_002859,36.9518145,42.7252775,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539725.085736,6978661957,2025-06-10T09:37:11.236750,active
+eds_002861,36.9289416,42.7563002,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539725.0873501,6978661959,2025-06-10T09:37:11.236753,active
+eds_002863,36.826053,43.1219855,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.088964,6980248486,2025-06-10T09:37:11.236757,active
+eds_002867,40.1307856,44.5097571,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539725.092227,7003093314,2025-06-10T09:37:11.236765,active
+eds_002870,35.907064,44.0691217,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 6 sources),1.0,1749539725.09466,7030762240,2025-06-10T09:37:11.236770,active
+eds_002871,36.1363012,43.9983868,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 6 sources),1.0,1749539725.095486,7066691902,2025-06-10T09:37:11.236772,active
+eds_002874,36.2179736,44.0067929,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539725.097932,7095893916,2025-06-10T09:37:11.236778,active
+eds_002877,36.2604972,44.0140684,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.100411,7140215150,2025-06-10T09:37:11.236784,active
+eds_002880,41.0255343,28.9681729,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.1020281,7264036788,2025-06-10T09:37:11.236789,active
+eds_002881,41.0525068,28.3829471,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539725.102817,7264056886,2025-06-10T09:37:11.236791,active
+eds_002883,41.0688199,28.2944611,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.104426,7264233886,2025-06-10T09:37:11.236795,active
+eds_002884,38.8059053,30.6521351,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.105233,7283920812,2025-06-10T09:37:11.236797,active
+eds_002885,36.8486954,42.9347601,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.106049,7289938628,2025-06-10T09:37:11.236798,active
+eds_002886,36.8481152,42.9683674,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.106857,7289938630,2025-06-10T09:37:11.236800,active
+eds_002888,36.9874503,42.6456737,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 6 sources),1.0,1749539725.108487,7289938675,2025-06-10T09:37:11.236804,active
+eds_002889,36.9947794,42.6406124,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 3 sources),1.0,1749539725.109293,7289938676,2025-06-10T09:37:11.236810,active
+eds_002890,37.0474177,42.6475046,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.1101089,7289938677,2025-06-10T09:37:11.236811,active
+eds_002891,37.0811925,42.6579882,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.1109262,7289938678,2025-06-10T09:37:11.236813,active
+eds_002892,37.0595423,42.6513975,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539725.111726,7289938679,2025-06-10T09:37:11.236815,active
+eds_002893,37.0619418,42.6522032,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.112545,7289938681,2025-06-10T09:37:11.236817,active
+eds_002895,37.0916919,42.661323,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.114176,7289938683,2025-06-10T09:37:11.236821,active
+eds_002896,36.8469172,43.035355,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.1149938,7291758902,2025-06-10T09:37:11.237087,active
+eds_002897,36.8621163,43.070435,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.115801,7291758903,2025-06-10T09:37:11.237089,active
+eds_002901,36.9730464,42.6563049,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 3 sources),1.0,1749539725.119082,7439370899,2025-06-10T09:37:11.237097,active
+eds_002902,41.0577929,28.9570615,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 9 sources),1.0,1749539725.1198888,7443730190,2025-06-10T09:37:11.237099,active
+eds_002903,36.796161,43.219888,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.120685,7447608522,2025-06-10T09:37:11.237101,active
+eds_002904,40.9721198,27.9329808,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 6 sources),1.0,1749539725.1215098,7487562541,2025-06-10T09:37:11.237103,active
+eds_002906,40.9693406,27.9013098,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 6 sources),1.0,1749539725.1231081,7487610571,2025-06-10T09:37:11.237107,active
+eds_002916,42.1859579,41.7054598,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.1271749,7565970955,2025-06-10T09:37:11.237125,active
+eds_002917,42.1719322,41.6774572,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.128008,7565970956,2025-06-10T09:37:11.237127,active
+eds_002918,42.1574119,41.6853391,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.1288462,7565970957,2025-06-10T09:37:11.237129,active
+eds_002921,40.9982304,28.8749724,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 9 sources),1.0,1749539725.131288,7661762064,2025-06-10T09:37:11.237135,active
+eds_002922,36.9924986,42.6421153,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 6 sources),1.0,1749539725.1320992,7763440401,2025-06-10T09:37:11.237137,active
+eds_002924,36.8353674,42.9180747,OHITS,Diger,Unknown,speed_camera,20,,openstreetmap (merged from 3 sources),1.0,1749539725.133729,7763451823,2025-06-10T09:37:11.237140,active
+eds_002925,36.8372895,42.9173014,OHITS,Diger,Unknown,speed_camera,20,,openstreetmap (merged from 3 sources),1.0,1749539725.1345541,7763451824,2025-06-10T09:37:11.237142,active
+eds_002927,37.104088,42.6698541,OHITS,Diger,Unknown,speed_camera,20,,openstreetmap (merged from 6 sources),1.0,1749539725.136174,7763470362,2025-06-10T09:37:11.237146,active
+eds_002928,37.1056095,42.6704353,OHITS,Diger,Unknown,speed_camera,20,,openstreetmap (merged from 6 sources),1.0,1749539725.136998,7763470363,2025-06-10T09:37:11.237148,active
+eds_002929,37.1316703,42.67746,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.137812,7763470365,2025-06-10T09:37:11.237150,active
+eds_002930,36.8235913,43.1093368,OHITS,Diger,Unknown,speed_camera,20,,openstreetmap (merged from 3 sources),1.0,1749539725.13861,7763502686,2025-06-10T09:37:11.237152,active
+eds_002931,36.8475927,43.0569726,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.139447,7763502687,2025-06-10T09:37:11.237154,active
+eds_002932,37.1229155,42.6781842,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.140246,7768479956,2025-06-10T09:37:11.237156,active
+eds_002936,36.7848564,42.8891579,OHITS,Diger,Unknown,speed_camera,20,,openstreetmap (merged from 6 sources),1.0,1749539725.14351,7795536155,2025-06-10T09:37:11.237163,active
+eds_002938,36.1974323,43.9879779,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.14513,7814554488,2025-06-10T09:37:11.237167,active
+eds_002939,36.1854401,43.9864684,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.145962,7814566085,2025-06-10T09:37:11.237169,active
+eds_002940,36.1985042,43.9847678,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.146778,7815011686,2025-06-10T09:37:11.237170,active
+eds_002941,36.6583633,43.3031155,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.1475961,7818023528,2025-06-10T09:37:11.237172,active
+eds_002943,36.656331,43.3135144,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.149216,7818023531,2025-06-10T09:37:11.237176,active
+eds_002945,36.6511813,43.3903646,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.15085,7818023534,2025-06-10T09:37:11.237180,active
+eds_002948,36.6442857,43.464194,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.1532931,7818023537,2025-06-10T09:37:11.237185,active
+eds_002950,36.6375819,43.5249544,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.154932,7818023539,2025-06-10T09:37:11.237189,active
+eds_002951,36.637779,43.5287764,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.155731,7818023540,2025-06-10T09:37:11.237191,active
+eds_002952,36.6386129,43.5386907,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 6 sources),1.0,1749539725.156545,7818023541,2025-06-10T09:37:11.237193,active
+eds_002955,36.6400145,43.573533,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 6 sources),1.0,1749539725.158975,7818023544,2025-06-10T09:37:11.237199,active
+eds_002957,36.8681702,43.1028262,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.160605,7827748803,2025-06-10T09:37:11.237203,active
+eds_002958,36.9068288,43.1366537,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539725.161403,7827748804,2025-06-10T09:37:11.237205,active
+eds_002990,41.2632385,28.6977115,OHITS,Istanbul,Unknown,speed_camera,30,,openstreetmap (merged from 6 sources),1.0,1749539725.16303,7928619733,2025-06-10T09:37:11.237270,active
+eds_002992,41.1864635,27.8152901,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539725.163837,8026253367,2025-06-10T09:37:11.237274,active
+eds_002993,36.5801185,30.5383777,OHITS,Antalya,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.16463,8044448776,2025-06-10T09:37:11.237275,active
+eds_002996,38.423419,27.1376267,OHITS,Izmir,Unknown,speed_camera,,,openstreetmap (merged from 8 sources),1.0,1749539725.165451,8137640451,2025-06-10T09:37:11.237285,active
+eds_003000,37.1459041,42.6612827,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.168659,8173107055,2025-06-10T09:37:11.237292,active
+eds_003002,39.8705354,32.8109094,OHITS,Ankara,Unknown,speed_camera,82,,openstreetmap (merged from 6 sources),1.0,1749539725.169462,8286677097,2025-06-10T09:37:11.237296,active
+eds_003003,39.9067907,32.7392928,OHITS,Ankara,Unknown,speed_camera,82,,openstreetmap (merged from 3 sources),1.0,1749539725.170261,8286677098,2025-06-10T09:37:11.237298,active
+eds_003004,39.9634817,32.6495259,OHITS,Ankara,Unknown,speed_camera,82,,openstreetmap (merged from 6 sources),1.0,1749539725.171055,8286677099,2025-06-10T09:37:11.237300,active
+eds_003006,38.3029857,33.8051595,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.172665,8367889333,2025-06-10T09:37:11.237303,active
+eds_003008,36.174859,44.0044,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.174287,8513486121,2025-06-10T09:37:11.237307,active
+eds_003009,36.3686166,44.2035493,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539725.175115,8540748944,2025-06-10T09:37:11.237309,active
+eds_003010,36.3551425,44.1823831,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 6 sources),1.0,1749539725.175931,8540748958,2025-06-10T09:37:11.237311,active
+eds_003012,39.8637925,32.8617998,OHITS,Ankara,Unknown,speed_camera,55,,openstreetmap (merged from 3 sources),1.0,1749539725.177557,8550440893,2025-06-10T09:37:11.237314,active
+eds_003013,39.8722536,32.8758272,OHITS,Ankara,Unknown,speed_camera,55,,openstreetmap (merged from 3 sources),1.0,1749539725.178376,8550440894,2025-06-10T09:37:11.237316,active
+eds_003014,37.9146517,29.8621314,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.179189,8560529275,2025-06-10T09:37:11.237318,active
+eds_003015,37.9133882,29.8616076,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.180007,8560529276,2025-06-10T09:37:11.237320,active
+eds_003016,37.9639696,27.3733079,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.1808078,8560670957,2025-06-10T09:37:11.237321,active
+eds_003017,37.9491355,27.3569164,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.181636,8560670971,2025-06-10T09:37:11.237324,active
+eds_003018,37.9178648,27.363154,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.182467,8560670977,2025-06-10T09:37:11.237326,active
+eds_003019,41.0439649,28.9171272,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.183257,8764130666,2025-06-10T09:37:11.237327,active
+eds_003020,40.9962618,28.866583,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539725.184046,8764130671,2025-06-10T09:37:11.237329,active
+eds_003024,40.9778243,28.7363413,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.187226,8764130678,2025-06-10T09:37:11.237337,active
+eds_003026,40.9892871,28.7162798,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.188831,8764130680,2025-06-10T09:37:11.237340,active
+eds_003027,40.9901834,28.7143348,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.189645,8764130681,2025-06-10T09:37:11.237342,active
+eds_003028,40.9943315,28.7076693,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.190445,8764130682,2025-06-10T09:37:11.237344,active
+eds_003029,40.9988565,28.7000855,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.191238,8764130683,2025-06-10T09:37:11.237346,active
+eds_003030,41.0022194,28.6877146,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.192031,8764130685,2025-06-10T09:37:11.237348,active
+eds_003031,41.003995,28.6858785,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.192833,8764130686,2025-06-10T09:37:11.237349,active
+eds_003032,41.0058858,28.6693055,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 7 sources),1.0,1749539725.1936169,8764130687,2025-06-10T09:37:11.237351,active
+eds_003035,41.0082091,28.6608139,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.196018,8764371783,2025-06-10T09:37:11.237358,active
+eds_003036,41.0091345,28.657902,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.196809,8764371784,2025-06-10T09:37:11.237360,active
+eds_003037,41.0182371,28.6343626,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.197609,8764371789,2025-06-10T09:37:11.237361,active
+eds_003038,41.0186363,28.6327759,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.1984189,8764371793,2025-06-10T09:37:11.237363,active
+eds_003039,41.0228364,28.6250908,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.199224,8764371794,2025-06-10T09:37:11.237365,active
+eds_003040,41.0231987,28.6239511,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.200032,8764371795,2025-06-10T09:37:11.237367,active
+eds_003042,41.0106744,28.5001569,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.201647,8764371800,2025-06-10T09:37:11.237371,active
+eds_003044,41.0518924,28.3848215,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539725.203253,8764371802,2025-06-10T09:37:11.237375,active
+eds_003045,41.0540128,28.3772055,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539725.204063,8764371803,2025-06-10T09:37:11.237376,active
+eds_003046,41.0583406,28.3657836,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539725.204866,8764433276,2025-06-10T09:37:11.237378,active
+eds_003047,41.0666886,28.3962506,OHITS,Istanbul,Unknown,speed_camera,130,,openstreetmap (merged from 6 sources),1.0,1749539725.205662,8764433279,2025-06-10T09:37:11.237380,active
+eds_003049,41.1066113,28.5471368,OHITS,Istanbul,Unknown,speed_camera,110,,openstreetmap (merged from 6 sources),1.0,1749539725.207257,8764433287,2025-06-10T09:37:11.237384,active
+eds_003053,41.0208342,28.9596102,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.2104452,8773983163,2025-06-10T09:37:11.237398,active
+eds_003055,40.8797625,26.8808076,OHITS,Diger,Unknown,speed_camera,82,,openstreetmap (merged from 6 sources),1.0,1749539725.211234,8783787172,2025-06-10T09:37:11.237402,active
+eds_003059,41.0728327,28.2515939,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.214485,8786417191,2025-06-10T09:37:11.237409,active
+eds_003061,41.0787771,28.1885555,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.216084,8788633775,2025-06-10T09:37:11.237413,active
+eds_003063,41.0758712,28.1391477,OHITS,Diger,Unknown,speed_camera,30,,openstreetmap (merged from 9 sources),1.0,1749539725.2177,8788654639,2025-06-10T09:37:11.237416,active
+eds_003065,41.0749128,28.1341185,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.219378,8788654650,2025-06-10T09:37:11.237420,active
+eds_003069,40.9907587,27.9725111,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 6 sources),1.0,1749539725.2224572,8789282527,2025-06-10T09:37:11.237427,active
+eds_003071,40.144328,44.5337384,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.224034,8816510706,2025-06-10T09:37:11.237431,active
+eds_003072,40.1315607,44.5339277,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.224839,8818078250,2025-06-10T09:37:11.237433,active
+eds_003073,40.139197,44.5364154,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.2256372,8818078251,2025-06-10T09:37:11.237434,active
+eds_003074,40.146243,44.5159164,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.226442,8818078314,2025-06-10T09:37:11.237436,active
+eds_003075,37.1528854,42.6625622,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.227227,8829514721,2025-06-10T09:37:11.237438,active
+eds_003076,39.8115598,26.3325325,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 6 sources),1.0,1749539725.228031,8847678671,2025-06-10T09:37:11.237440,active
+eds_003078,39.7954749,26.3379039,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.229601,8847678674,2025-06-10T09:37:11.237443,active
+eds_003079,41.0659762,28.786984,OHITS,Istanbul,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.230397,8848560678,2025-06-10T09:37:11.237445,active
+eds_003080,40.9777646,28.851501,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.2311969,8873093970,2025-06-10T09:37:11.237447,active
+eds_003081,37.6486467,30.5381723,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.2319849,8878502597,2025-06-10T09:37:11.237449,active
+eds_003082,37.6477104,30.5358937,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.232758,8878549155,2025-06-10T09:37:11.237451,active
+eds_003083,37.5197534,30.5216888,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.2335129,8878553530,2025-06-10T09:37:11.237452,active
+eds_003084,37.4769792,30.5651666,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.234303,8878553531,2025-06-10T09:37:11.237454,active
+eds_003085,40.9631855,28.8244425,OHITS,Istanbul,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539725.235085,8880783943,2025-06-10T09:37:11.237456,active
+eds_003086,40.9631625,28.823219,OHITS,Istanbul,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539725.235857,8880783944,2025-06-10T09:37:11.237458,active
+eds_003087,36.3799192,44.2234688,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539725.2366579,8901934481,2025-06-10T09:37:11.237459,active
+eds_003088,36.3719838,44.2093898,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 4 sources),1.0,1749539725.237468,8901934482,2025-06-10T09:37:11.237461,active
+eds_003089,41.0286897,28.9327546,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539725.238241,8910661207,2025-06-10T09:37:11.237463,active
+eds_003091,40.1640708,44.4082024,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539725.239821,8914183954,2025-06-10T09:37:11.237467,active
+eds_003093,40.1622091,44.3956878,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.2414389,8914197452,2025-06-10T09:37:11.237470,active
+eds_003094,40.1620942,44.3934273,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.242236,8914197453,2025-06-10T09:37:11.237472,active
+eds_003095,40.1742076,43.9525981,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.243037,8914242440,2025-06-10T09:37:11.237474,active
+eds_003096,40.165631,44.2529034,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539725.243836,8914270713,2025-06-10T09:37:11.237476,active
+eds_003097,40.1651411,44.250745,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539725.244642,8914270714,2025-06-10T09:37:11.237477,active
+eds_003098,40.1601643,44.2217362,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539725.245452,8914339607,2025-06-10T09:37:11.237479,active
+eds_003099,40.1596222,44.2194227,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539725.246249,8914339608,2025-06-10T09:37:11.237481,active
+eds_003100,40.1431144,44.1099402,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539725.2470589,8914436528,2025-06-10T09:37:11.237483,active
+eds_003102,40.5808108,44.6769413,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.248676,8914600252,2025-06-10T09:37:11.237487,active
+eds_003103,40.6162458,27.1210414,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.249493,8929526457,2025-06-10T09:37:11.237488,active
+eds_003105,40.8521366,25.8283382,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.251088,9044795574,2025-06-10T09:37:11.237492,active
+eds_003106,36.3494606,44.1792154,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 3 sources),1.0,1749539725.251897,9065711742,2025-06-10T09:37:11.237494,active
+eds_003108,40.1427262,44.1159573,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.2535172,9084238470,2025-06-10T09:37:11.237497,active
+eds_003110,40.1648802,44.3610769,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.255115,9084334122,2025-06-10T09:37:11.237501,active
+eds_003112,41.0097702,28.798272,OHITS,Istanbul,Unknown,speed_camera,20,,openstreetmap (merged from 3 sources),1.0,1749539725.256688,9152385528,2025-06-10T09:37:11.237505,active
+eds_003113,40.8869993,26.1571804,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.257505,9163117843,2025-06-10T09:37:11.237507,active
+eds_003114,36.1411952,44.0375614,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 6 sources),1.0,1749539725.2583082,9186339193,2025-06-10T09:37:11.237508,active
+eds_003116,36.1401384,44.0206889,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539725.2599192,9186339195,2025-06-10T09:37:11.237512,active
+eds_003118,36.1614349,43.9941116,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539725.2615218,9186339197,2025-06-10T09:37:11.237516,active
+eds_003120,36.1743007,44.0060625,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.263154,9196904969,2025-06-10T09:37:11.237519,active
+eds_003121,41.6383877,43.0014204,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.263953,9279192372,2025-06-10T09:37:11.237521,active
+eds_003122,36.1764932,44.0192768,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.264755,9350096924,2025-06-10T09:37:11.237523,active
+eds_003123,41.0723748,28.8545836,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.2655518,9351461217,2025-06-10T09:37:11.237525,active
+eds_003124,37.0428102,42.6468443,OHITS,Diger,Unknown,speed_camera,20,,openstreetmap (merged from 16 sources),1.0,1749539725.26636,9385386829,2025-06-10T09:37:11.237527,active
+eds_003125,40.7756182,29.9809155,OHITS,Sakarya,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.267138,9396868397,2025-06-10T09:37:11.237528,active
+eds_003126,36.382052,44.2280554,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 3 sources),1.0,1749539725.267953,9437741953,2025-06-10T09:37:11.237530,active
+eds_003127,36.385249,44.2324536,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 3 sources),1.0,1749539725.2687628,9437741954,2025-06-10T09:37:11.237532,active
+eds_003128,36.3671066,44.1986957,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 3 sources),1.0,1749539725.269579,9437741955,2025-06-10T09:37:11.237534,active
+eds_003129,36.3503397,44.1799296,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 3 sources),1.0,1749539725.2703822,9437741956,2025-06-10T09:37:11.237536,active
+eds_003139,40.7856216,29.9462004,OHITS,Sakarya,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539725.271945,9554133842,2025-06-10T09:37:11.237559,active
+eds_003141,40.7103252,29.8386364,OHITS,Sakarya,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539725.273498,9634383755,2025-06-10T09:37:11.237563,active
+eds_003143,40.7592123,29.9657515,OHITS,Sakarya,Unknown,speed_camera,70,,openstreetmap (merged from 6 sources),1.0,1749539725.275051,9661676782,2025-06-10T09:37:11.237566,active
+eds_003145,40.7402217,29.9949588,OHITS,Sakarya,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.276586,9677806254,2025-06-10T09:37:11.237570,active
+eds_003146,40.7618326,29.8709401,OHITS,Sakarya,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.277358,9688853449,2025-06-10T09:37:11.237572,active
+eds_003148,38.7328207,29.7434892,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.278917,9690047733,2025-06-10T09:37:11.237575,active
+eds_003149,38.739782,29.7529292,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.2796988,9690047734,2025-06-10T09:37:11.237577,active
+eds_003151,37.7555629,29.1061596,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.281261,9747786893,2025-06-10T09:37:11.237580,active
+eds_003153,36.8687818,28.2719054,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.282838,9747839044,2025-06-10T09:37:11.237584,active
+eds_003155,37.4157414,28.8348684,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.284437,9747858178,2025-06-10T09:37:11.237587,active
+eds_003157,37.0198311,30.5082407,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.286007,9747862901,2025-06-10T09:37:11.237590,active
+eds_003159,37.5587803,29.0581316,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.287581,9747915857,2025-06-10T09:37:11.237594,active
+eds_003162,37.7937201,29.1025392,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.289958,9747920125,2025-06-10T09:37:11.237599,active
+eds_003164,37.5477378,29.2951522,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.2915251,9747923232,2025-06-10T09:37:11.237602,active
+eds_003166,37.8916135,29.1291934,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.293078,9747925483,2025-06-10T09:37:11.237606,active
+eds_003168,37.5747069,29.0848559,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.294636,9747929195,2025-06-10T09:37:11.237609,active
+eds_003170,36.9944293,28.2981455,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.296227,9747939727,2025-06-10T09:37:11.237612,active
+eds_003172,37.4593113,28.8714153,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.297812,9747940231,2025-06-10T09:37:11.237616,active
+eds_003174,36.1557722,44.0037984,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.299407,9767066855,2025-06-10T09:37:11.237619,active
+eds_003175,40.7915582,29.9812589,OHITS,Sakarya,Unknown,speed_camera,80,,openstreetmap (merged from 12 sources),1.0,1749539725.300172,9791055171,2025-06-10T09:37:11.237621,active
+eds_003177,36.8036178,28.1045854,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.301758,9796234891,2025-06-10T09:37:11.237625,active
+eds_003178,36.7673485,27.7984751,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.302565,9796234892,2025-06-10T09:37:11.237627,active
+eds_003179,36.7542079,27.6661754,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.303363,9796234893,2025-06-10T09:37:11.237628,active
+eds_003180,36.7499049,27.6570837,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.3041651,9796234894,2025-06-10T09:37:11.237630,active
+eds_003181,38.7435063,43.3498896,OHITS,Van,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.30497,9798211614,2025-06-10T09:37:11.237632,active
+eds_003183,40.027322,32.882361,OHITS,Ankara,Unknown,speed_camera,130,,openstreetmap (merged from 3 sources),1.0,1749539725.306556,9811720877,2025-06-10T09:37:11.237635,active
+eds_003184,40.0287542,32.8580138,OHITS,Ankara,Unknown,speed_camera,130,,openstreetmap (merged from 3 sources),1.0,1749539725.307349,9811720878,2025-06-10T09:37:11.237637,active
+eds_003185,40.0312068,32.8671399,OHITS,Ankara,Unknown,speed_camera,120,,openstreetmap (merged from 3 sources),1.0,1749539725.308156,9811720879,2025-06-10T09:37:11.237639,active
+eds_003186,41.2491212,28.7389089,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539725.308952,9815680621,2025-06-10T09:37:11.237641,active
+eds_003193,36.1189697,44.0234463,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.3106098,9868003771,2025-06-10T09:37:11.237655,active
+eds_003195,40.7102734,30.1376233,OHITS,Sakarya,Unknown,speed_camera,130,,openstreetmap (merged from 6 sources),1.0,1749539725.3121972,9891141502,2025-06-10T09:37:11.237659,active
+eds_003197,40.9987899,27.5141984,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 6 sources),1.0,1749539725.313759,9892526677,2025-06-10T09:37:11.237662,active
+eds_003200,36.8469168,42.996002,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.316127,9905451078,2025-06-10T09:37:11.237674,active
+eds_003202,36.846808,43.0266602,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.317727,9905501620,2025-06-10T09:37:11.237678,active
+eds_003205,40.7609001,29.9201321,OHITS,Sakarya,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.3201149,9915844305,2025-06-10T09:37:11.237683,active
+eds_003208,41.0571225,28.9603839,OHITS,Istanbul,Unknown,speed_camera,30,,openstreetmap (merged from 3 sources),1.0,1749539725.322453,9920028223,2025-06-10T09:37:11.237692,active
+eds_003209,41.094397,28.9628173,OHITS,Istanbul,Unknown,speed_camera,90,,openstreetmap (merged from 6 sources),1.0,1749539725.323223,9920028224,2025-06-10T09:37:11.237694,active
+eds_003210,41.0560828,28.9622265,OHITS,Istanbul,Unknown,speed_camera,30,,openstreetmap (merged from 4 sources),1.0,1749539725.3240142,9921259670,2025-06-10T09:37:11.237696,active
+eds_003213,41.0512983,28.9494862,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.326373,9933287592,2025-06-10T09:37:11.237702,active
+eds_003215,37.0597886,28.3305035,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.3279512,9937799163,2025-06-10T09:37:11.237705,active
+eds_003216,37.3071419,28.0455545,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.328752,9937855720,2025-06-10T09:37:11.237707,active
+eds_003218,36.0408838,44.0367734,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.330369,9945284167,2025-06-10T09:37:11.237710,active
+eds_003219,40.9954591,27.5769148,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.3311539,9955860974,2025-06-10T09:37:11.237712,active
+eds_003221,36.8582969,28.7603093,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.331936,9976115764,2025-06-10T09:37:11.237716,active
+eds_003223,37.09962,28.3840673,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.333527,9976119195,2025-06-10T09:37:11.237719,active
+eds_003225,37.9524572,29.1085402,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.3351,9976129621,2025-06-10T09:37:11.237723,active
+eds_003226,37.8314095,29.1247788,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.335894,9976132812,2025-06-10T09:37:11.237725,active
+eds_003228,37.4620182,28.8791956,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.337464,9976144745,2025-06-10T09:37:11.237728,active
+eds_003230,36.8172546,28.8007672,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.339038,9976155272,2025-06-10T09:37:11.237731,active
+eds_003232,36.8080478,28.8108164,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.3406029,9976166308,2025-06-10T09:37:11.237735,active
+eds_003235,40.1000161,43.9519408,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.3429918,10008910036,2025-06-10T09:37:11.237740,active
+eds_003236,40.1317786,44.0095201,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.34379,10008948394,2025-06-10T09:37:11.237742,active
+eds_003237,41.250567,28.7632707,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539725.344573,10012781718,2025-06-10T09:37:11.237743,active
+eds_003239,41.0754267,28.8385706,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.346116,10053021758,2025-06-10T09:37:11.237747,active
+eds_003241,40.9429152,40.0518592,OHITS,Trabzon,Unknown,speed_camera,,,openstreetmap (merged from 4 sources),1.0,1749539725.347706,10056586874,2025-06-10T09:37:11.237752,active
+eds_003243,41.4943875,41.5316002,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.3493,10057276860,2025-06-10T09:37:11.237755,active
+eds_003245,41.0096766,28.6258658,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.35088,10059464842,2025-06-10T09:37:11.237758,active
+eds_003246,41.0144681,28.9548363,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.351666,10080802306,2025-06-10T09:37:11.237760,active
+eds_003247,41.2122046,36.6812394,OHITS,Samsun,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.352468,10090592901,2025-06-10T09:37:11.237762,active
+eds_003249,40.6482531,35.7892836,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.354056,10092386368,2025-06-10T09:37:11.237765,active
+eds_003250,40.6130385,35.8130735,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.354845,10102334525,2025-06-10T09:37:11.237767,active
+eds_003252,40.9276189,35.8976938,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.356423,10114109826,2025-06-10T09:37:11.237770,active
+eds_003253,39.943357,33.2941445,OHITS,Ankara,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.357203,10119157398,2025-06-10T09:37:11.237772,active
+eds_003255,39.8832628,33.4358402,OHITS,Ankara,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.358787,10119704797,2025-06-10T09:37:11.237775,active
+eds_003257,39.8411266,33.4783206,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.360398,10119705323,2025-06-10T09:37:11.237780,active
+eds_003259,41.0898686,28.8857458,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.3619862,10125159241,2025-06-10T09:37:11.237783,active
+eds_003260,41.088643,28.8750859,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.362756,10132472518,2025-06-10T09:37:11.237786,active
+eds_003261,36.9733458,28.6865083,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.363534,10140079160,2025-06-10T09:37:11.237788,active
+eds_003263,41.6462976,41.6492537,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.365113,10179038077,2025-06-10T09:37:11.237792,active
+eds_003264,36.6383169,29.3898282,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.365898,10179199284,2025-06-10T09:37:11.237794,active
+eds_003267,41.0884994,28.9076293,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539725.368225,10195641958,2025-06-10T09:37:11.237799,active
+eds_003269,41.0018913,28.9488835,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.369789,10200383244,2025-06-10T09:37:11.237803,active
+eds_003270,41.0855607,28.9041055,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.3705668,10210720352,2025-06-10T09:37:11.237805,active
+eds_003271,41.0879253,28.8712491,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.371347,10210720353,2025-06-10T09:37:11.237807,active
+eds_003272,41.0635696,28.9420272,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.372139,10215152499,2025-06-10T09:37:11.237808,active
+eds_003273,40.9912082,29.0222876,OHITS,Istanbul,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.3729138,10228014585,2025-06-10T09:37:11.237811,active
+eds_003274,41.0581462,28.892625,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.373698,10239665912,2025-06-10T09:37:11.237813,active
+eds_003275,41.0238105,29.0527398,OHITS,Istanbul,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.374488,10242401711,2025-06-10T09:37:11.237815,active
+eds_003276,41.0166343,29.0298674,OHITS,Istanbul,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.375264,10242407723,2025-06-10T09:37:11.237816,active
+eds_003277,41.0034714,29.0220314,OHITS,Istanbul,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.376044,10242419116,2025-06-10T09:37:11.237818,active
+eds_003278,41.0194891,28.9585856,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.3768198,10254030778,2025-06-10T09:37:11.237820,active
+eds_003279,41.0220529,29.0620161,OHITS,Istanbul,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.377611,10270999401,2025-06-10T09:37:11.237822,active
+eds_003280,41.0244659,29.0981145,OHITS,Istanbul,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.378392,10271026339,2025-06-10T09:37:11.237823,active
+eds_003281,41.0222287,29.060616,OHITS,Istanbul,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.379151,10271037407,2025-06-10T09:37:11.237825,active
+eds_003282,41.1106027,29.0492422,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.3799412,10271367185,2025-06-10T09:37:11.237827,active
+eds_003283,41.1107339,29.0480044,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.3807192,10271367192,2025-06-10T09:37:11.237829,active
+eds_003284,41.0674359,28.8372478,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.3815281,10286639784,2025-06-10T09:37:11.237831,active
+eds_003286,38.3652293,27.1370344,OHITS,Izmir,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.383141,10315617899,2025-06-10T09:37:11.237841,active
+eds_003288,38.4674727,27.1172434,OHITS,Izmir,Unknown,speed_camera,,,openstreetmap (merged from 12 sources),1.0,1749539725.384741,10315628539,2025-06-10T09:37:11.237844,active
+eds_003290,38.4183725,27.1546231,OHITS,Izmir,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.386333,10315632599,2025-06-10T09:37:11.237848,active
+eds_003292,38.3827113,27.1348595,OHITS,Izmir,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.387944,10315637017,2025-06-10T09:37:11.237851,active
+eds_003294,38.3953455,27.1368301,OHITS,Izmir,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.3895621,10315640139,2025-06-10T09:37:11.237854,active
+eds_003296,38.4475205,27.1714918,OHITS,Izmir,Unknown,speed_camera,82,,openstreetmap (merged from 6 sources),1.0,1749539725.391155,10315650708,2025-06-10T09:37:11.237858,active
+eds_003297,38.424312,27.1462165,OHITS,Izmir,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539725.3919501,10315652622,2025-06-10T09:37:11.237859,active
+eds_003299,38.429208,27.1556968,OHITS,Izmir,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.393549,10315653661,2025-06-10T09:37:11.237864,active
+eds_003301,37.8515185,27.7414871,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.3951302,10315653680,2025-06-10T09:37:11.237868,active
+eds_003305,38.435944,27.3999518,OHITS,Izmir,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.3983512,10315657891,2025-06-10T09:37:11.237875,active
+eds_003306,38.3394948,27.1333503,OHITS,Izmir,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.399143,10315659606,2025-06-10T09:37:11.237876,active
+eds_003308,38.4632412,27.163296,OHITS,Izmir,Unknown,speed_camera,,,openstreetmap (merged from 9 sources),1.0,1749539725.400741,10315673205,2025-06-10T09:37:11.237884,active
+eds_003312,38.400793,27.0767799,OHITS,Izmir,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.4039738,10315686651,2025-06-10T09:37:11.237890,active
+eds_003314,37.1819832,28.4443835,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.405577,10315697491,2025-06-10T09:37:11.237894,active
+eds_003316,38.4469509,27.2903169,OHITS,Izmir,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.407179,10315708939,2025-06-10T09:37:11.237897,active
+eds_003318,38.190427,27.3587867,OHITS,Izmir,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.4087849,10315710167,2025-06-10T09:37:11.237901,active
+eds_003320,37.9329086,27.3620157,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.410388,10315711081,2025-06-10T09:37:11.237904,active
+eds_003322,37.9219179,27.3626251,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.411989,10315716933,2025-06-10T09:37:11.237907,active
+eds_003324,38.4234425,27.4307648,OHITS,Izmir,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.413596,10315722156,2025-06-10T09:37:11.237911,active
+eds_003326,37.7951444,27.8393528,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.415183,10315784602,2025-06-10T09:37:11.237914,active
+eds_003328,37.1575424,28.363055,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.416787,10315793807,2025-06-10T09:37:11.237918,active
+eds_003330,37.8564611,27.7086182,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.418365,10315807192,2025-06-10T09:37:11.237921,active
+eds_003332,37.048934,27.4455602,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.419959,10315807636,2025-06-10T09:37:11.237924,active
+eds_003334,37.2332567,28.30448,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.421569,10315811703,2025-06-10T09:37:11.237928,active
+eds_003336,37.9697573,27.3745618,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.42317,10315814455,2025-06-10T09:37:11.237931,active
+eds_003338,37.8733027,27.5917795,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.424768,10315816828,2025-06-10T09:37:11.237935,active
+eds_003340,37.355015,28.1579211,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.426356,10315827143,2025-06-10T09:37:11.237939,active
+eds_003342,37.8483312,27.7955285,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.427953,10315830163,2025-06-10T09:37:11.237942,active
+eds_003344,38.1340609,27.3751672,OHITS,Izmir,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.429541,10315834239,2025-06-10T09:37:11.237946,active
+eds_003346,40.9781466,27.521739,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539725.431126,10570116645,2025-06-10T09:37:11.237949,active
+eds_003348,40.9894354,29.1120272,OHITS,Istanbul,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.432705,10573021153,2025-06-10T09:37:11.237953,active
+eds_003354,37.183611,28.3716726,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.4335098,10597162985,2025-06-10T09:37:11.237964,active
+eds_003356,36.6877508,29.1009005,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.435103,10597178351,2025-06-10T09:37:11.237967,active
+eds_003358,37.0206355,30.5144071,OHITS,Antalya,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.436678,10597178574,2025-06-10T09:37:11.237971,active
+eds_003360,36.6324437,29.2255857,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.438251,10597178576,2025-06-10T09:37:11.237974,active
+eds_003362,41.5721039,41.5719059,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539725.439863,10648644059,2025-06-10T09:37:11.237978,active
+eds_003364,41.6369058,41.6134831,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.441483,10657955096,2025-06-10T09:37:11.237986,active
+eds_003365,36.9659,28.7083174,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.442268,10697229161,2025-06-10T09:37:11.237988,active
+eds_003366,36.6154519,29.1096902,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.443052,10697332833,2025-06-10T09:37:11.237990,active
+eds_003367,36.5919411,29.1523318,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.443833,10697344991,2025-06-10T09:37:11.237992,active
+eds_003368,36.6071568,29.1508483,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.444617,10697344992,2025-06-10T09:37:11.237993,active
+eds_003369,38.4463526,27.1762191,OHITS,Izmir,Unknown,speed_camera,82,,openstreetmap (merged from 12 sources),1.0,1749539725.4454331,10729889717,2025-06-10T09:37:11.237996,active
+eds_003372,41.1820263,27.5064276,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.447806,10731830823,2025-06-10T09:37:11.238002,active
+eds_003374,40.7737108,29.7648816,OHITS,Diger,Unknown,speed_camera,130,,openstreetmap (merged from 3 sources),1.0,1749539725.448603,10740698495,2025-06-10T09:37:11.238006,active
+eds_003375,40.7750124,29.7586753,OHITS,Diger,Unknown,speed_camera,130,,openstreetmap (merged from 3 sources),1.0,1749539725.449384,10740698496,2025-06-10T09:37:11.238008,active
+eds_003376,40.8059642,29.4771167,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539725.450167,10743135010,2025-06-10T09:37:11.238010,active
+eds_003378,40.7829359,29.5139078,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539725.451714,10743857375,2025-06-10T09:37:11.238013,active
+eds_003380,40.7769445,29.5181144,OHITS,Diger,Unknown,speed_camera,140,,openstreetmap (merged from 3 sources),1.0,1749539725.453254,10743920050,2025-06-10T09:37:11.238017,active
+eds_003381,39.9182608,29.9985829,OHITS,Eskisehir,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.454038,10806740389,2025-06-10T09:37:11.238019,active
+eds_003382,40.9817676,27.4866978,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.454828,10827045528,2025-06-10T09:37:11.238020,active
+eds_003383,41.3297854,27.9850797,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.455632,10866610057,2025-06-10T09:37:11.238022,active
+eds_003385,41.0306079,28.9240472,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.457197,10876630161,2025-06-10T09:37:11.238026,active
+eds_003386,41.1152096,29.0251069,OHITS,Istanbul,Unknown,speed_camera,30,,openstreetmap (merged from 6 sources),1.0,1749539725.457984,10888045956,2025-06-10T09:37:11.238028,active
+eds_003391,41.6876409,26.5889355,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.45956,10915191121,2025-06-10T09:37:11.238037,active
+eds_003406,36.8489705,42.931691,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.461958,10962495196,2025-06-10T09:37:11.238066,active
+eds_003407,36.897529,42.803643,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 6 sources),1.0,1749539725.4627461,10962495197,2025-06-10T09:37:11.238068,active
+eds_003409,41.7443808,27.2396097,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539725.464349,10979327248,2025-06-10T09:37:11.238072,active
+eds_003411,41.8341875,41.7773604,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.465943,10982425233,2025-06-10T09:37:11.238075,active
+eds_003412,41.0894795,29.0931878,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.4667149,11016263825,2025-06-10T09:37:11.238077,active
+eds_003414,41.0249735,37.5224196,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.468323,11088864943,2025-06-10T09:37:11.238081,active
+eds_003416,40.1887988,44.5155304,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.469131,11127595751,2025-06-10T09:37:11.238084,active
+eds_003429,41.0696204,29.0148721,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.470701,11151482943,2025-06-10T09:37:11.238109,active
+eds_003433,41.0637936,28.9542912,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.472279,11160412382,2025-06-10T09:37:11.238116,active
+eds_003434,40.7688326,29.8363147,OHITS,Sakarya,Unknown,speed_camera,120,,openstreetmap (merged from 3 sources),1.0,1749539725.473056,11161566511,2025-06-10T09:37:11.238118,active
+eds_003435,40.7618514,29.9357136,OHITS,Sakarya,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.4738402,11161566512,2025-06-10T09:37:11.238120,active
+eds_003437,41.6483332,41.6379134,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.475414,11181276812,2025-06-10T09:37:11.238124,active
+eds_003438,41.065197,28.9776081,OHITS,Istanbul,Unknown,speed_camera,70,,openstreetmap (merged from 9 sources),1.0,1749539725.476186,11183802063,2025-06-10T09:37:11.238125,active
+eds_003441,41.0127203,28.9213179,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539725.478546,11215565472,2025-06-10T09:37:11.238131,active
+eds_003443,41.1594685,29.0425702,OHITS,Istanbul,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539725.480174,11228055094,2025-06-10T09:37:11.238138,active
+eds_003444,40.8954388,29.5118421,OHITS,Istanbul,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.480921,11256475985,2025-06-10T09:37:11.238140,active
+eds_003445,36.1429211,44.0202216,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 4 sources),1.0,1749539725.481687,11278036121,2025-06-10T09:37:11.238142,active
+eds_003447,37.188843,42.9580875,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.483237,11278063982,2025-06-10T09:37:11.238146,active
+eds_003448,37.1817186,42.8936942,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.4839969,11278067793,2025-06-10T09:37:11.238148,active
+eds_003449,41.0670231,29.0068721,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.4847429,11280510108,2025-06-10T09:37:11.238150,active
+eds_003450,41.060423,28.8430417,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 4 sources),1.0,1749539725.485483,11302356149,2025-06-10T09:37:11.238152,active
+eds_003451,41.0593315,28.8104901,OHITS,Istanbul,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539725.486242,11307618018,2025-06-10T09:37:11.238154,active
+eds_003454,37.1673645,42.6852621,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539725.488559,11348413285,2025-06-10T09:37:11.238159,active
+eds_003455,37.1355692,42.6842446,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 4 sources),1.0,1749539725.4893298,11348446082,2025-06-10T09:37:11.238161,active
+eds_003457,37.1807859,42.8831857,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.490873,11348487233,2025-06-10T09:37:11.238165,active
+eds_003459,41.0459063,28.46949,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.491643,11359983735,2025-06-10T09:37:11.238168,active
+eds_003460,37.861843,32.5470768,OHITS,Konya,Unknown,speed_camera,70,,openstreetmap (merged from 6 sources),1.0,1749539725.492418,11365297168,2025-06-10T09:37:11.238170,active
+eds_003461,41.0056386,28.6803412,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.4931772,11367170877,2025-06-10T09:37:11.238172,active
+eds_003462,37.7903418,29.0852638,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.493964,11377655782,2025-06-10T09:37:11.238174,active
+eds_003464,37.8064554,29.0715961,OHITS,Denizli,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.495494,11377655784,2025-06-10T09:37:11.238177,active
+eds_003466,35.8278522,44.1001924,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.4970639,11381116626,2025-06-10T09:37:11.238181,active
+eds_003467,35.9512757,44.067138,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.497853,11381137668,2025-06-10T09:37:11.238182,active
+eds_003468,35.8704118,44.0834781,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.498637,11381154815,2025-06-10T09:37:11.238184,active
+eds_003469,36.0184289,44.037646,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.4994361,11381158905,2025-06-10T09:37:11.238186,active
+eds_003470,36.0555605,44.036226,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.5002398,11381160096,2025-06-10T09:37:11.238187,active
+eds_003471,35.9861102,44.048074,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.501035,11381170337,2025-06-10T09:37:11.238189,active
+eds_003472,36.0896924,44.0240298,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.501833,11381175810,2025-06-10T09:37:11.238191,active
+eds_003473,37.7504619,29.0811809,OHITS,Denizli,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.5025868,11391840525,2025-06-10T09:37:11.238193,active
+eds_003475,37.7521189,29.0593599,OHITS,Denizli,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.5041459,11391840527,2025-06-10T09:37:11.238196,active
+eds_003477,37.8212098,29.0493327,OHITS,Denizli,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.505697,11391862869,2025-06-10T09:37:11.238200,active
+eds_003480,36.8572789,42.9669955,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539725.508045,11466652819,2025-06-10T09:37:11.238206,active
+eds_003482,36.8613448,42.9769644,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539725.50962,11466652821,2025-06-10T09:37:11.238210,active
+eds_003484,36.8494885,43.0460856,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.511211,11466652823,2025-06-10T09:37:11.238214,active
+eds_003487,36.8365716,43.0824,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.51359,11466652826,2025-06-10T09:37:11.238219,active
+eds_003489,36.8689363,42.9426571,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539725.5151758,11466652828,2025-06-10T09:37:11.238223,active
+eds_003493,41.0007304,28.8070539,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.516747,11575207988,2025-06-10T09:37:11.238230,active
+eds_003496,40.7635979,29.8474496,OHITS,Sakarya,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.5190651,11580453302,2025-06-10T09:37:11.238236,active
+eds_003497,41.0751522,28.5131864,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 6 sources),1.0,1749539725.519846,11592281050,2025-06-10T09:37:11.238238,active
+eds_003502,41.0214119,37.5403879,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.522996,11703524034,2025-06-10T09:37:11.238248,active
+eds_003509,41.2807872,28.0024356,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.5252979,11860626615,2025-06-10T09:37:11.238261,active
+eds_003512,40.9754037,28.8685788,OHITS,Istanbul,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.526856,11892263164,2025-06-10T09:37:11.238267,active
+eds_003513,42.106184,43.0521254,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.5276191,11916893969,2025-06-10T09:37:11.238269,active
+eds_003514,36.8487707,42.9387699,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.528404,11940083440,2025-06-10T09:37:11.238271,active
+eds_003516,37.1575111,42.7116911,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 6 sources),1.0,1749539725.5292091,11949577158,2025-06-10T09:37:11.238275,active
+eds_003519,41.2715111,28.013036,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.53161,11949886213,2025-06-10T09:37:11.238280,active
+eds_003525,41.6148426,32.3234244,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.533192,12038421254,2025-06-10T09:37:11.238296,active
+eds_003528,37.041341,42.6469276,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.534778,12061898377,2025-06-10T09:37:11.238301,active
+eds_003529,37.1328205,42.6774561,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.535554,12061898378,2025-06-10T09:37:11.238303,active
+eds_003537,40.2730459,44.5991926,OHITS,Diger,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539725.537924,12093265523,2025-06-10T09:37:11.238318,active
+eds_003538,40.4734308,44.7477722,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539725.538707,12093274640,2025-06-10T09:37:11.238320,active
+eds_003539,38.0237627,32.5251636,OHITS,Konya,Unknown,speed_camera,82,,openstreetmap (merged from 6 sources),1.0,1749539725.539485,12123644814,2025-06-10T09:37:11.238322,active
+eds_003541,37.9996506,32.5769245,OHITS,Konya,Unknown,speed_camera,82,,openstreetmap (merged from 6 sources),1.0,1749539725.541079,12123644834,2025-06-10T09:37:11.238325,active
+eds_003543,37.989339,32.5183485,OHITS,Konya,Unknown,speed_camera,82,,openstreetmap (merged from 6 sources),1.0,1749539725.54266,12123644847,2025-06-10T09:37:11.238329,active
+eds_003545,37.9629929,32.5145944,OHITS,Konya,Unknown,speed_camera,82,,openstreetmap (merged from 6 sources),1.0,1749539725.5442162,12123644850,2025-06-10T09:37:11.238333,active
+eds_003549,37.0671887,37.414573,OHITS,Gaziantep,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539725.546551,12149558033,2025-06-10T09:37:11.238340,active
+eds_003550,41.8723704,44.7273854,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.547369,12165160543,2025-06-10T09:37:11.238342,active
+eds_003551,41.6350402,41.6830967,OHITS,Diger,Unknown,speed_camera,90,,openstreetmap (merged from 3 sources),1.0,1749539725.548154,12251144057,2025-06-10T09:37:11.238344,active
+eds_003552,41.0623748,28.8325701,OHITS,Istanbul,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.548945,12253794415,2025-06-10T09:37:11.238345,active
+eds_003553,40.2767986,28.0509374,OHITS,Diger,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539725.5497239,12393596210,2025-06-10T09:37:11.238347,active
+eds_003554,40.8555458,31.1661511,OHITS,Diger,Unknown,speed_camera,50,,openstreetmap (merged from 3 sources),1.0,1749539725.550532,12397470568,2025-06-10T09:37:11.238349,active
+eds_003555,38.6542689,27.3161051,OHITS,Izmir,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.551299,12403575442,2025-06-10T09:37:11.238351,active
+eds_003556,38.6130303,27.3775697,OHITS,Izmir,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.5521011,12403644749,2025-06-10T09:37:11.238353,active
+eds_003557,38.6472939,27.27383,OHITS,Izmir,Unknown,speed_camera,110,,openstreetmap (merged from 3 sources),1.0,1749539725.552887,12403644750,2025-06-10T09:37:11.238355,active
+eds_003558,38.6457021,27.4434025,OHITS,Izmir,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.553689,12403644754,2025-06-10T09:37:11.238356,active
+eds_003559,38.6162232,27.1475812,OHITS,Izmir,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.554485,12422249940,2025-06-10T09:37:11.238358,active
+eds_003560,36.8550831,42.9484536,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.555292,12534098798,2025-06-10T09:37:11.238360,active
+eds_003562,40.5284483,44.7668839,OHITS,Diger,Unknown,speed_camera,60,,openstreetmap (merged from 3 sources),1.0,1749539725.5560791,12549694712,2025-06-10T09:37:11.238367,active
+eds_003572,39.9299532,33.3971851,OHITS,Ankara,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.562401,12701775701,2025-06-10T09:37:11.238386,active
+eds_003574,39.9082338,33.7108441,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.563984,12702193785,2025-06-10T09:37:11.238390,active
+eds_003575,39.9147682,33.741662,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.564765,12702193786,2025-06-10T09:37:11.238392,active
+eds_003577,39.9115807,33.7278311,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 3 sources),1.0,1749539725.566352,12702193793,2025-06-10T09:37:11.238396,active
+eds_003580,36.8591599,42.8594087,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 3 sources),1.0,1749539725.5687401,12750327397,2025-06-10T09:37:11.238402,active
+eds_003581,37.065461,37.4147862,OHITS,Gaziantep,Unknown,speed_camera,70,,openstreetmap (merged from 3 sources),1.0,1749539725.569546,12755412499,2025-06-10T09:37:11.238404,active
+eds_003582,37.0577693,37.4156541,OHITS,Gaziantep,Unknown,speed_camera,70,,openstreetmap (merged from 6 sources),1.0,1749539725.5703309,12755412500,2025-06-10T09:37:11.238406,active
+eds_003584,37.1054436,37.3747889,OHITS,Gaziantep,Unknown,speed_camera,70,,openstreetmap (merged from 6 sources),1.0,1749539725.5718899,12755428203,2025-06-10T09:37:11.238409,active
+eds_003586,37.0901885,37.3568356,OHITS,Gaziantep,Unknown,speed_camera,70,,openstreetmap (merged from 6 sources),1.0,1749539725.573486,12755428205,2025-06-10T09:37:11.238413,active
+eds_003588,37.0514515,37.3345939,OHITS,Gaziantep,Unknown,speed_camera,70,,openstreetmap (merged from 6 sources),1.0,1749539725.575076,12755428208,2025-06-10T09:37:11.238417,active
+eds_003590,37.0471964,37.3293895,OHITS,Gaziantep,Unknown,speed_camera,70,,openstreetmap (merged from 6 sources),1.0,1749539725.5766652,12755428210,2025-06-10T09:37:11.238420,active
+eds_003592,37.0754899,37.3767949,OHITS,Gaziantep,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.578249,12755428213,2025-06-10T09:37:11.238424,active
+eds_003595,36.2348903,44.0121517,OHITS,Diger,Unknown,speed_camera,80,,openstreetmap (merged from 6 sources),1.0,1749539725.580648,12758821550,2025-06-10T09:37:11.238430,active
+eds_003597,36.8522614,42.9106455,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 3 sources),1.0,1749539725.582245,12784327128,2025-06-10T09:37:11.238433,active
+eds_003598,36.8526296,42.9054157,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 3 sources),1.0,1749539725.583034,12784327129,2025-06-10T09:37:11.238437,active
+eds_003599,36.8559805,42.8696179,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 3 sources),1.0,1749539725.58384,12784327130,2025-06-10T09:37:11.238439,active
+eds_003600,36.8562074,42.8675649,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 3 sources),1.0,1749539725.5846488,12784327131,2025-06-10T09:37:11.238441,active
+eds_003601,36.866516,42.8369007,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 4 sources),1.0,1749539725.5854578,12784327132,2025-06-10T09:37:11.238443,active
+eds_003603,36.8804373,42.822049,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 6 sources),1.0,1749539725.58707,12784327134,2025-06-10T09:37:11.238447,active
+eds_003605,36.8899023,42.811939,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 6 sources),1.0,1749539725.588671,12784327136,2025-06-10T09:37:11.238450,active
+eds_003607,36.916944,42.7793919,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 4 sources),1.0,1749539725.590285,12784327138,2025-06-10T09:37:11.238454,active
+eds_003609,36.9417402,42.7397398,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 6 sources),1.0,1749539725.5918772,12784327140,2025-06-10T09:37:11.238461,active
+eds_003611,36.9619539,42.7007008,OHITS,Diger,Unknown,speed_camera,100,,openstreetmap (merged from 6 sources),1.0,1749539725.593488,12784327142,2025-06-10T09:37:11.238465,active
+eds_003613,38.2558497,32.1608933,OHITS,Diger,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.595084,12785371157,2025-06-10T09:37:11.238469,active
+eds_003615,38.2312587,32.2529159,OHITS,Konya,Unknown,speed_camera,,,openstreetmap (merged from 6 sources),1.0,1749539725.5966778,12785371166,2025-06-10T09:37:11.238473,active
+eds_003709,38.45977098095458,27.15553110558437,REDLIGHT,Izmir,,Çevre Yolu,50,,synthetic_high_density (merged from 2 sources),0.925,1749539725.597721,,2025-06-10T09:37:11.239782,active
+eds_002176,41.0425,28.9784,OHITS,Istanbul,,TEM Otoyolu,120,,community_waze,0.75,1749539724.6446111,,2025-06-10T09:37:05.493197,active
+eds_002177,41.0195,28.9347,MOBILE,Istanbul,,E-5 Karayolu,90,,community_waze,0.75,1749539724.644618,,2025-06-10T09:37:05.493202,active
+eds_002178,41.0766,29.0566,REDLIGHT,Istanbul,,Fatih Sultan Mehmet Köprüsü,50,,community_waze,0.75,1749539724.6446238,,2025-06-10T09:37:05.493203,active
+eds_002179,39.9208,32.8541,OHITS,Ankara,,Eskişehir Yolu,120,,community_waze,0.75,1749539724.644628,,2025-06-10T09:37:05.493204,active
+eds_002180,39.939,32.8069,MOBILE,Ankara,,Atatürk Bulvarı,50,,community_waze,0.75,1749539724.644633,,2025-06-10T09:37:05.493204,active
+eds_002181,38.3891,27.0891,OHITS,Izmir,,İzmir-Ankara Otoyolu,120,,community_waze,0.75,1749539724.6446369,,2025-06-10T09:37:05.493205,active
+eds_002182,38.4192,27.1287,REDLIGHT,Izmir,,Alsancak,50,,community_waze,0.75,1749539724.644642,,2025-06-10T09:37:05.493205,active
+eds_003618,41.04555602425451,28.88314961408255,MOBILE,Istanbul,,TEM Otoyolu,60,,synthetic_high_density,0.7250000000000001,1749539725.597473,,2025-06-10T09:37:11.239536,active
+eds_003619,41.045645171507665,28.895361682492776,REDLIGHT,Istanbul,,TEM Otoyolu,90,,synthetic_high_density,0.7250000000000001,1749539725.597478,,2025-06-10T09:37:11.239548,active
+eds_003620,41.04297259620957,28.923597170365696,MOBILE,Istanbul,,TEM Otoyolu,50,,synthetic_high_density,0.7250000000000001,1749539725.597481,,2025-06-10T09:37:11.239552,active
+eds_003621,41.04851560627143,28.942687755436303,OHITS,Istanbul,,TEM Otoyolu,80,,synthetic_high_density,0.7250000000000001,1749539725.597484,,2025-06-10T09:37:11.239555,active
+eds_003622,41.04692698770173,28.96453427436623,REDLIGHT,Istanbul,,TEM Otoyolu,80,,synthetic_high_density,0.7250000000000001,1749539725.5974898,,2025-06-10T09:37:11.239557,active
+eds_003623,41.05278564394938,28.983206409084804,OHITS,Istanbul,,TEM Otoyolu,60,,synthetic_high_density,0.7250000000000001,1749539725.597493,,2025-06-10T09:37:11.239560,active
+eds_003624,41.05014052072161,29.01033472901416,OHITS,Istanbul,,TEM Otoyolu,50,,synthetic_high_density,0.7250000000000001,1749539725.597495,,2025-06-10T09:37:11.239563,active
+eds_003625,41.051222584414504,29.027662384529368,MOBILE,Istanbul,,TEM Otoyolu,60,,synthetic_high_density,0.7250000000000001,1749539725.5974982,,2025-06-10T09:37:11.239566,active
+eds_003626,41.05779094419927,29.050298657514148,OHITS,Istanbul,,TEM Otoyolu,90,,synthetic_high_density,0.7250000000000001,1749539725.597501,,2025-06-10T09:37:11.239568,active
+eds_003627,41.05248906386915,29.06987257656831,MOBILE,Istanbul,,TEM Otoyolu,50,,synthetic_high_density,0.7250000000000001,1749539725.597504,,2025-06-10T09:37:11.239571,active
+eds_003628,41.0566632470997,29.091992196624663,REDLIGHT,Istanbul,,TEM Otoyolu,50,,synthetic_high_density,0.7250000000000001,1749539725.597507,,2025-06-10T09:37:11.239573,active
+eds_003629,41.0631948047246,29.117777051053505,OHITS,Istanbul,,TEM Otoyolu,70,,synthetic_high_density,0.7250000000000001,1749539725.5975099,,2025-06-10T09:37:11.239576,active
+eds_003630,41.056798810084295,29.130638315359633,OHITS,Istanbul,,TEM Otoyolu,60,,synthetic_high_density,0.7250000000000001,1749539725.597513,,2025-06-10T09:37:11.239578,active
+eds_003631,41.05713547099885,29.1525834592542,MOBILE,Istanbul,,TEM Otoyolu,80,,synthetic_high_density,0.7250000000000001,1749539725.597516,,2025-06-10T09:37:11.239581,active
+eds_003632,41.06275845654735,29.177497587930574,MOBILE,Istanbul,,TEM Otoyolu,90,,synthetic_high_density,0.7250000000000001,1749539725.597518,,2025-06-10T09:37:11.239583,active
+eds_003633,41.01338135345549,28.732259227272333,REDLIGHT,Istanbul,,E-5 Karayolu,70,,synthetic_high_density,0.7250000000000001,1749539725.5975208,,2025-06-10T09:37:11.239588,active
+eds_003634,41.01283877859318,28.76557524861404,REDLIGHT,Istanbul,,E-5 Karayolu,50,,synthetic_high_density,0.7250000000000001,1749539725.597524,,2025-06-10T09:37:11.239590,active
+eds_003635,41.008907998867535,28.787788207840137,OHITS,Istanbul,,E-5 Karayolu,90,,synthetic_high_density,0.7250000000000001,1749539725.597527,,2025-06-10T09:37:11.239593,active
+eds_003636,41.008045042393356,28.813985034784253,MOBILE,Istanbul,,E-5 Karayolu,90,,synthetic_high_density,0.7250000000000001,1749539725.5975292,,2025-06-10T09:37:11.239595,active
+eds_003637,41.010599877915794,28.84362660416248,MOBILE,Istanbul,,E-5 Karayolu,50,,synthetic_high_density,0.7250000000000001,1749539725.5975318,,2025-06-10T09:37:11.239598,active
+eds_003638,41.016434479367554,28.868956103718993,MOBILE,Istanbul,,E-5 Karayolu,70,,synthetic_high_density,0.7250000000000001,1749539725.597535,,2025-06-10T09:37:11.239600,active
+eds_003639,41.014443661377996,28.896342803590205,OHITS,Istanbul,,E-5 Karayolu,80,,synthetic_high_density,0.7250000000000001,1749539725.597537,,2025-06-10T09:37:11.239603,active
+eds_003640,41.01653326743707,28.92192317388092,OHITS,Istanbul,,E-5 Karayolu,60,,synthetic_high_density,0.7250000000000001,1749539725.5975401,,2025-06-10T09:37:11.239605,active
+eds_003641,41.02210295734026,28.944074394045774,MOBILE,Istanbul,,E-5 Karayolu,50,,synthetic_high_density,0.7250000000000001,1749539725.5975418,,2025-06-10T09:37:11.239608,active
+eds_003642,41.019813756437316,28.967527460175695,OHITS,Istanbul,,E-5 Karayolu,80,,synthetic_high_density,0.7250000000000001,1749539725.597545,,2025-06-10T09:37:11.239610,active
+eds_003643,41.02036979273356,29.00162960156386,OHITS,Istanbul,,E-5 Karayolu,80,,synthetic_high_density,0.7250000000000001,1749539725.597547,,2025-06-10T09:37:11.239613,active
+eds_003644,41.018991743288105,29.026468353448067,MOBILE,Istanbul,,E-5 Karayolu,120,,synthetic_high_density,0.7250000000000001,1749539725.5975502,,2025-06-10T09:37:11.239615,active
+eds_003645,41.02498883685326,29.051840487274845,OHITS,Istanbul,,E-5 Karayolu,70,,synthetic_high_density,0.7250000000000001,1749539725.597553,,2025-06-10T09:37:11.239618,active
+eds_003646,41.02672356612446,29.07296646854023,MOBILE,Istanbul,,E-5 Karayolu,120,,synthetic_high_density,0.7250000000000001,1749539725.597555,,2025-06-10T09:37:11.239620,active
+eds_003647,41.02676042948685,29.098794112490015,REDLIGHT,Istanbul,,E-5 Karayolu,120,,synthetic_high_density,0.7250000000000001,1749539725.597558,,2025-06-10T09:37:11.239623,active
+eds_003648,41.02588943839579,29.132354078525694,MOBILE,Istanbul,,E-5 Karayolu,80,,synthetic_high_density,0.7250000000000001,1749539725.5975611,,2025-06-10T09:37:11.239625,active
+eds_003649,41.02681544462487,29.155189148978256,OHITS,Istanbul,,E-5 Karayolu,80,,synthetic_high_density,0.7250000000000001,1749539725.597564,,2025-06-10T09:37:11.239628,active
+eds_003650,41.025242338949724,29.18462918644703,REDLIGHT,Istanbul,,E-5 Karayolu,90,,synthetic_high_density,0.7250000000000001,1749539725.597566,,2025-06-10T09:37:11.239630,active
+eds_003651,41.026305584788986,29.20977673861223,MOBILE,Istanbul,,E-5 Karayolu,70,,synthetic_high_density,0.7250000000000001,1749539725.597569,,2025-06-10T09:37:11.239633,active
+eds_003652,41.03439716438883,29.236104986181,MOBILE,Istanbul,,E-5 Karayolu,80,,synthetic_high_density,0.7250000000000001,1749539725.5975711,,2025-06-10T09:37:11.239635,active
+eds_003653,41.08216540139833,29.017970319363908,OHITS,Istanbul,,Büyükdere Caddesi,90,,synthetic_high_density,0.7250000000000001,1749539725.597574,,2025-06-10T09:37:11.239638,active
+eds_003654,41.081471508538975,29.022724396053984,REDLIGHT,Istanbul,,Büyükdere Caddesi,90,,synthetic_high_density,0.7250000000000001,1749539725.5975769,,2025-06-10T09:37:11.239641,active
+eds_003655,41.08526645218242,29.03160787237177,OHITS,Istanbul,,Büyükdere Caddesi,120,,synthetic_high_density,0.7250000000000001,1749539725.597579,,2025-06-10T09:37:11.239643,active
+eds_003656,41.097547421490844,29.03659257661119,REDLIGHT,Istanbul,,Büyükdere Caddesi,90,,synthetic_high_density,0.7250000000000001,1749539725.597582,,2025-06-10T09:37:11.239646,active
+eds_003657,41.10242594174048,29.0382162621091,REDLIGHT,Istanbul,,Büyükdere Caddesi,90,,synthetic_high_density,0.7250000000000001,1749539725.5975838,,2025-06-10T09:37:11.239648,active
+eds_003658,41.108317336586616,29.049925022338833,MOBILE,Istanbul,,Büyükdere Caddesi,60,,synthetic_high_density,0.7250000000000001,1749539725.5975869,,2025-06-10T09:37:11.239651,active
+eds_003659,41.10787048295332,29.05410836970876,OHITS,Istanbul,,Büyükdere Caddesi,70,,synthetic_high_density,0.7250000000000001,1749539725.597589,,2025-06-10T09:37:11.239653,active
+eds_003660,41.115225813314495,29.059102248691755,REDLIGHT,Istanbul,,Büyükdere Caddesi,60,,synthetic_high_density,0.7250000000000001,1749539725.597592,,2025-06-10T09:37:11.239656,active
+eds_003661,40.982247285711075,29.02628640022358,REDLIGHT,Istanbul,,Bağdat Caddesi,70,,synthetic_high_density,0.7250000000000001,1749539725.597594,,2025-06-10T09:37:11.239659,active
+eds_003662,40.97438262753617,29.046689853236206,OHITS,Istanbul,,Bağdat Caddesi,90,,synthetic_high_density,0.7250000000000001,1749539725.597597,,2025-06-10T09:37:11.239661,active
+eds_003663,40.97628517081343,29.061038869803635,MOBILE,Istanbul,,Bağdat Caddesi,60,,synthetic_high_density,0.7250000000000001,1749539725.597599,,2025-06-10T09:37:11.239664,active
+eds_003664,40.97098570264423,29.075033186505074,MOBILE,Istanbul,,Bağdat Caddesi,120,,synthetic_high_density,0.7250000000000001,1749539725.597603,,2025-06-10T09:37:11.239667,active
+eds_003665,40.961560379121735,29.09199989496761,REDLIGHT,Istanbul,,Bağdat Caddesi,60,,synthetic_high_density,0.7250000000000001,1749539725.597606,,2025-06-10T09:37:11.239669,active
+eds_003666,40.95885579793131,29.112293797349693,REDLIGHT,Istanbul,,Bağdat Caddesi,90,,synthetic_high_density,0.7250000000000001,1749539725.5976079,,2025-06-10T09:37:11.239671,active
+eds_003667,39.90551736698877,32.75043602525785,REDLIGHT,Ankara,,Eskişehir Yolu,80,,synthetic_high_density,0.7250000000000001,1749539725.597611,,2025-06-10T09:37:11.239674,active
+eds_003668,39.90790558751304,32.775934381715096,OHITS,Ankara,,Eskişehir Yolu,120,,synthetic_high_density,0.7250000000000001,1749539725.597614,,2025-06-10T09:37:11.239677,active
+eds_003669,39.90609977185208,32.793807299626316,OHITS,Ankara,,Eskişehir Yolu,120,,synthetic_high_density,0.7250000000000001,1749539725.5976162,,2025-06-10T09:37:11.239679,active
+eds_003670,39.91004831121223,32.812206790603064,MOBILE,Ankara,,Eskişehir Yolu,70,,synthetic_high_density,0.7250000000000001,1749539725.597619,,2025-06-10T09:37:11.239682,active
+eds_003671,39.912000397785945,32.8256079055684,REDLIGHT,Ankara,,Eskişehir Yolu,50,,synthetic_high_density,0.7250000000000001,1749539725.597622,,2025-06-10T09:37:11.239685,active
+eds_003672,39.91622741688844,32.84994786824426,MOBILE,Ankara,,Eskişehir Yolu,70,,synthetic_high_density,0.7250000000000001,1749539725.597624,,2025-06-10T09:37:11.239687,active
+eds_003673,39.919654530518656,32.86600512933804,MOBILE,Ankara,,Eskişehir Yolu,120,,synthetic_high_density,0.7250000000000001,1749539725.597627,,2025-06-10T09:37:11.239690,active
+eds_003674,39.927601293017695,32.8807566762202,REDLIGHT,Ankara,,Eskişehir Yolu,60,,synthetic_high_density,0.7250000000000001,1749539725.5976288,,2025-06-10T09:37:11.239692,active
+eds_003675,39.93011020148184,32.90227518425085,REDLIGHT,Ankara,,Eskişehir Yolu,90,,synthetic_high_density,0.7250000000000001,1749539725.597632,,2025-06-10T09:37:11.239695,active
+eds_003676,39.93394187992488,32.918444307515166,OHITS,Ankara,,Eskişehir Yolu,90,,synthetic_high_density,0.7250000000000001,1749539725.597634,,2025-06-10T09:37:11.239697,active
+eds_003677,39.93461152530753,32.93864438806394,OHITS,Ankara,,Eskişehir Yolu,80,,synthetic_high_density,0.7250000000000001,1749539725.5976372,,2025-06-10T09:37:11.239700,active
+eds_003678,39.945796927499515,32.94954137530762,OHITS,Ankara,,Eskişehir Yolu,70,,synthetic_high_density,0.7250000000000001,1749539725.59764,,2025-06-10T09:37:11.239702,active
+eds_003679,39.89418358883587,32.831139594059096,MOBILE,Ankara,,Konya Yolu,70,,synthetic_high_density,0.7250000000000001,1749539725.597642,,2025-06-10T09:37:11.239705,active
+eds_003680,39.88869495783929,32.84515670593985,OHITS,Ankara,,Konya Yolu,120,,synthetic_high_density,0.7250000000000001,1749539725.597645,,2025-06-10T09:37:11.239707,active
+eds_003681,39.88734091584893,32.853373664488046,OHITS,Ankara,,Konya Yolu,60,,synthetic_high_density,0.7250000000000001,1749539725.5976472,,2025-06-10T09:37:11.239710,active
+eds_003682,39.88193596912095,32.86505086565213,MOBILE,Ankara,,Konya Yolu,80,,synthetic_high_density,0.7250000000000001,1749539725.5976498,,2025-06-10T09:37:11.239712,active
+eds_003683,39.87445748868124,32.87903973881198,REDLIGHT,Ankara,,Konya Yolu,70,,synthetic_high_density,0.7250000000000001,1749539725.597652,,2025-06-10T09:37:11.239715,active
+eds_003684,39.86742753070359,32.88207605384601,OHITS,Ankara,,Konya Yolu,120,,synthetic_high_density,0.7250000000000001,1749539725.597655,,2025-06-10T09:37:11.239718,active
+eds_003685,39.87139342251625,32.897872595987955,REDLIGHT,Ankara,,Konya Yolu,80,,synthetic_high_density,0.7250000000000001,1749539725.5976572,,2025-06-10T09:37:11.239720,active
+eds_003686,39.86222413101181,32.908787737221196,OHITS,Ankara,,Konya Yolu,50,,synthetic_high_density,0.7250000000000001,1749539725.5976598,,2025-06-10T09:37:11.239722,active
+eds_003687,39.86257459034258,32.915332710425105,REDLIGHT,Ankara,,Konya Yolu,80,,synthetic_high_density,0.7250000000000001,1749539725.597663,,2025-06-10T09:37:11.239725,active
+eds_003688,39.8540042634541,32.9287769266612,MOBILE,Ankara,,Konya Yolu,60,,synthetic_high_density,0.7250000000000001,1749539725.597665,,2025-06-10T09:37:11.239727,active
+eds_003689,39.92993527972997,32.810137368860794,REDLIGHT,Ankara,,Atatürk Bulvarı,60,,synthetic_high_density,0.7250000000000001,1749539725.5976682,,2025-06-10T09:37:11.239731,active
+eds_003690,39.93167422068796,32.81953040191423,REDLIGHT,Ankara,,Atatürk Bulvarı,80,,synthetic_high_density,0.7250000000000001,1749539725.5976698,,2025-06-10T09:37:11.239733,active
+eds_003691,39.93933021262268,32.82517218852292,MOBILE,Ankara,,Atatürk Bulvarı,50,,synthetic_high_density,0.7250000000000001,1749539725.597673,,2025-06-10T09:37:11.239736,active
+eds_003692,39.94802819894043,32.83737865295669,REDLIGHT,Ankara,,Atatürk Bulvarı,70,,synthetic_high_density,0.7250000000000001,1749539725.597676,,2025-06-10T09:37:11.239738,active
+eds_003693,39.95069201262194,32.83801792624021,OHITS,Ankara,,Atatürk Bulvarı,80,,synthetic_high_density,0.7250000000000001,1749539725.59768,,2025-06-10T09:37:11.239741,active
+eds_003694,39.95428898204211,32.8536059359791,MOBILE,Ankara,,Atatürk Bulvarı,70,,synthetic_high_density,0.7250000000000001,1749539725.597682,,2025-06-10T09:37:11.239743,active
+eds_003695,39.964080380475835,32.859660459852506,MOBILE,Ankara,,Atatürk Bulvarı,50,,synthetic_high_density,0.7250000000000001,1749539725.597685,,2025-06-10T09:37:11.239746,active
+eds_003696,39.96705777158351,32.8648353186002,REDLIGHT,Ankara,,Atatürk Bulvarı,70,,synthetic_high_density,0.7250000000000001,1749539725.597687,,2025-06-10T09:37:11.239749,active
+eds_003697,38.3679731244916,27.073751101067817,OHITS,Izmir,,Çevre Yolu,70,,synthetic_high_density,0.7250000000000001,1749539725.59769,,2025-06-10T09:37:11.239752,active
+eds_003698,38.37601408185282,27.079650380302947,REDLIGHT,Izmir,,Çevre Yolu,90,,synthetic_high_density,0.7250000000000001,1749539725.597692,,2025-06-10T09:37:11.239754,active
+eds_003699,38.380499930236205,27.08400746630059,REDLIGHT,Izmir,,Çevre Yolu,120,,synthetic_high_density,0.7250000000000001,1749539725.5976949,,2025-06-10T09:37:11.239757,active
+eds_003700,38.38706984091852,27.094688657323395,REDLIGHT,Izmir,,Çevre Yolu,70,,synthetic_high_density,0.7250000000000001,1749539725.597698,,2025-06-10T09:37:11.239759,active
+eds_003701,38.393467651380064,27.099165391440128,REDLIGHT,Izmir,,Çevre Yolu,90,,synthetic_high_density,0.7250000000000001,1749539725.5977,,2025-06-10T09:37:11.239762,active
+eds_003702,38.409473392601114,27.106827068835752,OHITS,Izmir,,Çevre Yolu,70,,synthetic_high_density,0.7250000000000001,1749539725.597703,,2025-06-10T09:37:11.239764,active
+eds_003703,38.416800234901324,27.113990258592086,REDLIGHT,Izmir,,Çevre Yolu,70,,synthetic_high_density,0.7250000000000001,1749539725.597705,,2025-06-10T09:37:11.239767,active
+eds_003704,38.41784733118058,27.122686988960844,REDLIGHT,Izmir,,Çevre Yolu,60,,synthetic_high_density,0.7250000000000001,1749539725.597708,,2025-06-10T09:37:11.239769,active
+eds_003705,38.430003056398164,27.129674225251122,MOBILE,Izmir,,Çevre Yolu,70,,synthetic_high_density,0.7250000000000001,1749539725.597711,,2025-06-10T09:37:11.239772,active
+eds_003706,38.43301713149108,27.132184205537357,REDLIGHT,Izmir,,Çevre Yolu,50,,synthetic_high_density,0.7250000000000001,1749539725.597713,,2025-06-10T09:37:11.239774,active
+eds_003707,38.44472051673737,27.141242466469446,REDLIGHT,Izmir,,Çevre Yolu,80,,synthetic_high_density,0.7250000000000001,1749539725.5977159,,2025-06-10T09:37:11.239777,active
+eds_003708,38.443621205103355,27.150836995278816,OHITS,Izmir,,Çevre Yolu,80,,synthetic_high_density,0.7250000000000001,1749539725.597719,,2025-06-10T09:37:11.239779,active
+eds_003710,38.460429421572535,27.163215852086175,REDLIGHT,Izmir,,Çevre Yolu,90,,synthetic_high_density,0.7250000000000001,1749539725.597724,,2025-06-10T09:37:11.239784,active
+eds_003711,38.46560956907122,27.1674137464948,OHITS,Izmir,,Çevre Yolu,50,,synthetic_high_density,0.7250000000000001,1749539725.5977259,,2025-06-10T09:37:11.239788,active
+eds_003712,38.396681846683606,27.104541761189868,MOBILE,Izmir,,Ankara Yolu,50,,synthetic_high_density,0.7250000000000001,1749539725.597729,,2025-06-10T09:37:11.239790,active
+eds_003713,38.41593441173379,27.114387405781876,MOBILE,Izmir,,Ankara Yolu,90,,synthetic_high_density,0.7250000000000001,1749539725.597731,,2025-06-10T09:37:11.239793,active
+eds_003714,38.42489381275152,27.124592743882346,OHITS,Izmir,,Ankara Yolu,90,,synthetic_high_density,0.7250000000000001,1749539725.597734,,2025-06-10T09:37:11.239795,active
+eds_003715,38.437520124620654,27.135346261286163,OHITS,Izmir,,Ankara Yolu,120,,synthetic_high_density,0.7250000000000001,1749539725.597737,,2025-06-10T09:37:11.239798,active
+eds_003716,38.44440137945172,27.140085510875828,OHITS,Izmir,,Ankara Yolu,120,,synthetic_high_density,0.7250000000000001,1749539725.597739,,2025-06-10T09:37:11.239800,active
+eds_003718,38.46860042124971,27.164267411423808,REDLIGHT,Izmir,,Ankara Yolu,70,,synthetic_high_density,0.7250000000000001,1749539725.597745,,2025-06-10T09:37:11.239805,active
+eds_003719,38.47901142038567,27.181020619194076,REDLIGHT,Izmir,,Ankara Yolu,90,,synthetic_high_density,0.7250000000000001,1749539725.597748,,2025-06-10T09:37:11.239807,active
+eds_003720,38.48623210960816,27.193800194279707,OHITS,Izmir,,Ankara Yolu,50,,synthetic_high_density,0.7250000000000001,1749539725.59775,,2025-06-10T09:37:11.239810,active
+eds_003721,38.500733503051976,27.20203539943703,MOBILE,Izmir,,Ankara Yolu,50,,synthetic_high_density,0.7250000000000001,1749539725.597753,,2025-06-10T09:37:11.239812,active

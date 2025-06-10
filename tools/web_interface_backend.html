@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚨 EDS Data Merger - Web Interface</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .main-panel {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .step {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 2px dashed #e0e0e0;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .step.active {
+            border-color: #667eea;
+            background: #f8f9ff;
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .step-number {
+            width: 32px;
+            height: 32px;
+            background: #667eea;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .file-drop-zone {
+            border: 3px dashed #ccc;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background: #fafafa;
+        }
+
+        .file-drop-zone:hover,
+        .file-drop-zone.dragover {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+
+        .file-drop-zone.has-files {
+            border-color: #28a745;
+            background: #f0fff4;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .file-list {
+            margin-top: 15px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .file-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .file-item:last-child {
+            border-bottom: none;
+        }
+
+        .settings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .setting-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e9ecef;
+        }
+
+        .setting-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .setting-input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .setting-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .setting-description {
+            font-size: 14px;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        .process-btn {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .process-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .process-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .progress-section {
+            display: none;
+            margin-top: 30px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: #e9ecef;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            text-align: center;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .results-section {
+            display: none;
+            margin-top: 30px;
+            padding: 30px;
+            background: #f0fff4;
+            border: 2px solid #28a745;
+            border-radius: 12px;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .result-item {
+            text-align: center;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .result-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .result-label {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .download-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .download-btn {
+            padding: 12px 20px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            background: #218838;
+            transform: translateY(-1px);
+        }
+
+        .error-message {
+            background: #fff5f5;
+            border: 2px solid #fc8181;
+            color: #c53030;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            display: none;
+        }
+
+        .success-message {
+            background: #f0fff4;
+            border: 2px solid #68d391;
+            color: #22543d;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            display: none;
+        }
+
+        .log-section {
+            margin-top: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            max-height: 200px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: #333;
+            border: 1px solid #e9ecef;
+        }
+
+        .tips {
+            background: #e7f3ff;
+            border: 2px solid #667eea;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .tips h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .tips ul {
+            margin-left: 20px;
+        }
+
+        .tips li {
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .loading-spinner {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .main-panel {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .settings-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .download-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚨 EDS Data Merger</h1>
+            <p>Tüm EDS verilerinizi tek kaliteli veri setinde birleştirin</p>
+        </div>
+
+        <div class="main-panel">
+            <!-- Step 1: File Upload -->
+            <div class="step active" id="step1">
+                <div class="step-header">
+                    <div class="step-number">1</div>
+                    <span>Veri Dosyalarını Yükleyin</span>
+                </div>
+                
+                <div class="file-drop-zone" id="dropZone" onclick="document.getElementById('fileInput').click()">
+                    <div style="font-size: 48px; margin-bottom: 15px;">📁</div>
+                    <h3>Dosyaları buraya sürükleyin veya tıklayın</h3>
+                    <p>Desteklenen formatlar: .json, .geojson, .csv</p>
+                    <input type="file" id="fileInput" class="file-input" multiple accept=".json,.geojson,.csv">
+                </div>
+                
+                <div class="file-list" id="fileList" style="display: none;"></div>
+                <div class="error-message" id="uploadError"></div>
+                <div class="success-message" id="uploadSuccess"></div>
+            </div>
+
+            <!-- Step 2: Settings -->
+            <div class="step" id="step2">
+                <div class="step-header">
+                    <div class="step-number">2</div>
+                    <span>Ayarları Yapılandırın</span>
+                </div>
+                
+                <div class="settings-grid">
+                    <div class="setting-item">
+                        <label class="setting-label" for="qualityThreshold">Minimum Kalite Eşiği</label>
+                        <input type="number" id="qualityThreshold" class="setting-input" min="0.1" max="1.0" step="0.1" value="0.3">
+                        <div class="setting-description">
+                            Düşük kaliteli veri noktalarını filtreler (0.1 = çok gevşek, 1.0 = çok sıkı)
+                        </div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <label class="setting-label" for="duplicateDistance">Dublika Tespit Mesafesi (km)</label>
+                        <input type="number" id="duplicateDistance" class="setting-input" min="0.01" max="5.0" step="0.01" value="0.1">
+                        <div class="setting-description">
+                            Bu mesafedeki noktalar dublika olarak değerlendirilir
+                        </div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <label class="setting-label" for="outputName">Çıktı Dosya Adı</label>
+                        <input type="text" id="outputName" class="setting-input" value="eds_merged_data" placeholder="eds_merged_data">
+                        <div class="setting-description">
+                            Export edilecek dosyaların temel adı
+                        </div>
+                    </div>
+                    
+                    <div class="setting-item">
+                        <label class="setting-label" for="includeStats">İstatistikler</label>
+                        <select id="includeStats" class="setting-input">
+                            <option value="true">Detaylı istatistikler dahil et</option>
+                            <option value="false">Sadece veri dosyaları</option>
+                        </select>
+                        <div class="setting-description">
+                            İşlem sonrası analiz raporları oluşturulsun mu?
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Process -->
+            <div class="step" id="step3">
+                <div class="step-header">
+                    <div class="step-number">3</div>
+                    <span>Veri Birleştirme İşlemi</span>
+                </div>
+                
+                <button class="process-btn" id="processBtn" onclick="startProcessing()">
+                    🚀 İşlemi Başlat
+                </button>
+                
+                <div class="error-message" id="errorMessage"></div>
+                
+                <div class="progress-section" id="progressSection">
+                    <div class="progress-text" id="progressText">İşlem hazırlanıyor...</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="log-section" id="logSection"></div>
+                </div>
+                
+                <div class="results-section" id="resultsSection">
+                    <h3>🎉 İşlem Tamamlandı!</h3>
+                    
+                    <div class="results-grid" id="resultsGrid">
+                        <!-- Results will be populated here -->
+                    </div>
+                    
+                    <div class="download-links" id="downloadLinks">
+                        <!-- Download links will be populated here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tips">
+            <h3>💡 İpuçları:</h3>
+            <ul>
+                <li><strong>Kalite Eşiği:</strong> 0.3 iyi bir başlangıçtır. Çok az veri geliyorsa 0.2'ye düşürün.</li>
+                <li><strong>Dublika Mesafesi:</strong> 0.1 km (100m) çoğu durumda uygundur. Şehir içinde 0.05 km kullanabilirsiniz.</li>
+                <li><strong>Dosya Formatları:</strong> GeoJSON harita uygulamaları için, JSON genel kullanım için, CSV analiz için idealdir.</li>
+                <li><strong>Performans:</strong> Büyük veri setleri için işlem birkaç dakika sürebilir.</li>
+                <li><strong>Web Server:</strong> Bu arayüzü kullanmak için Python web server'ını çalıştırmanız gerekir.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <div>Dosyalar yükleniyor...</div>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let uploadedFiles = [];
+        let currentSessionId = null;
+
+        // File upload handling
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+        const fileList = document.getElementById('fileList');
+
+        // Drag and drop events
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('dragover');
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('dragover');
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('dragover');
+            handleFiles(e.dataTransfer.files);
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            handleFiles(e.target.files);
+        });
+
+        async function handleFiles(files) {
+            const validTypes = ['.json', '.geojson', '.csv'];
+            const formData = new FormData();
+            let validFileCount = 0;
+
+            for (let file of files) {
+                const extension = '.' + file.name.split('.').pop().toLowerCase();
+                if (validTypes.includes(extension)) {
+                    formData.append('files', file);
+                    validFileCount++;
+                }
+            }
+
+            if (validFileCount === 0) {
+                showError('upload', 'Geçerli dosya formatı bulunamadı. Desteklenen formatlar: .json, .geojson, .csv');
+                return;
+            }
+
+            showLoading(true, 'Dosyalar sunucuya yükleniyor...');
+
+            try {
+                const response = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    uploadedFiles = result.files;
+                    displayFileList();
+                    updateStepsState();
+                    showSuccess('upload', result.message);
+                } else {
+                    showError('upload', result.error || 'Dosya yükleme başarısız');
+                }
+            } catch (error) {
+                showError('upload', 'Sunucu bağlantı hatası: ' + error.message);
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        function displayFileList() {
+            if (uploadedFiles.length === 0) {
+                fileList.style.display = 'none';
+                dropZone.classList.remove('has-files');
+                return;
+            }
+
+            dropZone.classList.add('has-files');
+            fileList.style.display = 'block';
+            
+            fileList.innerHTML = '<h4>📁 Yüklenen Dosyalar:</h4>';
+            
+            uploadedFiles.forEach((file, index) => {
+                const fileItem = document.createElement('div');
+                fileItem.className = 'file-item';
+                fileItem.innerHTML = `
+                    <div>
+                        <strong>${file.name}</strong> 
+                        <span style="color: #666;">(${(file.size / 1024 / 1024).toFixed(1)} MB)</span>
+                    </div>
+                    <button onclick="removeFile(${index})" style="background: #dc3545; color: white; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer;">×</button>
+                `;
+                fileList.appendChild(fileItem);
+            });
+        }
+
+        function removeFile(index) {
+            uploadedFiles.splice(index, 1);
+            displayFileList();
+            updateStepsState();
+        }
+
+        function updateStepsState() {
+            const step2 = document.getElementById('step2');
+            const step3 = document.getElementById('step3');
+            const processBtn = document.getElementById('processBtn');
+
+            if (uploadedFiles.length > 0) {
+                step2.classList.add('active');
+                step3.classList.add('active');
+                processBtn.disabled = false;
+            } else {
+                step2.classList.remove('active');
+                step3.classList.remove('active');
+                processBtn.disabled = true;
+            }
+        }
+
+        async function startProcessing() {
+            if (uploadedFiles.length === 0) {
+                showError('process', 'Önce dosya yüklemelisiniz');
+                return;
+            }
+
+            const progressSection = document.getElementById('progressSection');
+            const resultsSection = document.getElementById('resultsSection');
+            const processBtn = document.getElementById('processBtn');
+            
+            // Reset UI
+            progressSection.style.display = 'block';
+            resultsSection.style.display = 'none';
+            hideError('process');
+            processBtn.disabled = true;
+            processBtn.textContent = '⏳ İşleniyor...';
+
+            // Get settings
+            const settings = {
+                qualityThreshold: parseFloat(document.getElementById('qualityThreshold').value),
+                duplicateDistance: parseFloat(document.getElementById('duplicateDistance').value),
+                outputName: document.getElementById('outputName').value,
+                includeStats: document.getElementById('includeStats').value === 'true'
+            };
+
+            updateProgress(10, 'İşlem başlatılıyor...');
+            addLog('İşlem parametreleri hazırlanıyor...');
+
+            try {
+                const response = await fetch('/process', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        files: uploadedFiles,
+                        settings: settings
+                    })
+                });
+
+                updateProgress(50, 'Veriler işleniyor...');
+                addLog('Sunucuda veri işleme başladı...');
+
+                const result = await response.json();
+
+                if (result.success) {
+                    currentSessionId = result.sessionId;
+                    updateProgress(100, 'İşlem tamamlandı! ✅');
+                    addLog('İşlem başarıyla tamamlandı!');
+                    showResults(result.results);
+                } else {
+                    throw new Error(result.error || 'Sunucu işleme hatası');
+                }
+
+            } catch (error) {
+                updateProgress(0, 'İşlem başarısız ❌');
+                addLog('HATA: ' + error.message);
+                showError('process', 'İşlem sırasında hata oluştu: ' + error.message);
+            } finally {
+                processBtn.disabled = false;
+                processBtn.textContent = '🚀 İşlemi Başlat';
+            }
+        }
+
+        function updateProgress(percentage, text) {
+            document.getElementById('progressFill').style.width = percentage + '%';
+            document.getElementById('progressText').textContent = text;
+        }
+
+        function addLog(message) {
+            const logSection = document.getElementById('logSection');
+            const timestamp = new Date().toLocaleTimeString();
+            logSection.innerHTML += `<div>[${timestamp}] ${message}</div>`;
+            logSection.scrollTop = logSection.scrollHeight;
+        }
+
+        function showResults(results) {
+            document.getElementById('resultsSection').style.display = 'block';
+            
+            const resultsGrid = document.getElementById('resultsGrid');
+            resultsGrid.innerHTML = `
+                <div class="result-item">
+                    <div class="result-number">${results.totalPoints.toLocaleString()}</div>
+                    <div class="result-label">Toplam EDS Noktası</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-number">${results.qualityScore.toFixed(3)}</div>
+                    <div class="result-label">Ortalama Kalite</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-number">${results.duplicatesRemoved}</div>
+                    <div class="result-label">Kaldırılan Dublika</div>
+                </div>
+                <div class="result-item">
+                    <div class="result-number">${Object.keys(results.typeDistribution).length}</div>
+                    <div class="result-label">Kamera Tipi</div>
+                </div>
+            `;
+
+            const downloadLinks = document.getElementById('downloadLinks');
+            downloadLinks.innerHTML = `
+                <button class="download-btn" onclick="downloadFile('geojson')">📍 GeoJSON</button>
+                <button class="download-btn" onclick="downloadFile('json')">📄 JSON</button>
+                <button class="download-btn" onclick="downloadFile('csv')">📊 CSV</button>
+                <button class="download-btn" onclick="downloadFile('db')">🗃️ SQLite</button>
+                <button class="download-btn" onclick="downloadFile('all')">📦 Tümü (ZIP)</button>
+            `;
+        }
+
+        async function downloadFile(format) {
+            if (!currentSessionId) {
+                alert('Önce veri işleme tamamlanmalı');
+                return;
+            }
+
+            try {
+                const response = await fetch(`/download/${currentSessionId}/${format}`);
+                
+                if (response.ok) {
+                    const blob = await response.blob();
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `eds_merged_data.${format === 'all' ? 'zip' : format}`;
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                    document.body.removeChild(a);
+                } else {
+                    const error = await response.json();
+                    alert('İndirme hatası: ' + error.error);
+                }
+            } catch (error) {
+                alert('İndirme hatası: ' + error.message);
+            }
+        }
+
+        function showError(section, message) {
+            const errorElement = document.getElementById(section === 'upload' ? 'uploadError' : 'errorMessage');
+            errorElement.textContent = message;
+            errorElement.style.display = 'block';
+        }
+
+        function hideError(section) {
+            const errorElement = document.getElementById(section === 'upload' ? 'uploadError' : 'errorMessage');
+            errorElement.style.display = 'none';
+        }
+
+        function showSuccess(section, message) {
+            const successElement = document.getElementById('uploadSuccess');
+            successElement.textContent = message;
+            successElement.style.display = 'block';
+            setTimeout(() => {
+                successElement.style.display = 'none';
+            }, 3000);
+        }
+
+        function showLoading(show, message = 'Yükleniyor...') {
+            const overlay = document.getElementById('loadingOverlay');
+            const spinner = overlay.querySelector('.loading-spinner div:last-child');
+            
+            if (show) {
+                spinner.textContent = message;
+                overlay.style.display = 'flex';
+            } else {
+                overlay.style.display = 'none';
+            }
+        }
+
+        // Initialize
+        updateStepsState();
+        
+        // Check if server is running
+        fetch('/api/info')
+            .then(response => response.json())
+            .then(data => {
+                console.log('Server is running:', data);
+            })
+            .catch(error => {
+                showError('upload', '⚠️ Web server çalışmıyor. Lütfen "python web_server.py" komutu ile sunucuyu başlatın.');
+            });
+    </script>
+</body>
+</html>
